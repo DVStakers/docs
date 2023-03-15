@@ -1,3 +1,3 @@
 # DVStakers
 
-Test main page
+Coming soon...
