@@ -28,11 +28,11 @@ Our passion for blockchain technology and decentralized systems led us to join f
 
 <div>
 
-<figure><img src=".gitbook/assets/Eridian.png" alt="Eridian"><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/Eridian.png" alt="Eridian"><figcaption><p>Eridian</p></figcaption></figure>
 
  
 
-<figure><img src=".gitbook/assets/Spacesider.png" alt="Spacesider"><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/Spacesider.png" alt="Spacesider"><figcaption><p>Spacesider</p></figcaption></figure>
 
 </div>
 

@@ -2,28 +2,40 @@
 
 * [🗺 DVStakers](README.md)
 * [🖥 Overview](overview.md)
-* [📖 Setup](setup/README.md)
-  * [Validator Key Generation](setup/validator-key-generation.md)
-  * [StakeWise V3 Vaults](setup/stakewise-v3-vaults.md)
+* [📖 DVT - Getting started](dvt-getting-started/README.md)
+  * [Validator Key Generation](dvt-getting-started/validator-key-generation.md)
+  * [StakeWise V3 Vaults](dvt-getting-started/stakewise-v3-vaults.md)
 * [❔ FAQ](faq.md)
 
 ## Eridian
 
-* [💻 Eridian - Hardware](eridian/eridian-hardware.md)
-* [🌐 Eridian - Networking](eridian/eridian-networking.md)
-* [💿 Eridian - Software](eridian/eridian-software.md)
-* [⛓ Eridian - Validator Clients](eridian/eridian-validator-clients/README.md)
-  * [Eridian - Geth](eridian/eridian-validator-clients/eridian-geth.md)
-  * [Eridian - Lighthouse](eridian/eridian-validator-clients/eridian-lighthouse.md)
-  * [Eridian - MEV Boost](eridian/eridian-validator-clients/eridian-mev-boost.md)
-* [🎛 Eridian - DVT Setup](eridian/eridian-dvt-setup.md)
+* [💻 Hardware](eridian/hardware.md)
+* [🌐 Networking](eridian/networking.md)
+* [💿 Linux software](eridian/linux-software/README.md)
+  * [💾 Installation](eridian/linux-software/installation.md)
+  * [⌨ Useful commands](eridian/linux-software/useful-commands.md)
+  * [🏗 Maintenance](eridian/linux-software/maintenance.md)
+* [⛓ Validator clients](eridian/validator-clients/README.md)
+  * [Geth](eridian/validator-clients/geth/README.md)
+    * [💾 Geth - Installation](eridian/validator-clients/geth/geth-installation.md)
+    * [⌨ Useful commands](eridian/validator-clients/geth/useful-commands.md)
+    * [🏗 Maintenance](eridian/validator-clients/geth/maintenance.md)
+  * [Lighthouse](eridian/validator-clients/lighthouse/README.md)
+    * [💾 Installation](eridian/validator-clients/lighthouse/installation.md)
+    * [⌨ Useful commands](eridian/validator-clients/lighthouse/useful-commands.md)
+    * [🏗 Maintenance](eridian/validator-clients/lighthouse/maintenance.md)
+  * [MEV Boost](eridian/validator-clients/mev-boost/README.md)
+    * [💾 Installation](eridian/validator-clients/mev-boost/installation.md)
+    * [⌨ Useful commands](eridian/validator-clients/mev-boost/useful-commands.md)
+    * [🏗 Maintenance](eridian/validator-clients/mev-boost/maintenance.md)
+* [🎛 DVT setup](eridian/dvt-setup.md)
 
 ## Spacesider
 
-* [💻 Spacesider - Hardware](spacesider/spacesider-hardware.md)
-* [🌐 Spacesider - Networking](spacesider/spacesider-networking.md)
-* [⛓ Spacesider - Validator Clients](spacesider/spacesider-validator-clients.md)
-* [🎛 Spacesider - DVT Setup](spacesider/spacesider-dvt-setup.md)
+* [💻 Hardware](spacesider/hardware.md)
+* [🌐 Networking](spacesider/networking.md)
+* [⛓ Validator clients](spacesider/validator-clients.md)
+* [🎛 DVT setup](spacesider/dvt-setup.md)
 
 ## Cloud Failover
 

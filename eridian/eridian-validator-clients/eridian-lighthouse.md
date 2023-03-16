@@ -1,2 +1,0 @@
-# Eridian - Lighthouse
-
