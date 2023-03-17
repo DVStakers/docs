@@ -46,7 +46,7 @@ fwupdmgr update
 
 Install useful packages.
 
-```bash
+```sh
 sudo apt-get install -y \
 git \
 build-essential \
@@ -91,25 +91,25 @@ Use `ntpd` instead of the default time synchronization `timedatectl`.
 
 The firewall is set to allow NTP calls out, so that's why it needs to be used.
 
-```
+```bash
 sudo timedatectl set-ntp no
 ```
 
 Verify it's disabled.
 
-```
+```bash
 timedatectl
 ```
 
 Install `ntp`.
 
-```
+```bash
 sudo apt-get install -y ntp
 ```
 
 Check `ntp` is running.
 
-```
+```bash
 ntpq -p
 ```
 
@@ -125,7 +125,7 @@ To avoid duplication these details can be found on the EthStaker Knowledge Base.
 
 Change the colors of the terminal prompt to make it easier to tell which server I'm currently using.
 
-```
+```bash
 vim ~/.bashrc
 ```
 
@@ -138,13 +138,13 @@ Comment out the existing `PS1` as it's useful to have a backup.
 * `<ENV>`
   * E.g. DEV or PROD
 
-```
+```bash
 PS1='\[\033[01;34m\]<ENV>|<LOCATION>|Validator\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
 ```
 
 Reload the terminal source to display the results.
 
-```
+```bash
 source ~/.bashrc
 ```
 
@@ -154,7 +154,7 @@ Some of the messages are useful so I don't want to hide everything, but some are
 
 Hide parts of the message by making the template `non-executable`.
 
-```
+```bash
 sudo chmod -x /etc/update-motd.d/10-help-text
 sudo chmod -x /etc/update-motd.d/50-motd-news
 ```
@@ -165,7 +165,7 @@ I was concerned that the default time of 180 seconds wouldn't be long enough for
 
 The shutdown time can be individually set on each service, but this is a catch-all.
 
-```
+```bash
 sudo vim /etc/systemd/system.conf
 ```
 
@@ -175,14 +175,14 @@ Uncomment out the line `#DefaultTimeoutStopSec=90s` and change it to `1200s`.
 
 Confirm UFW is disabled before blocking everything or you could be disconnected.
 
-```
+```bash
 sudo ufw disable
 sudo ufw status
 ```
 
 Configure the firewall.
 
-```
+```bash
 sudo ufw default deny incoming comment 'Deny all incoming traffic'
 sudo ufw default deny outgoing comment 'Deny all outgoing traffic'
 
@@ -233,19 +233,19 @@ sudo ufw allow out https comment 'Allow HTTPS traffic out'
 
 Edit the UFW settings to disable IPV6. This isn't for any particular security reason, it just makes the UFW status easier to read when it prints out on screen.
 
-```
+```bash
 sudo vim /etc/default/ufw
 ```
 
 Change `IPV6` to `no`.
 
-```
+```bash
 IPV6=no
 ```
 
 Enable UFW.
 
-```
+```bash
 # <USE --FORCE TO STOP THE PROMPT ASKING IF YOU WANT TO ENABLE>
 sudo ufw --force enable
 
@@ -274,7 +274,7 @@ To avoid duplication these details can be found on the EthStaker Knowledge Base.
 
 Edit the Git configuration.
 
-```
+```bash
 vim ~/.gitconfig
 ```
 
@@ -287,7 +287,7 @@ Add this to the `[alias]` section for a pretty view of commit tree for current b
 
 Then run these commands in a directory using Git to see a pretty view of the commit tree.
 
-```
+```bash
 git tree
 git tree-current
 ```
