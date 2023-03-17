@@ -1,5 +1,5 @@
 ---
-description: Notes on how to maintain and update my Geth client.
+description: Notes on how to maintain and update my Geth Client.
 ---
 
 # 🏗 Maintenance

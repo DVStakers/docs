@@ -1,5 +1,5 @@
 ---
-description: Notes on how to install, use and maintain my Geth client.
+description: Notes on how to install, use and maintain my Geth Client.
 ---
 
 # Geth

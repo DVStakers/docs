@@ -1,5 +1,5 @@
 ---
-description: My Geth installation guide.
+description: My Geth Client installation guide.
 ---
 
 # 💾 Installation

@@ -1,5 +1,5 @@
 ---
-description: Notes on how to use my Geth client.
+description: Notes on how to use my Geth Client.
 ---
 
 # ⌨ Useful commands
