@@ -1,7 +1,7 @@
 ---
 description: >-
-  SigmaPrime Lighthouse Validator Client Documentation. For my existing
-  validators that don't use DVT on mainnet... yet!
+  Notes on how to install and maintain the Lighthouse Validator Client. For my
+  existing validators that don't use DVT on mainnet... yet!
 ---
 
 # Lighthouse VC (No DVT)

@@ -1,5 +1,5 @@
 ---
-description: Notes on all the configuration of my infrastructure.
+description: Notes on the configuration of my infrastructure.
 ---
 
 # 📗 Eridian

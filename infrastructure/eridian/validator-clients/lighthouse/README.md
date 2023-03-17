@@ -1,5 +1,5 @@
 ---
-description: SigmaPrime Lighthouse Beacon Node Documentation.
+description: Notes on how to install and maintain my Lighthouse Beacon Node.
 ---
 
 # Lighthouse BN

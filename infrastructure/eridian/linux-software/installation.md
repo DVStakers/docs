@@ -1,7 +1,7 @@
 ---
 description: >-
-  My software installation guide, starting with a new machine through to the
-  point of installing the validator clients.
+  My Linux software installation guide, starting with a new machine through to
+  the point of installing the validator clients.
 ---
 
 # 💾 Installation

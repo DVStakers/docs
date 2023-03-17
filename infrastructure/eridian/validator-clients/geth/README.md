@@ -1,5 +1,5 @@
 ---
-description: Go Ethereum Client Documentation.
+description: Notes on how to install, use and maintain my Geth client.
 ---
 
 # Geth
