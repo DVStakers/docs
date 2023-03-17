@@ -6,24 +6,24 @@
 All of the alias commands have been defined as aliases in \~/`.bashrc when`[`installing Geth`](installation.md)
 {% endhint %}
 
-* [Services - geth.service](useful-commands.md#services-geth.service)
+* [geth.service](useful-commands.md#geth.service)
 * [Geth Direct Queries](useful-commands.md#geth-direct-queries)
 * [Geth JavaScript Console](useful-commands.md#geth-javascript-console)
 * [Other Useful Commands](useful-commands.md#other-useful-commands)
 * [Data Locations](useful-commands.md#data-locations)
 
-### Services - geth.service
+### geth.service
 
 {% tabs %}
 {% tab title="Command Aliases" %}
 ```bash
-geth-log        # View the Geth logs
-geth-start      # Start the Geth service
-geth-stop       # Stop the Geth service
-geth-restart    # Restart the Geth service
-geth-status     # View the status of the Geth service
-geth-enable     # Enable the Geth service
-geth-disable    # Disable the Geth service
+geth-log        # View the geth.service logs
+geth-start      # Start the geth.service
+geth-stop       # Stop the geth.service
+geth-restart    # Restart the geth.service
+geth-status     # View the status of the geth.service
+geth-enable     # Enable the geth.service
+geth-disable    # Disable the geth.service
 
 geth-config     # Open the /etc/systemd/system/geth.service in vim
 daemon-reload   # Reload any changes made to the geth.service
@@ -32,13 +32,13 @@ daemon-reload   # Reload any changes made to the geth.service
 
 {% tab title="Full Commands" %}
 ```bash
-sudo journalctl -f -u geth.service -o cat | ccze -A   # View the Geth logs
-sudo systemctl start geth.service                     # Start the Geth service
-sudo systemctl stop geth.service                      # Stop the Geth service
-sudo systemctl restart geth.service                   # Restart the Geth service
-sudo systemctl status geth.service                    # View the status of the Geth service
-sudo systemctl enable geth.service                    # Enable the Geth service
-sudo systemctl disable geth.service                   # Disable the Geth service
+sudo journalctl -f -u geth.service -o cat | ccze -A   # View the geth.service logs
+sudo systemctl start geth.service                     # Start the geth.service
+sudo systemctl stop geth.service                      # Stop the geth.service
+sudo systemctl restart geth.service                   # Restart the geth.service
+sudo systemctl status geth.service                    # View the status of the geth.service
+sudo systemctl enable geth.service                    # Enable the geth.service
+sudo systemctl disable geth.service                   # Disable the geth.service
 
 sudo vim /etc/systemd/system/geth.service             # Open the /etc/systemd/system/geth.service in vim
 sudo systemctl daemon-reload                          # Reload any changes made to the geth.service

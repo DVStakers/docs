@@ -6,9 +6,9 @@
 
 ## DVT
 
-* [📖 DVT - Getting started](dvt/dvt-getting-started/README.md)
-  * [Validator Key Generation](dvt/dvt-getting-started/validator-key-generation.md)
-  * [StakeWise V3 Vaults](dvt/dvt-getting-started/stakewise-v3-vaults.md)
+* [📖 DVT - Getting started](dvt-getting-started/README.md)
+  * [Validator Key Generation](dvt-getting-started/validator-key-generation.md)
+  * [StakeWise V3 Vaults](dvt-getting-started/stakewise-v3-vaults.md)
 
 ## Infrastructure
 
@@ -17,29 +17,32 @@
   * [🌐 Networking](infrastructure/eridian/networking.md)
   * [💿 Linux software](infrastructure/eridian/linux-software/README.md)
     * [💾 Installation](infrastructure/eridian/linux-software/installation.md)
-    * [⌨ Useful commands](infrastructure/eridian/linux-software/useful-commands.md)
     * [🏗 Maintenance](infrastructure/eridian/linux-software/maintenance.md)
   * [⛓ Validator clients](infrastructure/eridian/validator-clients/README.md)
     * [Geth](infrastructure/eridian/validator-clients/geth/README.md)
       * [💾 Installation](infrastructure/eridian/validator-clients/geth/installation.md)
       * [⌨ Useful commands](infrastructure/eridian/validator-clients/geth/useful-commands.md)
       * [🏗 Maintenance](infrastructure/eridian/validator-clients/geth/maintenance.md)
-    * [Lighthouse BN](infrastructure/eridian/validator-clients/lighthouse-bn/README.md)
-      * [💾 Installation](infrastructure/eridian/validator-clients/lighthouse-bn/installation.md)
-      * [⌨ Useful commands](infrastructure/eridian/validator-clients/lighthouse-bn/useful-commands.md)
-      * [🏗 Maintenance](infrastructure/eridian/validator-clients/lighthouse-bn/maintenance.md)
-    * [Lighthouse VC (No DVT)](infrastructure/eridian/validator-clients/lighthouse-vc-no-dvt/README.md)
-      * [💾 Installation](infrastructure/eridian/validator-clients/lighthouse-vc-no-dvt/installation.md)
-      * [⌨ Useful commands](infrastructure/eridian/validator-clients/lighthouse-vc-no-dvt/useful-commands.md)
-      * [🏗 Maintenance](infrastructure/eridian/validator-clients/lighthouse-vc-no-dvt/maintenance.md)
+    * [Lighthouse](infrastructure/eridian/validator-clients/lighthouse/README.md)
+      * [Lighthouse client](infrastructure/eridian/validator-clients/lighthouse/lighthouse-client/README.md)
+        * [💾 Installation](infrastructure/eridian/validator-clients/lighthouse/lighthouse-client/installation.md)
+        * [🏗 Maintenance](infrastructure/eridian/validator-clients/lighthouse/lighthouse-client/maintenance.md)
+      * [Lighthouse BN](infrastructure/eridian/validator-clients/lighthouse/lighthouse-bn/README.md)
+        * [💾 Installation](infrastructure/eridian/validator-clients/lighthouse/lighthouse-bn/installation.md)
+        * [⌨ Useful commands](infrastructure/eridian/validator-clients/lighthouse/lighthouse-bn/useful-commands.md)
+        * [🏗 Maintenance](infrastructure/eridian/validator-clients/lighthouse/lighthouse-bn/maintenance.md)
+      * [Lighthouse VC (No DVT)](infrastructure/eridian/validator-clients/lighthouse/lighthouse-vc-no-dvt/README.md)
+        * [💾 Installation](infrastructure/eridian/validator-clients/lighthouse/lighthouse-vc-no-dvt/installation.md)
+        * [⌨ Useful commands](infrastructure/eridian/validator-clients/lighthouse/lighthouse-vc-no-dvt/useful-commands.md)
+        * [🏗 Maintenance](infrastructure/eridian/validator-clients/lighthouse/lighthouse-vc-no-dvt/maintenance.md)
     * [MEV Boost](infrastructure/eridian/validator-clients/mev-boost/README.md)
       * [💾 Installation](infrastructure/eridian/validator-clients/mev-boost/installation.md)
       * [⌨ Useful commands](infrastructure/eridian/validator-clients/mev-boost/useful-commands.md)
       * [🏗 Maintenance](infrastructure/eridian/validator-clients/mev-boost/maintenance.md)
   * [🎛 DVT setup](infrastructure/eridian/dvt-setup.md)
 * [📘 Spacesider](infrastructure/spacesider.md)
-* [☁ Cloud redundancy](infrastructure/cloud-redundancy/README.md)
-  * [AWS?](infrastructure/cloud-redundancy/aws.md)
+* [☁ Cloud redundancy](infrastructure/cloud-failover/README.md)
+  * [AWS?](infrastructure/cloud-failover/aws.md)
 
 ## Spacesider-old
 

@@ -2,22 +2,18 @@
 
 <figure><img src="https://raw.githubusercontent.com/DVStakers/docs/main/.gitbook/assets/Eridian.png" alt=""><figcaption><p>Eridian</p></figcaption></figure>
 
+* [Create Aliases](installation.md#create-aliases)
+* [Rust - Install](installation.md#rust-install)
+* [Lighthouse - Install](installation.md#lighthouse-install)
+* [Lighthouse - Update Scripts](installation.md#lighthouse-update-scripts)
+
 ### Create Aliases
 
-These aliases make interacting with `Lighthouse` on the command line easier.
-
-```
-echo "alias beacon-log='sudo journalctl -f -u lighthousebeacon.service -o cat | ccze -A'" >> ~/.bashrc
-echo "alias beacon-start='sudo systemctl start lighthousebeacon.service'" >> ~/.bashrc
-echo "alias beacon-stop='sudo systemctl stop lighthousebeacon.service'" >> ~/.bashrc
-echo "alias beacon-restart='sudo systemctl restart lighthousebeacon.service'" >> ~/.bashrc
-echo "alias beacon-status='sudo systemctl status lighthousebeacon.service'" >> ~/.bashrc
-echo "alias beacon-config='sudo vim /etc/systemd/system/lighthousebeacon.service'" >> ~/.bashrc
-echo "alias beacon-enable='sudo systemctl enable lighthousebeacon.service'" >> ~/.bashrc
-echo "alias beacon-disable='sudo systemctl disable lighthousebeacon.service'" >> ~/.bashrc
-
+```bash
 echo "alias lighthouse-version-current='cd /usr/local/bin/; ./lighthouse --version; cd;'" >> ~/.bashrc
+echo "alias lighthouse-build='cd; ./lighthouse-build.sh'" >> ~/.bashrc
 echo "alias lighthouse-version-new='cd ~/.cargo/bin/; ./lighthouse --version; cd;'" >> ~/.bashrc
+echo "alias lighthouse-deploy='cd; ./lighthouse-deploy-check.sh'" >> ~/.bashrc
 
 source ~/.bashrc
 ```
@@ -71,55 +67,6 @@ Create `Lighthouse` directory.
 ```bash
 sudo mkdir -p /var/lib/lighthouse
 ```
-
-### Lighthouse - Configure Service
-
-Create `Lighthouse Beacon` user and set permissions
-
-```bash
-sudo useradd --no-create-home --shell /bin/false lighthousebeacon
-sudo mkdir -p /var/lib/lighthouse/beacon
-sudo chown -R lighthousebeacon:lighthousebeacon /var/lib/lighthouse/beacon
-```
-
-Configure `Lighthouse` service using the command line flags.
-
-```bash
-sudo vim /etc/systemd/system/lighthousebeacon.service
-```
-
-{% code title="lighthousebeacon.service" %}
-```
-TODO
-- Create file then change variables with a script after.
-```
-{% endcode %}
-
-Start the service and check it's working as expected.
-
-{% tabs %}
-{% tab title="Command Aliases" %}
-```bash
-daemon-reload     # Reload any changes made to the lighthousebeacon.service
-beacon-enable     # Enable the lighthousebeacon service
-beacon-start      # Start the lighthousebeacon service
-beacon-status     # View the lighthousebeacon of the Geth service
-
-beacon-log        # View the lighthousebeacon logs
-```
-{% endtab %}
-
-{% tab title="Full Commands" %}
-```bash
-sudo systemctl daemon-reload                                     # Reload any changes made to the lighthousebeacon.service
-sudo systemctl enable lighthousebeacon.service                   # Enable the lighthousebeacon service
-sudo systemctl start lighthousebeacon.service                    # Start the lighthousebeacon service
-sudo systemctl status lighthousebeacon.service                   # View the lighthousebeacon of the Geth service
-
-sudo journalctl -f -u lighthousebeacon.service -o cat | ccze -A  # View the lighthousebeacon logs
-```
-{% endtab %}
-{% endtabs %}
 
 ### Lighthouse - Update Scripts
 

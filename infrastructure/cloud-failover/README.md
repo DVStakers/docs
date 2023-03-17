@@ -1,4 +1,4 @@
-# ☁ Cloud failover
+# ☁ Cloud redundancy
 
 ### Why is this needed?
 

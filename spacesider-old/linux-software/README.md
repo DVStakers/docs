@@ -6,8 +6,8 @@
 [installation.md](../../infrastructure/eridian/linux-software/installation.md)
 {% endcontent-ref %}
 
-{% content-ref url="../../infrastructure/eridian/linux-software/useful-commands.md" %}
-[useful-commands.md](../../infrastructure/eridian/linux-software/useful-commands.md)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
 
 {% content-ref url="../../infrastructure/eridian/linux-software/maintenance.md" %}

@@ -13,7 +13,7 @@
 
 These aliases make interacting with `Geth` on the command line easier.
 
-```
+```bash
 echo "alias geth-log='sudo journalctl -f -u geth.service -o cat | ccze -A'" >> ~/.bashrc
 echo "alias geth-start='sudo systemctl start geth.service'" >> ~/.bashrc
 echo "alias geth-stop='sudo systemctl stop geth.service'" >> ~/.bashrc
@@ -91,6 +91,8 @@ Configure `Geth` service using the command line flags.
 sudo vim /etc/systemd/system/geth.service
 ```
 
+{% tabs %}
+{% tab title="/etc/systemd/system/geth.service" %}
 {% code title="/etc/systemd/system/geth.service" %}
 ```bash
 [Unit]
@@ -122,6 +124,25 @@ ExecStart=/usr/local/bin/geth \
 WantedBy=default.target
 ```
 {% endcode %}
+{% endtab %}
+
+{% tab title="Geth Flags Explained" %}
+| `/usr/local/bin/geth` | Starts Geth                                                                                                                                                                                                                                                                                                                       |
+| --------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `--mainnet`           | Specifies mainnet as the target network                                                                                                                                                                                                                                                                                           |
+| `--syncmode`          | <ul><li><code>full</code> very/impossibly slow on Mainnet due to Shanghai DDOS attacks</li><li><code>fast</code> used to be the best option, but is now slower than snap</li><li><code>snap</code> the current fastest way to sync</li></ul>                                                                                      |
+| `--http`              | Enable the HTTP-RPC server                                                                                                                                                                                                                                                                                                        |
+| `--datadir`           | Data directory for the databases and keystore                                                                                                                                                                                                                                                                                     |
+| `--metrics`           | Enable metrics collection and reporting                                                                                                                                                                                                                                                                                           |
+| `--metrics.expensive` | Enable expensive metrics collection and reporting                                                                                                                                                                                                                                                                                 |
+| `--pprof`             | <p>Enable the pprof HTTP server</p><p>Required for metrics to work properly</p>                                                                                                                                                                                                                                                   |
+| `--http.api`          | API's offered over the HTTP-RPC interface                                                                                                                                                                                                                                                                                         |
+| `--authrpc.jwtsecret` | <p>The JWT secret is automatically generated when <code>Geth</code> is first run and added to <code>/var/lib/goethereum/</code></p><p></p><p>This is same location that is pointed to in both the <code>Geth</code> and <code>Lighthouse</code> configuration so that they use the same JWT secret and can talk to each other</p> |
+| `--maxpeers`          | <p>Maximum number of network peers</p><ul><li>Network disabled if set to 0</li><li>Default: 50</li></ul>                                                                                                                                                                                                                          |
+| `--cache`             | <p>Megabytes of memory allocated to internal caching</p><ul><li>Default = 4096 mainnet full node and 128 light mode</li></ul>                                                                                                                                                                                                     |
+| `--bootnodes`         | <p>Comma separated enode URLs for P2P discovery bootstrap</p><ul><li><a href="https://github.com/ethereum/go-ethereum/blob/master/params/bootnodes.go">https://github.com/ethereum/go-ethereum/blob/master/params/bootnodes.go</a></li></ul>                                                                                      |
+{% endtab %}
+{% endtabs %}
 
 Start the service and check it's working as expected.
 
@@ -129,22 +150,22 @@ Start the service and check it's working as expected.
 {% tab title="Command Aliases" %}
 ```bash
 daemon-reload   # Reload any changes made to the geth.service
-geth-enable     # Enable the Geth service
-geth-start      # Start the Geth service
-geth-status     # View the status of the Geth service
+geth-enable     # Enable the geth.service
+geth-start      # Start the geth.service
+geth-status     # View the status of the geth.service
 
-geth-log        # View the Geth logs
+geth-log        # View the geth.service logs
 ```
 {% endtab %}
 
 {% tab title="Full Commands" %}
 ```bash
 sudo systemctl daemon-reload                          # Reload any changes made to the geth.service
-sudo systemctl enable geth.service                    # Enable the Geth service
-sudo systemctl start geth.service                     # Start the Geth service
-sudo systemctl status geth.service                    # View the status of the Geth service
+sudo systemctl enable geth.service                    # Enable the geth.service
+sudo systemctl start geth.service                     # Start the geth.service
+sudo systemctl status geth.service                    # View the status of the geth.service
 
-sudo journalctl -f -u geth.service -o cat | ccze -A   # View the Geth logs
+sudo journalctl -f -u geth.service -o cat | ccze -A   # View the geth.service logs
 ```
 {% endtab %}
 {% endtabs %}

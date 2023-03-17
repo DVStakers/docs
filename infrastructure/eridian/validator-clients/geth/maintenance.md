@@ -47,7 +47,6 @@ sudo rm /usr/local/bin/geth
 sudo cp ~/go-ethereum/build/bin/geth /usr/local/bin
 
 sudo systemctl start geth.service
-sudo systemctl status geth.service
 ```
 {% endtab %}
 {% endtabs %}
