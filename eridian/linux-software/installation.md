@@ -100,8 +100,6 @@ fwupdmgr refresh; fwupdmgr get-updates; fwupdmgr update                         
 {% endtab %}
 {% endtabs %}
 
-Install useful packages.
-
 Set up `btop`.
 
 * Change them to TTY.
@@ -312,15 +310,34 @@ git tree-current
 
 ### 📝 Systemd Journal Logs
 
-The systemd services create logs that grow over time.
-
-It is possible to clear the logs to free up disk space on your server.
-
-The following steps will delete existing log data.
+The systemd services create logs that grow over time. It is possible to clear the logs to free up disk space on your server. The following steps will delete existing log data.
 
 Be careful if you require this data for debugging purposes.
 
 Check the amount of disk space the logs are using.
+
+```bash
+sudo journalctl --disk-usage
+```
+
+To clear the logs use the following command
+
+* The `--flush` flag flushes the logs currently in memory onto the disk
+* The `--rotate` flag archives the existing logs so they can’t be written to anymore and starts new logs for each service
+* The `--vacuum-time` flag deletes log data that is older than `3 days`
+
+```bash
+sudo journalctl --flush --rotate
+sudo journalctl --vacuum-time=3days
+```
+
+It is recommended to check the logs are in a good state after the vacuum operation
+
+Each log should have a status of `PASS`
+
+```bash
+sudo journalctl --verify
+```
 
 
 

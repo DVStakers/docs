@@ -233,7 +233,7 @@ function blockInfo() {
 ```
 {% endcode %}
 
-Check `Geth` details.
+Check `Geth` details by attaching to the JavaScript console
 
 {% tabs %}
 {% tab title="Command Alias" %}
@@ -249,7 +249,7 @@ sudo geth attach --preload ~/geth-console-script.js /var/lib/goethereum/geth.ipc
 {% endtab %}
 {% endtabs %}
 
-Console commands.
+`Geth` JavaScript console commands.
 
 ```bash
 eth.syncing
