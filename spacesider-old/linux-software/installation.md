@@ -294,4 +294,4 @@ git tree-current
 
 
 
-Success! The staking machine is now ready to [install the validator clients](../../eridian/validator-clients/) 🥳
+Success! The staking machine is now ready to [install the validator clients](../../infrastructure/eridian/validator-clients/) 🥳

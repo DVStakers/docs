@@ -109,15 +109,13 @@ ExecStart=/usr/local/bin/geth \
     --mainnet \
     --syncmode=snap \
     --http \
+    --http.api="engine,eth,web3,net" \
     --datadir /var/lib/goethereum \
     --metrics \
     --metrics.expensive \
     --pprof \
-    --http.api="engine,eth,web3,net" \
     --authrpc.jwtsecret=/var/lib/goethereum/jwtsecret \
     --maxpeers 50 \
-    --txpool.globalslots=250000 \
-    --txpool.globalqueue=50000 \
     --cache 32768
 
 [Install]
@@ -189,8 +187,6 @@ echo "******************"
 sudo systemctl start geth.service
 ```
 {% endcode %}
-
-
 
 Create update script checker script.
 

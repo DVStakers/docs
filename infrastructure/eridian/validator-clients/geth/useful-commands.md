@@ -118,7 +118,7 @@ curl https://eth2-client-port-checker.vercel.app/api/checker?ports=${PORTS_TO_CH
 Checks the validator status using the validator's public address.
 
 ```bash
-VALIDATOR_HTTP_PORT=        # Default for Lighthouse: 5052
+VALIDATOR_HTTP_PORT=        # Lighthouse default: 5052
 VALIDATOR_PUBLIC_KEY=       # E.g. 0x88426dd9c3d2bb71ad862a2e47d537304de528e88f5164f6db6ec423f1f7ed24d050c27ae4df45b37d2a4931fc820edf
 
 curl -s http://127.0.0.1:${VALIDATOR_HTTP_PORT}/eth/v1/beacon/states/head/validators/${VALIDATOR_PUBLIC_KEY} |jq
