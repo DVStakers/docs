@@ -1,2 +1,0 @@
-# ⛓ Spacesider - Validator Clients
-
