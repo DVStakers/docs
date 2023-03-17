@@ -6,8 +6,6 @@ description: Notes on how to maintain and update my Linux system.
 
 <figure><img src="https://raw.githubusercontent.com/DVStakers/docs/main/.gitbook/assets/Eridian.png" alt=""><figcaption><p>Eridian</p></figcaption></figure>
 
-* [General System Updates](maintenance.md#general-system-updates)
-
 ### General System Updates
 
 Update system packages and [firmware](https://github.com/fwupd/fwupd).

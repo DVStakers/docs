@@ -6,7 +6,7 @@ description: >-
 
 # 🗺 DVStakers
 
-<figure><img src=".gitbook/assets/Road.jpg" alt="Image of a road"><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/Road.jpg" alt="Image of a road"><figcaption><p>Ethereum path shared, two stakers quest for DVT, blockchain harmony.</p></figcaption></figure>
 
 * [🚀 About Us](./#about-us)
 * [🎯 Our Vision](./#our-vision)
@@ -14,9 +14,9 @@ description: >-
 * [📚 Our Journey](./#our-journey)
 * [💬 Be part of our Community](./#be-part-of-our-community)
 
-Join us on an adventure as two dedicated Ethereum solo stakers prepare to run [Obol](https://obol.tech/) Decentralized Validation Technology (DVT) on the Ethereum mainnet. Our goal is to document every step of our journey, offering valuable insights, sharing our experiences, and fostering a supportive community for enthusiasts and experts alike.
+Join us on an adventure as two dedicated Ethereum solo stakers prepare to run [Obol](https://obol.tech/) Distributed Validator Technology (DVT) on the Ethereum mainnet. Our goal is to document every step of our journey, offering valuable insights, sharing our experiences, and fostering a supportive community for enthusiasts and experts alike.
 
-Jump straight to our overview by click to image below:
+Jump straight to our overview by clicking on the image below:
 
 <figure><img src=".gitbook/assets/image (2) (1).png" alt="System architecture of DVStakers decentralized DVT validators with redundancy"><figcaption><p>System architecture of DVStakers decentralized DVT validators with redundancy</p></figcaption></figure>
 
@@ -40,15 +40,17 @@ Our passion for blockchain technology and decentralized systems led us to join f
 
 **To become a Multi-Protocol DVT Node Operator**
 
-DVStakers' end goal is to become a prominent Decentralized Validation Technology (DVT) node operator within the Ethereum ecosystem, running validators for others across multiple staking protocols. By working with platforms such as RocketPool, StakeWise, Lido, and more, we aim to support a diverse range of staking opportunities. Our commitment to leveraging the best of each protocol will enable us to offer optimal staking experiences, maximizing rewards, and minimizing risks for all stakeholders involved. As we continue our journey, we strive to stay at the forefront of innovation and contribute to the growth and resilience of the Ethereum network, fostering a more decentralized and secure future.
+DVStakers' vision is to become a leading DVT node operator within the Ethereum ecosystem, running validators across multiple staking protocols. By working with platforms such as RocketPool, StakeWise, Lido, Diva, and more, we aim to support a diverse range of staking opportunities. Our commitment to leveraging the best of each protocol will enable us to offer optimal staking experiences, maximizing rewards, and minimizing risks for all stakeholders involved. As we continue our journey, we strive to stay at the forefront of innovation and contribute to the growth and resilience of the Ethereum network, building a more decentralized and secure future.
 
 ### 🔍 Why Obol DVT?
 
-Obol DVT is a cutting-edge technology designed to enhance Ethereum's scalability, security, and sustainability. As avid supporters of the Ethereum network, we believe that Obol DVT will play a pivotal role in advancing decentralized finance and empowering individuals worldwide. By running an Obol DVT cluster, we aim to actively participate in the future of Ethereum and support its ongoing development.
+Obol DVT is a cutting-edge technology designed to enhance Ethereum's scalability, security, and sustainability. As avid supporters of the Ethereum network, we believe that Obol DVT will play a pivotal role in advancing decentralized finance and empowering individuals worldwide. By running Obol DVT clusters, we aim to actively participate in the future of Ethereum and support its ongoing development.
+
+The versatility and customizability of Obol DVT are key factors in selecting them as DVStakers' first DVT solution. Supporting features such as existing key splitting and recombination as well as a Distributed Key Generation (DKG) ceremony.
 
 ### 📚 Our Journey
 
-As we prepare for Obol DVT's mainnet launch, we will be documenting our entire journey. From understanding the technology to setting up the node and participating in the network, we will provide a comprehensive, step-by-step guide for fellow stakers and crypto-enthusiasts.
+As we prepare for Obol DVT's mainnet launch, we will be documenting our entire journey. From understanding the technology to setting up the node and participating in the network, we will provide comprehensive, step-by-step guides for fellow stakers and crypto-enthusiasts.
 
 Here's a glimpse of what you can expect from our content:
 
@@ -64,6 +66,8 @@ Here's a glimpse of what you can expect from our content:
 
 We believe that collaboration and knowledge sharing are essential for the growth and success of the Ethereum ecosystem. We invite you to join our vibrant community of stakers, developers, and enthusiasts.
 
-Get ready to embark on this exciting adventure with us, as we delve into the world of Decentralized Validation Technology and contribute to the evolution of Ethereum. Together, we can ensure the future of Ethereum is decentralized.
+Get ready to embark on this exciting adventure with us, as we delve into the world of Distributed Validator Technology and contribute to the evolution of Ethereum. Together, we can ensure the future of Ethereum is decentralized.
 
 Follow us now, and let the journey begin! 🌟
+
+* [Twitter - @DVStakers](https://twitter.com/DVStakers)

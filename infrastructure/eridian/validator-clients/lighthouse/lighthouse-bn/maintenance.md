@@ -35,5 +35,3 @@ sudo systemctl status lighthousebeacon.service
 ```
 {% endtab %}
 {% endtabs %}
-
-d
