@@ -19,6 +19,7 @@ description: >-
 * [🔒 Enable Automatic Security Updates](installation.md#enable-automatic-security-updates)
 * [📱 SSH Security - 2FA](installation.md#ssh-security-2fa)
 * [🚦 Git Configuration](installation.md#git-configuration)
+* [📝 Systemd Journal Logs](installation.md#systemd-journal-logs)
 
 ### 💾 Installing Linux
 
@@ -28,21 +29,34 @@ To avoid duplication these details can be found on the EthStaker Knowledge Base.
 
 ### 🔧 System Configuration
 
+Add useful `Bash` aliases.
+
+```bash
+echo "alias lsl='ls -la'" >> ~/.bashrc
+echo "alias clc='clear'" >> ~/.bashrc
+echo "alias myip='echo Response from https://ipinfo.io/ip:; curl https://ipinfo.io/ip; echo'" >> ~/.bashrc
+echo "alias ports='sudo lsof -i -P -n | grep LISTEN'" >> ~/.bashrc
+echo "alias update-system='sudo apt-get update -y; sudo apt-get upgrade -y; sudo apt-get dist-upgrade -y'" >> ~/.bashrc
+echo "alias update-firmware='fwupdmgr refresh; fwupdmgr get-updates; fwupdmgr update'" >> ~/.bashrc
+echo "alias daemon-reload='sudo systemctl daemon-reload'" >> ~/.bashrc
+source ~/.bashrc
+```
+
 Update system packages.
 
+{% tabs %}
+{% tab title="Command Alias" %}
 ```bash
-sudo apt-get update -y
-sudo apt-get upgrade -y
-sudo apt-get dist-upgrade -y
+update-system    # Update all system packages
 ```
+{% endtab %}
 
-Check for Firmware Updates ([https://github.com/fwupd/fwupd](https://github.com/fwupd/fwupd)).
-
+{% tab title="Full Commands" %}
 ```bash
-fwupdmgr refresh
-fwupdmgr get-updates
-fwupdmgr update
+sudo apt-get update -y; sudo apt-get upgrade -y; sudo apt-get dist-upgrade -y    # Update all system packages
 ```
+{% endtab %}
+{% endtabs %}
 
 Install useful packages.
 
@@ -70,22 +84,28 @@ fwupd
 sudo snap install btop
 ```
 
+Update [firmware](https://github.com/fwupd/fwupd).
+
+{% tabs %}
+{% tab title="Command Alias" %}
+```bash
+update-firmware  # Update firmware
+```
+{% endtab %}
+
+{% tab title="Full Commands" %}
+```bash
+fwupdmgr refresh; fwupdmgr get-updates; fwupdmgr update                          # Update firmware
+```
+{% endtab %}
+{% endtabs %}
+
+Install useful packages.
+
 Set up `btop`.
 
 * Change them to TTY.
 * Change time interval to 1000ms.
-
-Add useful bash aliases.
-
-```bash
-echo "alias lsl='ls -la'" >> ~/.bashrc
-echo "alias clc='clear'" >> ~/.bashrc
-echo "alias myip='echo Response from https://ipinfo.io/ip:; curl https://ipinfo.io/ip; echo'" >> ~/.bashrc
-echo "alias ports='sudo lsof -i -P -n | grep LISTEN'" >> ~/.bashrc
-echo "alias update-all='sudo apt-get update -y; sudo apt-get upgrade -y; sudo apt-get dist-upgrade -y'" >> ~/.bashrc
-echo "alias daemon-reload='sudo systemctl daemon-reload'" >> ~/.bashrc
-source ~/.bashrc
-```
 
 Use `ntpd` instead of the default time synchronization `timedatectl`.
 
@@ -95,7 +115,7 @@ The firewall is set to allow NTP calls out, so that's why it needs to be used.
 sudo timedatectl set-ntp no
 ```
 
-Verify it's disabled.
+Verify `timedatectl` is disabled - The result should say `NTP service: n/a`.
 
 ```bash
 timedatectl
@@ -107,13 +127,11 @@ Install `ntp`.
 sudo apt-get install -y ntp
 ```
 
-Check `ntp` is running.
+Check `ntp` is running - There should be some results shown.
 
 ```bash
 ntpq -p
 ```
-
-There should be some results shown.
 
 ### 📏 Confirm Available Disk Space
 
@@ -291,6 +309,18 @@ Then run these commands in a directory using Git to see a pretty view of the com
 git tree
 git tree-current
 ```
+
+### 📝 Systemd Journal Logs
+
+The systemd services create logs that grow over time.
+
+It is possible to clear the logs to free up disk space on your server.
+
+The following steps will delete existing log data.
+
+Be careful if you require this data for debugging purposes.
+
+Check the amount of disk space the logs are using.
 
 
 
