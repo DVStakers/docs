@@ -6,8 +6,8 @@
 [geth](../../infrastructure/eridian/validator-clients/geth/)
 {% endcontent-ref %}
 
-{% content-ref url="../../infrastructure/eridian/validator-clients/lighthouse/lighthouse-bn/" %}
-[lighthouse-bn](../../infrastructure/eridian/validator-clients/lighthouse/lighthouse-bn/)
+{% content-ref url="../../infrastructure/eridian/validator-clients/lighthouse/" %}
+[lighthouse](../../infrastructure/eridian/validator-clients/lighthouse/)
 {% endcontent-ref %}
 
 {% content-ref url="../../infrastructure/eridian/validator-clients/mev-boost/" %}

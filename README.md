@@ -18,7 +18,7 @@ Join us on an adventure as two dedicated Ethereum solo stakers prepare to run [O
 
 Jump straight to our overview by click to image below:
 
-<figure><img src=".gitbook/assets/image (2).png" alt="System architecture of DVStakers decentralized DVT validators with redundancy"><figcaption><p>System architecture of DVStakers decentralized DVT validators with redundancy</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (2) (1).png" alt="System architecture of DVStakers decentralized DVT validators with redundancy"><figcaption><p>System architecture of DVStakers decentralized DVT validators with redundancy</p></figcaption></figure>
 
 ### 🚀 About Us
 
