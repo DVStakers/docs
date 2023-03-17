@@ -123,7 +123,7 @@ WantedBy=default.target
 ```
 {% endcode %}
 
-Start service and check it's working as expected.
+Start the service and check it's working as expected.
 
 {% tabs %}
 {% tab title="Command Aliases" %}
@@ -151,7 +151,7 @@ sudo journalctl -f -u geth.service -o cat | ccze -A   # View the Geth logs
 
 ### Geth - Update Scripts
 
-* Create `Geth` update script
+Create `Geth` update script.
 
 ```bash
 vim ~/geth-update.sh
@@ -188,7 +188,7 @@ sudo systemctl start geth.service
 ```
 {% endcode %}
 
-Create update script checker script.
+Create `Geth` update script checker script.
 
 ```bash
 vim ~/geth-update-check.sh

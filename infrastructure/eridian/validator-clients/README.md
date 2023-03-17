@@ -6,8 +6,8 @@
 [geth](geth/)
 {% endcontent-ref %}
 
-{% content-ref url="lighthouse/" %}
-[lighthouse](lighthouse/)
+{% content-ref url="lighthouse-bn/" %}
+[lighthouse-bn](lighthouse-bn/)
 {% endcontent-ref %}
 
 {% content-ref url="mev-boost/" %}

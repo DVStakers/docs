@@ -319,24 +319,44 @@ Check the amount of disk space the logs are using.
 sudo journalctl --disk-usage
 ```
 
-To clear the logs use the following command
+To clear the logs use the following command.
 
-* The `--flush` flag flushes the logs currently in memory onto the disk
-* The `--rotate` flag archives the existing logs so they can’t be written to anymore and starts new logs for each service
-* The `--vacuum-time` flag deletes log data that is older than `3 days`
+* The `--flush` flag flushes the logs currently in memory onto the disk.
+* The `--rotate` flag archives the existing logs so they can’t be written to anymore and starts new logs for each service.
+* The `--vacuum-time` flag deletes log data that is older than `3 days`.
 
 ```bash
 sudo journalctl --flush --rotate
 sudo journalctl --vacuum-time=3days
 ```
 
-It is recommended to check the logs are in a good state after the vacuum operation
+It is recommended to check the logs are in a good state after the vacuum operation.
 
-Each log should have a status of `PASS`
+Each log should have a status of `PASS`.
 
 ```bash
 sudo journalctl --verify
 ```
+
+To have the system automatically keep log data to a specified max size complete the following additional steps.
+
+Open the systemd journal service configuration file.
+
+```bash
+sudo vim /etc/systemd/journald.conf
+```
+
+Edit the file to set the maximum disk space that can be used by the journal in persistent storage.
+
+Remove the `#` from the line `SystemMaxUse` and add a value in megabytes, say `1000M`.
+
+Restart the `journald` after updating the file.
+
+```bash
+sudo systemctl restart systemd-journald
+```
+
+Journal logs will now be limited to 1000MB in size.
 
 
 
