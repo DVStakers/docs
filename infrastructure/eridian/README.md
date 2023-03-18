@@ -22,6 +22,6 @@ description: Notes on the configuration of my infrastructure.
 [validator-clients](validator-clients/)
 {% endcontent-ref %}
 
-{% content-ref url="dvt-setup.md" %}
-[dvt-setup.md](dvt-setup.md)
+{% content-ref url="dvt-setup/" %}
+[dvt-setup](dvt-setup/)
 {% endcontent-ref %}

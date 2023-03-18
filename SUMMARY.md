@@ -4,11 +4,10 @@
 * [🖥 Overview](overview.md)
 * [❔ FAQ](faq.md)
 
-## DVT
+## DVT Solutions
 
-* [📖 DVT - Getting started](dvt-getting-started/README.md)
-  * [Validator Key Generation](dvt-getting-started/validator-key-generation.md)
-  * [StakeWise V3 Vaults](dvt-getting-started/stakewise-v3-vaults.md)
+* [➡ Direct Staking](dvt-solutions/direct-staking.md)
+* [🏦 StakeWise V3 Vault](dvt-solutions/stakewise-v3-vault.md)
 
 ## Infrastructure
 
@@ -39,7 +38,8 @@
       * [💾 Installation](infrastructure/eridian/validator-clients/mev-boost/installation.md)
       * [⌨ Useful commands](infrastructure/eridian/validator-clients/mev-boost/useful-commands.md)
       * [🏗 Maintenance](infrastructure/eridian/validator-clients/mev-boost/maintenance.md)
-  * [🎛 DVT setup](infrastructure/eridian/dvt-setup.md)
+  * [🎛 DVT setup](infrastructure/eridian/dvt-setup/README.md)
+    * [Validator Key Generation](infrastructure/eridian/dvt-setup/validator-key-generation.md)
 * [📘 Spacesider](infrastructure/spacesider.md)
 * [☁ Cloud redundancy](infrastructure/cloud-failover/README.md)
   * [AWS?](infrastructure/cloud-failover/aws.md)

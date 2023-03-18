@@ -1,2 +1,0 @@
-# 📖 DVT - Getting started
-
