@@ -2,7 +2,7 @@
 description: Notes on how to install, use and maintain multiple validator clients.
 ---
 
-# ⛓ Validator clients
+# ⛓ Client software
 
 <figure><img src="https://raw.githubusercontent.com/DVStakers/docs/main/.gitbook/assets/Eridian.png" alt=""><figcaption><p>Eridian</p></figcaption></figure>
 
@@ -10,8 +10,8 @@ description: Notes on how to install, use and maintain multiple validator client
 [geth](geth/)
 {% endcontent-ref %}
 
-{% content-ref url="lighthouse/README (1).md" %}
-[README (1).md](<lighthouse/README (1).md>)
+{% content-ref url="lighthouse/" %}
+[lighthouse](lighthouse/)
 {% endcontent-ref %}
 
 {% content-ref url="mev-boost/" %}

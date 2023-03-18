@@ -11,7 +11,6 @@ description: >-
 * [💾 Installing Linux](installation.md#installing-linux)
 * [🔧 System Configuration](installation.md#system-configuration)
 * [📏 Confirm Available Disk Space](installation.md#confirm-available-disk-space)
-* [🎨 Change Terminal Colors](installation.md#change-terminal-colors)
 * [🫣 Hide Welcome Message on Login](installation.md#hide-welcome-message-on-login)
 * [⏱️ Increases Service Shutdown Timer](installation.md#increases-service-shutdown-timer)
 * [🚧 Firewall Configuration](installation.md#firewall-configuration)
@@ -137,33 +136,6 @@ To avoid duplication these details can be found on the EthStaker Knowledge Base.
 
 * [Confirm Available Disk Space](https://ethstaker.gitbook.io/ethstaker-knowledge-base/tutorials/confirm-available-disk-space)
 
-### 🎨 Change Terminal Colors
-
-Change the colors of the terminal prompt to make it easier to tell which server I'm currently using.
-
-```bash
-vim ~/.bashrc
-```
-
-Change the `PS1` value directly under `if [ "$color_prompt" = yes ]; then`
-
-Comment out the existing `PS1` as it's useful to have a backup.
-
-* `<LOCATION>`
-  * E.g. Home or Cloud
-* `<ENV>`
-  * E.g. DEV or PROD
-
-```bash
-PS1='\[\033[01;34m\]<ENV>|<LOCATION>|Validator\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
-```
-
-Reload the terminal source to display the results.
-
-```bash
-source ~/.bashrc
-```
-
 ### 🫣 Hide Welcome Message on Login
 
 Some of the messages are useful so I don't want to hide everything, but some are annoying.
@@ -199,46 +171,17 @@ sudo ufw status
 Configure the firewall.
 
 ```bash
-GETH_P2P_PORT=                    # Default: 30303
-LIGHTHOUSE_P2P_PORT=              # Default: 9000
-LIGHTHOUSE_HTTP_PORT=             # Default: 5052
-LOCAL_IP=                     
-SPACESIDER_IP=                
-SPACESIDER_TEKU_PORT=
-SPACESIDER_LIGHTHOUSE_PORT=
-MEV_PORT=                         # Default: 18550
 CUSTOM_SSH_PORT=                  # Default: 22
 MOSH_STARTING_PORT=               # Default: 60000
 MOSH_ENDING_PORT=                 # Default: 61000
-RPC_PORT=
+GRAFANA_PORT=
 
 sudo ufw default deny incoming comment 'Deny all incoming traffic'
 sudo ufw default deny outgoing comment 'Deny all outgoing traffic'
 
-# <EXECUTION CLIENTS>
-sudo ufw allow ${GETH_P2P_PORT} comment 'Allow Geth P2P in'
-sudo ufw allow out ${GETH_P2P_PORT} comment 'Allow Geth P2P out'
-
-# <CONSENSUS CLIENTS>
-sudo ufw allow ${LIGHTHOUSE_P2P_PORT} comment 'Allow Lighthouse P2P in'
-sudo ufw allow out ${LIGHTHOUSE_P2P_PORT} comment 'Allow Lighthouse P2P out'
-sudo ufw allow from ${LOCAL_IP} to any proto tcp port ${LIGHTHOUSE_HTTP_PORT} comment 'Allow Lighthouse http in from local IP'
-sudo ufw allow out ${LIGHTHOUSE_HTTP_PORT}/tcp comment 'Allow Lighthouse VC out to local Lighthouse BN'
-
-# <SPACESIDER CONNECTIONS>
-sudo ufw allow from ${SPACESIDER_IP} to any proto tcp port ${LIGHTHOUSE_HTTP_PORT} comment 'Allow Lighthouse http in from Spacesider'
-sudo ufw allow out ${SPACESIDER_TEKU_PORT}/tcp comment 'Allow Lighthouse VC out to Spacesider Teku BN'
-sudo ufw allow out ${SPACESIDER_LIGHTHOUSE_PORT}/tcp comment 'Allow Lighthouse VC out to Spacesider Lighthouse BN'
-
-# <MEV BOOST>
-sudo ufw allow ${MEV_PORT} comment 'Allow MEV Boost in'
-sudo ufw allow out ${MEV_PORT} comment 'Allow MEV Boost out'
-
-# <OTHER PORTS>
 sudo ufw allow ${CUSTOM_SSH_PORT} comment 'Allow custom ssh in'
 sudo ufw allow ${MOSH_STARTING_PORT}:${MOSH_ENDING_PORT}/udp comment 'Allow Mosh in'
 sudo ufw allow ${GRAFANA_PORT} comment 'Allow Grafana in'
-sudo ufw allow ${RPC_PORT} comment 'MetaMask RPC Port in'
 
 sudo ufw allow out 53 comment 'Allow DNS calls out'
 sudo ufw allow out 123 comment 'Allow NTP out'
@@ -360,4 +303,4 @@ Journal logs will now be limited to 1000MB in size.
 
 
 
-Success! The staking machine is now ready to [install the validator clients](../validator-clients/) 🥳
+Success! The staking machine is now ready to [install the validator clients](../client-software/) 🥳

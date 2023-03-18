@@ -18,10 +18,6 @@ description: Notes on the configuration of my infrastructure.
 [linux-software](linux-software/)
 {% endcontent-ref %}
 
-{% content-ref url="validator-clients/" %}
-[validator-clients](validator-clients/)
-{% endcontent-ref %}
-
-{% content-ref url="dvt-setup.md" %}
-[dvt-setup.md](dvt-setup.md)
+{% content-ref url="client-software/" %}
+[client-software](client-software/)
 {% endcontent-ref %}

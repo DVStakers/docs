@@ -7,6 +7,7 @@ description: My Geth Client installation guide.
 <figure><img src="https://raw.githubusercontent.com/DVStakers/docs/main/.gitbook/assets/Eridian.png" alt=""><figcaption><p>Eridian</p></figcaption></figure>
 
 * [Create Aliases](installation.md#create-aliases)
+* [Firewall Configuration](installation.md#firewall-configuration)
 * [Go - Install](installation.md#go-install)
 * [Geth - Install](installation.md#geth-install)
 * [Geth - Configure Service](installation.md#geth-configure-service)
@@ -33,6 +34,20 @@ echo "alias geth-peerCount='sudo geth --exec \"net.peerCount\" attach /var/lib/g
 echo "alias geth-nodeInfo='sudo geth --exec \"admin.nodeInfo\" attach /var/lib/goethereum/geth.ipc'" >> ~/.bashrc
 
 source ~/.bashrc
+```
+
+### Firewall Configuration
+
+Configure the firewall.
+
+```bash
+GETH_P2P_PORT=                    # Default: 30303
+RPC_PORT=
+
+sudo ufw allow ${GETH_P2P_PORT} comment 'Allow Geth P2P in'
+sudo ufw allow out ${GETH_P2P_PORT} comment 'Allow Geth P2P out'
+
+sudo ufw allow ${RPC_PORT} comment 'MetaMask RPC Port in'
 ```
 
 ### Go - Install

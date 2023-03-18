@@ -14,6 +14,6 @@ description: Notes on how to install and maintain my Lighthouse Beacon Node.
 [useful-commands.md](useful-commands.md)
 {% endcontent-ref %}
 
-{% content-ref url="lighthouse-bn/maintenance.md" %}
-[maintenance.md](lighthouse-bn/maintenance.md)
+{% content-ref url="maintenance.md" %}
+[maintenance.md](maintenance.md)
 {% endcontent-ref %}

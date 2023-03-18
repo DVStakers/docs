@@ -4,6 +4,16 @@ description: Answering all your DVT questions like "What is DVT?" and more!
 
 # ❔ FAQ
 
+<div>
+
+<figure><img src="https://raw.githubusercontent.com/DVStakers/docs/main/.gitbook/assets/Eridian.png" alt=""><figcaption><p>Eridian</p></figcaption></figure>
+
+ 
+
+<figure><img src=".gitbook/assets/Spacesider.png" alt=""><figcaption><p>Spacesider</p></figcaption></figure>
+
+</div>
+
 ### What is DVT?
 
 Distributed Validator Technology. In a traditional solo staking setup, if a single validator node goes offline due to technical issues or maintenance, it immediately stops performing its validator duties (attestations, block proposals, etc.). This can lead to missed rewards and penalties for the staker.

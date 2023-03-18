@@ -3,6 +3,7 @@
 <figure><img src="https://raw.githubusercontent.com/DVStakers/docs/main/.gitbook/assets/Eridian.png" alt=""><figcaption><p>Eridian</p></figcaption></figure>
 
 * [Create Aliases](installation.md#create-aliases)
+* [Firewall Configuration](installation.md#firewall-configuration)
 * [MEV Boost - Install](installation.md#mev-boost-install)
 * [MEV Boost - Configure Service](installation.md#mev-boost-configure-service)
 * [MEV Boost - Update Scripts](installation.md#mev-boost-update-scripts)
@@ -21,6 +22,17 @@ echo "alias mev-disable='sudo systemctl disable mevboost.service'" >> ~/.bashrc
 echo "alias mev-update='cd; ./mev-update-check.sh'" >> ~/.bashrc
 
 source ~/.bashrc
+```
+
+### Firewall Configuration
+
+Configure the firewall.
+
+```bash
+MEV_PORT=        # Default: 18550
+
+sudo ufw allow ${MEV_PORT} comment 'Allow MEV Boost in'
+sudo ufw allow out ${MEV_PORT} comment 'Allow MEV Boost out'
 ```
 
 ### MEV Boost - Install
