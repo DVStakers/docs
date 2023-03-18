@@ -10,3 +10,14 @@ description: Notes on my networking configuration.
   * Isolated networks
 * Discuss potential issues with DDOS attacks
 * Using a VPN stops participation in the gossip network, etc.
+
+
+
+Machine Names
+
+* ProdELBN1
+* ProdELBN2
+* ProdVal1
+
+
+

@@ -41,7 +41,7 @@ source ~/.bashrc
 Configure the firewall.
 
 ```bash
-GETH_P2P_PORT=                    # Default: 30303
+GETH_P2P_PORT=        # Default: 30303
 RPC_PORT=
 
 sudo ufw allow ${GETH_P2P_PORT} comment 'Allow Geth P2P in'
@@ -126,9 +126,17 @@ Type=simple
 Restart=always
 RestartSec=5
 TimeoutStopSec=1200
+
+Environment=NETWORK=         # E.g. mainnet or goerli
+Environment=P2P_PORT=        # Default: 30303
+Environment=MAX_PEERS=       # Default: 50
+Environment=CACHE=           # Default 
+
 ExecStart=/usr/local/bin/geth \
-    --mainnet \
+    --${NETWORK} \
     --syncmode=snap \
+    --port ${P2P_PORT} \
+    --discovery.port ${P2P_PORT} \
     --http \
     --http.api="engine,eth,web3,net" \
     --datadir /var/lib/goethereum \
@@ -136,8 +144,8 @@ ExecStart=/usr/local/bin/geth \
     --metrics.expensive \
     --pprof \
     --authrpc.jwtsecret=/var/lib/goethereum/jwtsecret \
-    --maxpeers 50 \
-    --cache 32768
+    --maxpeers ${MAX_PEERS} \
+    --cache ${CACHE}
 
 [Install]
 WantedBy=default.target
@@ -146,20 +154,22 @@ WantedBy=default.target
 {% endtab %}
 
 {% tab title="Geth Flags Explained" %}
-| `/usr/local/bin/geth` | Starts Geth                                                                                                                                                                                                                                                                                                                       |
-| --------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `--mainnet`           | Specifies mainnet as the target network                                                                                                                                                                                                                                                                                           |
-| `--syncmode`          | <ul><li><code>full</code> very/impossibly slow on Mainnet due to Shanghai DDOS attacks</li><li><code>fast</code> used to be the best option, but is now slower than snap</li><li><code>snap</code> the current fastest way to sync</li></ul>                                                                                      |
-| `--http`              | Enable the HTTP-RPC server                                                                                                                                                                                                                                                                                                        |
-| `--datadir`           | Data directory for the databases and keystore                                                                                                                                                                                                                                                                                     |
-| `--metrics`           | Enable metrics collection and reporting                                                                                                                                                                                                                                                                                           |
-| `--metrics.expensive` | Enable expensive metrics collection and reporting                                                                                                                                                                                                                                                                                 |
-| `--pprof`             | <p>Enable the pprof HTTP server</p><p>Required for metrics to work properly</p>                                                                                                                                                                                                                                                   |
-| `--http.api`          | API's offered over the HTTP-RPC interface                                                                                                                                                                                                                                                                                         |
-| `--authrpc.jwtsecret` | <p>The JWT secret is automatically generated when <code>Geth</code> is first run and added to <code>/var/lib/goethereum/</code></p><p></p><p>This is same location that is pointed to in both the <code>Geth</code> and <code>Lighthouse</code> configuration so that they use the same JWT secret and can talk to each other</p> |
-| `--maxpeers`          | <p>Maximum number of network peers</p><ul><li>Network disabled if set to 0</li><li>Default: 50</li></ul>                                                                                                                                                                                                                          |
-| `--cache`             | <p>Megabytes of memory allocated to internal caching</p><ul><li>Default = 4096 mainnet full node and 128 light mode</li></ul>                                                                                                                                                                                                     |
-| `--bootnodes`         | <p>Comma separated enode URLs for P2P discovery bootstrap</p><ul><li><a href="https://github.com/ethereum/go-ethereum/blob/master/params/bootnodes.go">https://github.com/ethereum/go-ethereum/blob/master/params/bootnodes.go</a></li></ul>                                                                                      |
+| `/usr/local/bin/geth` | Starts Geth.                                                                                                                                                                                                                                                                                                                       |
+| --------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `--mainnet`           | Specifies mainnet as the target network.                                                                                                                                                                                                                                                                                           |
+| `--syncmode`          | <ul><li><code>full</code> very/impossibly slow on Mainnet due to Shanghai DDOS attacks.</li><li><code>fast</code> used to be the best option, but is now slower than snap.</li><li><code>snap</code> the current fastest way to sync.</li></ul>                                                                                    |
+| `--port`              | Network listening port (TCP).                                                                                                                                                                                                                                                                                                      |
+| `--discovery.port`    | UDP port for P2P discovery.                                                                                                                                                                                                                                                                                                        |
+| `--http`              | Enable the HTTP-RPC server.                                                                                                                                                                                                                                                                                                        |
+| `--datadir`           | Data directory for the databases and keystore.                                                                                                                                                                                                                                                                                     |
+| `--metrics`           | Enable metrics collection and reporting.                                                                                                                                                                                                                                                                                           |
+| `--metrics.expensive` | Enable expensive metrics collection and reporting.                                                                                                                                                                                                                                                                                 |
+| `--pprof`             | <p>Enable the pprof HTTP server.</p><p>Required for metrics to work properly.</p>                                                                                                                                                                                                                                                  |
+| `--http.api`          | API's offered over the HTTP-RPC interface.                                                                                                                                                                                                                                                                                         |
+| `--authrpc.jwtsecret` | <p>The JWT secret is automatically generated when <code>Geth</code> is first run and added to <code>/var/lib/goethereum/</code></p><p></p><p>This is same location that is pointed to in both the <code>Geth</code> and <code>Lighthouse</code> configuration so that they use the same JWT secret and can talk to each other.</p> |
+| `--maxpeers`          | <p>Maximum number of network peers.</p><ul><li>Network disabled if set to 0.</li><li>Default: 50.</li></ul>                                                                                                                                                                                                                        |
+| `--cache`             | <p>Megabytes of memory allocated to internal caching.</p><ul><li>Default = 4096 mainnet full node and 128 light mode.</li></ul>                                                                                                                                                                                                    |
+| `--bootnodes`         | <p>Comma separated enode URLs for P2P discovery bootstrap.</p><ul><li><a href="https://github.com/ethereum/go-ethereum/blob/master/params/bootnodes.go">https://github.com/ethereum/go-ethereum/blob/master/params/bootnodes.go</a></li></ul>                                                                                      |
 {% endtab %}
 {% endtabs %}
 

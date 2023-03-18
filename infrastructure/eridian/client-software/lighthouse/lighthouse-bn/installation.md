@@ -74,18 +74,20 @@ Group=lighthousebeacon
 Restart=always
 RestartSec=5
 
-Environment=NETWORK=
-Environment=HTTP_ADDRESS=
-Environment=HTTP_PORT=
+Environment=NETWORK=                     # E.g. mainnet or goerli
+Environment=P2P_PORT=                    # Default: 9000
+Environment=HTTP_ADDRESS=                # E.g. 0.0.0.0
+Environment=HTTP_PORT=                   # Default: 5052
 Environment=MONITORING_ENDPOINTS=
-Environment=EXECUTION_ENDPOINTS=
-Environment=SUGGESTED_FEE_RECIPIENT=
+Environment=EXECUTION_ENDPOINTS=         
+Environment=SUGGESTED_FEE_RECIPIENT=     
 Environment=CHECKPOINT_SYNC_URL=
 Environment=BUILDER=
 
 ExecStart=/usr/local/bin/lighthouse bn \
     --network ${NETWORK} \
     --datadir /var/lib/lighthouse \
+    --port ${P2P_PORT} \
     --http \
     --http-address=${HTTP_ADDRESS} \
     --http-port=${HTTP_PORT} \
@@ -110,6 +112,7 @@ WantedBy=multi-user.target
 | ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `--network`                     | <p>Name of the chain Lighthouse will sync and follow</p><p>Possible values:</p><ul><li>mainnet</li><li>prater</li><li>gnosis</li><li>kiln</li><li>ropsten</li></ul>                                                                                                                                                                                                                                                                                                                                                                                                                   |
 | `--datadir`                     | Used to specify a custom root data directory for lighthouse keys and databases                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| `--port`                        | The TCP/UDP port to listen on for peer discovery.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 | `--staking`                     | <p>Standard option for a staking beacon node. Equivalent to <code>lighthouse bn --http --eth1</code></p><ul><li>This will enable the http server on <code>localhost:5052</code> and try connecting to an execution node (<code>Geth</code>) on <code>localhost:8545</code></li></ul>                                                                                                                                                                                                                                                                                                  |
 | `--http`                        | <p>Enable the RESTful HTTP API server</p><ul><li>Disabled by default</li></ul>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 | `--execution-endpoints`         | <p>One or more comma-delimited server endpoints for HTTP JSON-RPC connection</p><ul><li>If multiple endpoints are given the endpoints are used as fallback in the given order</li></ul>                                                                                                                                                                                                                                                                                                                                                                                               |

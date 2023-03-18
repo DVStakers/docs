@@ -84,11 +84,13 @@ Restart=always
 RestartSec=5
 
 Environment=NETWORK=
+Environment=ADDR_PORT=
 Environment=MIN_BID=
 Environment=RELAYS=
 
 ExecStart=/usr/local/bin/mev-boost \
     -${NETWORK} \
+    -addr localhost:${ADDR_PORT} \
     -min-bid ${MIN_BID} \
     -relay-check \
     -relays ${RELAYS}
@@ -103,6 +105,7 @@ WantedBy=multi-user.target
 | `/usr/local/bin/mev-boost` | Starts MEV Boost.                                                                                                                                                                                       |
 | -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `-${NETWORK}`              | Specifies the target network.                                                                                                                                                                           |
+| `-addr`                    | Set listening port.                                                                                                                                                                                     |
 | `-min-bid`                 | <p>Sets the minimum bid that needs to be offered to accept a block from the relay.<br><br>If no offer is higher than the <code>min-bid</code> then the validator will build its own block locally. </p> |
 | `-relay-check`             | MEV Boost pings the relays to check they are still alive.                                                                                                                                               |
 | `-relays`                  | Comma separated list of relay addresses.                                                                                                                                                                |
