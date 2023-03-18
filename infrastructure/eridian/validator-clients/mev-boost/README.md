@@ -6,10 +6,6 @@
 [installation.md](installation.md)
 {% endcontent-ref %}
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
-{% endcontent-ref %}
-
 {% content-ref url="maintenance.md" %}
 [maintenance.md](maintenance.md)
 {% endcontent-ref %}
