@@ -26,7 +26,7 @@ source ~/.bashrc
 
 ### Lighthouse BN - Configure Service
 
-Create `Lighthouse Beacon` user and set permissions
+Create `Lighthouse Beacon` user and set permissions.
 
 ```bash
 sudo useradd --no-create-home --shell /bin/false lighthousebeacon

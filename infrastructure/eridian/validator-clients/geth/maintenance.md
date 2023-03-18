@@ -50,6 +50,7 @@ sudo systemctl stop geth.service
 sudo rm /usr/local/bin/geth
 sudo cp ~/go-ethereum/build/bin/geth /usr/local/bin
 
+# <START SERVICE>
 sudo systemctl start geth.service
 ```
 {% endtab %}

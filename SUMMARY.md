@@ -36,7 +36,6 @@
         * [🏗 Maintenance](infrastructure/eridian/validator-clients/lighthouse/lighthouse-vc-no-dvt/maintenance.md)
     * [MEV Boost](infrastructure/eridian/validator-clients/mev-boost/README.md)
       * [💾 Installation](infrastructure/eridian/validator-clients/mev-boost/installation.md)
-      * [⌨ Useful commands](infrastructure/eridian/validator-clients/mev-boost/useful-commands.md)
       * [🏗 Maintenance](infrastructure/eridian/validator-clients/mev-boost/maintenance.md)
   * [🎛 DVT setup](infrastructure/eridian/dvt-setup/README.md)
     * [Validator Key Generation](infrastructure/eridian/dvt-setup/validator-key-generation.md)

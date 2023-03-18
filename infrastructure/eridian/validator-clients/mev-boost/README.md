@@ -6,8 +6,8 @@
 [installation.md](installation.md)
 {% endcontent-ref %}
 
-{% content-ref url="useful-commands.md" %}
-[useful-commands.md](useful-commands.md)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
 
 {% content-ref url="maintenance.md" %}
