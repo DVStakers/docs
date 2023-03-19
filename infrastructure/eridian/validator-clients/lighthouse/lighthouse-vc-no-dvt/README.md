@@ -1,0 +1,21 @@
+---
+description: >-
+  Notes on how to install and maintain the Lighthouse Validator Client. For my
+  existing validators that don't use DVT on mainnet... yet!
+---
+
+# Lighthouse VC (No DVT)
+
+<figure><img src="https://raw.githubusercontent.com/DVStakers/docs/main/.gitbook/assets/Eridian.png" alt=""><figcaption><p>Eridian</p></figcaption></figure>
+
+{% content-ref url="../../../client-software/lighthouse/lighthouse-vc-no-dvt/installation.md" %}
+[installation.md](../../../client-software/lighthouse/lighthouse-vc-no-dvt/installation.md)
+{% endcontent-ref %}
+
+{% content-ref url="useful-commands.md" %}
+[useful-commands.md](useful-commands.md)
+{% endcontent-ref %}
+
+{% content-ref url="maintenance.md" %}
+[maintenance.md](maintenance.md)
+{% endcontent-ref %}

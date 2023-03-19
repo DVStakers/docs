@@ -4,10 +4,10 @@
 
 [Proxmox ](https://www.proxmox.com/en/proxmox-ve)has been deployed as a hypervisor where multiple virtual machines are being managed, all of which are running [Ubuntu Server](https://ubuntu.com/download/server) where they serve a specific purpose.
 
-One hosts the Lighthouse vaildator client, one hosts Lighthouse-Nethermind and the other hosts Teku-Besu.
+One hosts the Lighthouse vaildator client, one hosts Lighthouse(Consensus)-Nethermind(Execution) and the other hosts Teku(Consensus)-Besu(Execution).
 
-The 4th SSD is a spare plugged in ready to go at all times.
+The 4th SSD is a spare which is plugged in ready to go at all times.
 
 Below is an image of the full hardware/software setup.
 
-<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>

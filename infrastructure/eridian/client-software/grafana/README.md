@@ -10,10 +10,10 @@ description: Notes on how to install, use and maintain my Grafana Client.
 [installation.md](../geth/installation.md)
 {% endcontent-ref %}
 
-{% content-ref url="../geth/useful-commands.md" %}
-[useful-commands.md](../geth/useful-commands.md)
+{% content-ref url="../../validator-clients/geth/useful-commands.md" %}
+[useful-commands.md](../../validator-clients/geth/useful-commands.md)
 {% endcontent-ref %}
 
-{% content-ref url="../geth/maintenance.md" %}
-[maintenance.md](../geth/maintenance.md)
+{% content-ref url="../../validator-clients/geth/maintenance.md" %}
+[maintenance.md](../../validator-clients/geth/maintenance.md)
 {% endcontent-ref %}
