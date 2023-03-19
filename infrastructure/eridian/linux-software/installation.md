@@ -9,6 +9,7 @@ description: >-
 <figure><img src="https://raw.githubusercontent.com/DVStakers/docs/main/.gitbook/assets/Eridian.png" alt=""><figcaption><p>Eridian</p></figcaption></figure>
 
 * [💾 Installing Linux](installation.md#installing-linux)
+* [🚪 Change Default SSH Port](installation.md#change-default-ssh-port)
 * [🔧 System Configuration](installation.md#system-configuration)
 * [📏 Confirm Available Disk Space](installation.md#confirm-available-disk-space)
 * [🫣 Hide Welcome Message on Login](installation.md#hide-welcome-message-on-login)
@@ -25,6 +26,22 @@ description: >-
 To avoid duplication these details can be found on the EthStaker Knowledge Base.
 
 * [Installing Linux](https://ethstaker.gitbook.io/ethstaker-knowledge-base/tutorials/installing-linux)
+
+### 🚪 Change Default SSH Port
+
+Useful when you have multiple machines running on the same ip address.
+
+```bash
+sudo vim /etc/ssh/sshd_config
+```
+
+Uncomment `#Port 22` and change it to your modified ssh port.
+
+Restart the `sshd` service.
+
+```bash
+systemctl restart sshd
+```
 
 ### 🔧 System Configuration
 
