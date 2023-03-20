@@ -44,7 +44,7 @@ Our passion for blockchain technology and decentralized systems led us to join f
 
 **To become a Multi-Protocol DVT Node Operator**
 
-DVStakers' vision is to become a leading DVT node operator within the Ethereum ecosystem, running validators across multiple staking protocols. By working with platforms such as RocketPool, StakeWise, Lido, Diva, and more, we aim to support a diverse range of staking opportunities. Our commitment to leveraging the best of each protocol will enable us to offer optimal staking experiences, maximizing rewards, and minimizing risks for all stakeholders involved. As we continue our journey, we strive to stay at the forefront of innovation and contribute to the growth and resilience of the Ethereum network, building a more decentralized and secure future.
+DVStakers' vision is to become a leading DVT node operator within the Ethereum ecosystem, running validators across multiple staking protocols. By working with platforms such as StakeWise, RocketPool, Lido, Diva, and more, we aim to support a diverse range of staking opportunities. Our commitment to leveraging the best of each protocol will enable us to offer optimal staking experiences, maximizing rewards, and minimizing risks for all stakeholders involved. As we continue our journey, we strive to stay at the forefront of innovation and contribute to the growth and resilience of the Ethereum network, building a more decentralized and secure future.
 
 ### 🔍 Why Obol DVT?
 
