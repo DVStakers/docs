@@ -1,7 +1,5 @@
 ---
-description: >-
-  Welcome to DVStakers - The journey of two Ethereum solo stakers to distributed
-  validator staking.
+description: The journey of two Ethereum solo stakers to distributed validator staking.
 ---
 
 # 🗺 DVStakers
