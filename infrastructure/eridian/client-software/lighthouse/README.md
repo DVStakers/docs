@@ -10,8 +10,8 @@ description: Notes on how to install, use and maintain Lighthouse.
 [lighthouse-client](lighthouse-client/)
 {% endcontent-ref %}
 
-{% content-ref url="./" %}
-[.](./)
+{% content-ref url="lighthouse-bn/" %}
+[lighthouse-bn](lighthouse-bn/)
 {% endcontent-ref %}
 
 {% content-ref url="lighthouse-vc-no-dvt/" %}

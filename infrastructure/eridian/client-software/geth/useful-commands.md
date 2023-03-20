@@ -7,7 +7,7 @@ description: Notes on how to use my Geth Client.
 <figure><img src="https://raw.githubusercontent.com/DVStakers/docs/main/.gitbook/assets/Eridian.png" alt=""><figcaption><p>Eridian</p></figcaption></figure>
 
 {% hint style="info" %}
-All of the alias commands have been defined as aliases in \~/`.bashrc when`[`installing Geth`](../../client-software/geth/installation.md)
+All of the alias commands have been defined as aliases in \~/`.bashrc when`[`installing Geth`](installation.md)
 {% endhint %}
 
 * [geth.service](useful-commands.md#geth.service)

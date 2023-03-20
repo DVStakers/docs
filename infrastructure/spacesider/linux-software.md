@@ -10,4 +10,4 @@ The 4th SSD is a spare which is plugged in ready to go at all times.
 
 Below is an image of the full hardware/software setup.
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>

@@ -1,4 +1,4 @@
-# Validator Key Generation
+# 🔑 Validator Key Generation
 
 * Standard key generation
   * As this isn't a generic tutorial I can just explicitly show exactly how the CLI works
