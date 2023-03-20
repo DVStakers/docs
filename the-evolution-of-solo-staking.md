@@ -76,9 +76,5 @@ Adding StakeWise V3 Vaults as an additional Obot DVT Cluster.
 
 ### Step 6: DVT+++
 
-
-
-
-
-
+Coming soon...
 
