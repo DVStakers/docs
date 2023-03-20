@@ -52,9 +52,7 @@ The Cloud redundancy is useful in this setup because:
 
 {% tabs %}
 {% tab title="Trusted" %}
-<figure><img src=".gitbook/assets/image (8).png" alt=""><figcaption><p>Shared Cloud Auxiliary Client</p></figcaption></figure>
-
-123
+<figure><img src=".gitbook/assets/image (8) (1).png" alt=""><figcaption><p>Shared Cloud Auxiliary Client</p></figcaption></figure>
 {% endtab %}
 
 {% tab title="Trustless" %}

@@ -16,9 +16,15 @@ description: >-
 
 Join us on an adventure as two dedicated Ethereum solo stakers prepare to run [Obol](https://obol.tech/) Distributed Validator Technology (DVT) on the Ethereum mainnet. Our goal is to document every step of our journey, offering valuable insights, sharing our experiences, and fostering a supportive community for enthusiasts and experts alike.
 
-Jump straight to our overview by clicking on the image below:
+{% tabs %}
+{% tab title="View our progress by clicking on the link below:" %}
+{% content-ref url="the-evolution-of-solo-staking.md" %}
+[the-evolution-of-solo-staking.md](the-evolution-of-solo-staking.md)
+{% endcontent-ref %}
 
-<figure><img src=".gitbook/assets/image (2) (1).png" alt="System architecture of DVStakers decentralized DVT validators with redundancy"><figcaption><p>System architecture of DVStakers decentralized DVT validators with redundancy</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+{% endtab %}
+{% endtabs %}
 
 ### 🚀 About Us
 
