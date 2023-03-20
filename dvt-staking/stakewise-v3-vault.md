@@ -1,5 +1,6 @@
-# 🏦 StakeWise V3 Vault
+---
+description: Coming soon...
+---
 
-* Create the vault
-* Set the withdrawal address to the vault address
+# 🏦 StakeWise V3 Vault
 

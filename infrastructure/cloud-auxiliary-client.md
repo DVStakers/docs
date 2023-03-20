@@ -2,5 +2,5 @@
 description: Coming soon...
 ---
 
-# 🔑 Validator Key Generation
+# ☁ Cloud Auxiliary Client
 

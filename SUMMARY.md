@@ -12,7 +12,7 @@
 ## DVT Configuration
 
 * [🔑 Validator Key Generation](dvt-configuration/validator-key-generation.md)
-* [Charon](dvt-configuration/charon.md)
+* [⚙ Charon](dvt-configuration/charon.md)
 
 ## Infrastructure
 
@@ -51,6 +51,4 @@
   * [🌐 Networking](infrastructure/spacesider/networking.md)
   * [💿 Linux software](infrastructure/spacesider/linux-software.md)
   * [⛓ Client software](infrastructure/spacesider/client-software.md)
-  * [🎛 DVT setup](spacesider-old/dvt-setup.md)
-* [☁ Cloud Redundancy](infrastructure/cloud-failover/README.md)
-  * [AWS?](infrastructure/cloud-failover/aws.md)
+* [☁ Cloud Auxiliary Client](infrastructure/cloud-auxiliary-client.md)
