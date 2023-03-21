@@ -76,17 +76,20 @@ Type=simple
 Restart=always
 RestartSec=5
 
-Environment=NETWORK=
-Environment=GRAFFITI=
+Environment=NETWORK=                    # E.g. mainnet or goerli
+Environment=DATADIR=                    # Default: /var/lib/lighthouse
+Environment=GRAFFITI=                   # E.g. DVStakers
+Environment=METRICS_PORT=               # Default: 5064
 Environment=MONITORING_ENDPOINTS=
 Environment=SUGGESTED_FEE_RECIPIENT=
 Environment=BEACON_NODES=
 
 ExecStart=/usr/local/bin/lighthouse vc \
     --network ${NETWORK} \
-    --datadir /var/lib/lighthouse \
+    --datadir ${DATADIR} \
     --graffiti ${GRAFFITI} \
     --metrics \
+    --metrics-port ${METRICS_PORT} \
     --monitoring-endpoint ${MONITORING_ENDPOINTS} \
     --enable-doppelganger-protection \
     --suggested-fee-recipient ${SUGGESTED_FEE_RECIPIENT} \
