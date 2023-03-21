@@ -62,7 +62,7 @@ The Cloud redundancy is useful in this setup because:
 
 ### Step 5: StakeWise V3 Vaults + Obol DVT Validators
 
-Adding StakeWise V3 Vaults as an additional Obot DVT Cluster.
+Adding StakeWise V3 Vaults as an additional Obol DVT Cluster.
 
 {% tabs %}
 {% tab title="Trusted" %}

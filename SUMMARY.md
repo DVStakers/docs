@@ -11,9 +11,9 @@
 
 ## DVT Configuration
 
-* [🔑 DKG Ceremony](dvt-configuration/dkg-ceremony.md)
+* [🔑 Validator Key Generation](dvt-configuration/validator-key-generation.md)
+* [✂ Split Validator Keys](dvt-configuration/split-validator-keys.md)
 * [⚙ Charon](dvt-configuration/charon/README.md)
-  * [✂ Split Existing Validator Keys](dvt-configuration/charon/split-existing-validator-keys.md)
   * [🔧 Cluster Config - 4/6](dvt-configuration/charon/cluster-config-4-6.md)
 
 ## Infrastructure
