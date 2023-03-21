@@ -84,13 +84,14 @@ At the end of this process, you should have a tree like this:
 Split the validator keys into keyshares.
 
 ```bash
+CHARON_VERSION=                # E.g. 0.14.0
 CLUSTER_NAME=                  # E.g. DVStakers
 WITHDRAWAL_ADDRESS=            # Set withdrawal address
 FEE_RECIPIENT_ADDRESS=         # Set fee recipient address
 THRESHOLD=                     # E.g. 4
-NODES=                         # E.g. 6
+NODES=                         # E.g. 6                
 
-docker run --rm -v $(pwd):/opt/charon obolnetwork/charon:v0.14.0 create cluster --name="${CLUSTER_NAME}" --withdrawal-addresses="${WITHDRAWAL_ADDRESS}" --fee-recipient-addresses="${FEE_RECIPIENT_ADDRESS}" --split-existing-keys --split-keys-dir=/opt/charon/split_keys --threshold ${THRESHOLD} --nodes ${NODES}
+docker run --rm -v $(pwd):/opt/charon obolnetwork/charon:v${CHARON_VERSION} create cluster --name="${CLUSTER_NAME}" --withdrawal-addresses="${WITHDRAWAL_ADDRESS}" --fee-recipient-addresses="${FEE_RECIPIENT_ADDRESS}" --split-existing-keys --split-keys-dir=/opt/charon/split_keys --threshold ${THRESHOLD} --nodes ${NODES}
 ```
 
 In the `.charon` directory there will now be a `cluster` directory containing 6 sub-directories, each named `node0`, `node1`, etc.&#x20;
