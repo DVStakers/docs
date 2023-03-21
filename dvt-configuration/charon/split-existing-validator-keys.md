@@ -2,5 +2,5 @@
 description: Coming soon...
 ---
 
-# ⚙ Charon
+# ✂ Split Existing Validator Keys
 
