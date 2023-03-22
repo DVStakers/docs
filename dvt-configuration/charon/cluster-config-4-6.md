@@ -16,10 +16,10 @@ Obol has a [GitHub repo](https://github.com/ObolNetwork/charon-distributed-valid
 
 In this cluster configuration section, we will show how to create a 4/6 cluster that can be split between:
 
-* 2 stakers + 1 cloud auxiliary node
-* 3 stakers
+* 2 participants + 1 cloud auxiliary node
+* 3 participants
 
-Where each participant holds two keyshares. Obol doesn't support 2/3 thresholds, so 4/6 is the only way to currently achieve this setup with only two stakers. However, it has the added benefit of allowing for increased client diversity as two validator clients can be run per cluster.
+Where each participant holds two keyshares. Obol doesn't support 2/3 thresholds, so 4/6 is the only way to currently achieve this setup with only two participants. However, it has the added benefit of allowing for increased client diversity as two validator clients can be run per cluster.
 
 ### Pre-requisites
 
@@ -110,8 +110,8 @@ vim docker-compose.override.yml
 ```
 
 {% tabs %}
-{% tab title="Staker 1" %}
-Staker 1 runs Lighthouse and Teku validator clients.
+{% tab title="Participant 1" %}
+Participant 1 runs Lighthouse and Teku validator clients.
 
 {% code title="docker-compose.override.yml" %}
 ```bash
@@ -162,8 +162,8 @@ services:
 {% endcode %}
 {% endtab %}
 
-{% tab title="Staker 2" %}
-Staker 2 runs Nimbus and Lighthouse validator clients.
+{% tab title="Participant 2" %}
+Participant 2 runs Nimbus and Lighthouse validator clients.
 
 {% code title="docker-compose.override.yml" %}
 ```bash
@@ -214,8 +214,8 @@ services:
 {% endcode %}
 {% endtab %}
 
-{% tab title="Cloud Auxiliary Node / Staker 3" %}
-Cloud Auxiliary Node / Staker 3 runs Teku and Nimbus validator clients.
+{% tab title="Participant 3 / Cloud Auxiliary Node" %}
+Participant 3 / Cloud Auxiliary Node runs Teku and Nimbus validator clients.
 
 {% code title="docker-compose.override.yml" %}
 ```bash
@@ -278,7 +278,7 @@ mkdir ~/charon-distributed-validator-cluster/.charon/cluster
 ```
 
 {% tabs %}
-{% tab title="Staker 1" %}
+{% tab title="Participant 1" %}
 ```
 ~/charon-distributed-validator-cluster/.charon/cluster/
 ├─ node[0]/
@@ -296,7 +296,7 @@ mkdir ~/charon-distributed-validator-cluster/.charon/cluster
 ```
 {% endtab %}
 
-{% tab title="Staker 2" %}
+{% tab title="Participant 2" %}
 ```
 ~/charon-distributed-validator-cluster/.charon/cluster/
 ├─ node[2]/
@@ -314,7 +314,7 @@ mkdir ~/charon-distributed-validator-cluster/.charon/cluster
 ```
 {% endtab %}
 
-{% tab title="Cloud Auxiliary Node / Staker 3" %}
+{% tab title="Participant 3 / Cloud Auxiliary Node" %}
 ```
 ~/charon-distributed-validator-cluster/.charon/cluster/
 ├─ node[4]/
