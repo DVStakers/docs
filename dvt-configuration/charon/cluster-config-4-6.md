@@ -83,9 +83,11 @@ CHARON_P2P_RELAYS="http://<LOCAL_IP_ADDRESS_OF_CURRENT_MACHINE>:<CHARON_RELAY_PO
 # Set the IP address and port of your existing Beacon Node client
 CHARON_BEACON_NODE_ENDPOINTS="http://<IP_ADDRESS>:<BEACON_PORT>"
 
-CHARON_P2P_EXTERNAL_HOSTNAME=<STATIC_IP_OF_CURRENT_MACHINE>
+CHARON_P2P_EXTERNAL_HOSTNAME="<STATIC_IP_OF_CURRENT_MACHINE>"
 
 CHARON_P2P_TCP_ADDRESS="0.0.0.0:<CHARON_PUBLIC_P2P_PORT>"
+
+MONITORING_PORT_GRAFANA="<GRAFANA_PUBLIC_PORT>"
 ```
 {% endcode %}
 
@@ -156,20 +158,6 @@ services:
 
   vc5-nimbus:
     profiles: [disable]
-    
-# If you are using existing monitoring tools
-# you may need to disable the monitoring containers as well
-  prometheus:
-    profiles: [disable]
-
-  grafana:
-    profiles: [disable]
-
-  node-exporter:
-    profiles: [disable]
-
-  jaeger:
-    profiles: [disable]
 ```
 {% endcode %}
 {% endtab %}
@@ -222,20 +210,6 @@ services:
 
   vc5-nimbus:
     profiles: [disable]
-    
-# If you are using existing monitoring tools
-# you may need to disable the monitoring images as well
-  prometheus:
-    profiles: [disable]
-
-  grafana:
-    profiles: [disable]
-
-  node-exporter:
-    profiles: [disable]
-
-  jaeger:
-    profiles: [disable]
 ```
 {% endcode %}
 {% endtab %}
@@ -287,20 +261,6 @@ services:
     profiles: [disable]
 
   vc3-lighthouse:
-    profiles: [disable]
-    
-# If you are using existing monitoring tools
-# you may need to disable the monitoring images as well
-  prometheus:
-    profiles: [disable]
-
-  grafana:
-    profiles: [disable]
-
-  node-exporter:
-    profiles: [disable]
-
-  jaeger:
     profiles: [disable]
 ```
 {% endcode %}
