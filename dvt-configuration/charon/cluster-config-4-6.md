@@ -78,10 +78,14 @@ TEKU_VERSION="<TEKU_VERSION>"
 CHARON_VERSION="<CHARON_VERSION>"
 
 # Specify the IP addresses and ports used by the other participants to allow direct P2P connections
-CHARON_P2P_RELAYS="http://<IP_ADDRESS>:<CHARON_RELAY_PORT>/enr,http://<IP_ADDRESS>:<CHARON_RELAY_PORT>/enr"
+CHARON_P2P_RELAYS="http://<LOCAL_IP_ADDRESS_OF_CURRENT_MACHINE>:<CHARON_RELAY_PORT>/enr,http://<PUBLIC_IP_ADDRESS_OF_REMOTE_RELAY>:<CHARON_RELAY_PORT>/enr,http://<PUBLIC_IP_ADDRESS_OF_REMOTE_RELAY>:<CHARON_RELAY_PORT>/enr"
 
 # Set the IP address and port of your existing Beacon Node client
 CHARON_BEACON_NODE_ENDPOINTS="http://<IP_ADDRESS>:<BEACON_PORT>"
+
+CHARON_P2P_EXTERNAL_HOSTNAME=<STATIC_IP_OF_CURRENT_MACHINE>
+
+CHARON_P2P_TCP_ADDRESS="0.0.0.0:<CHARON_PUBLIC_P2P_PORT>"
 ```
 {% endcode %}
 
@@ -133,8 +137,12 @@ services:
 
   # Edit the relay ports
   relay:
+    environment:
+      CHARON_HTTP_ADDRESS: 0.0.0.0:<CHARON_RELAY_PORT>
+      CHARON_P2P_EXTERNAL_HOSTNAME: <STATIC_IP_OF_CURRENT_MACHINE>
     ports:
-      - 3610:<CHARON_PUBLIC_P2P_PORT>/tcp
+      - <CHARON_PUBLIC_P2P_PORT>:<CHARON_PUBLIC_P2P_PORT>/tcp
+      - <CHARON_RELAY_PORT>:<CHARON_RELAY_PORT>/tcp
 
   # Disable the validator clients used by the other participants
   vc2-nimbus:
@@ -195,8 +203,12 @@ services:
 
   # Edit the relay ports
   relay:
+    environment:
+      CHARON_HTTP_ADDRESS: 0.0.0.0:<CHARON_RELAY_PORT>
+      CHARON_P2P_EXTERNAL_HOSTNAME: <STATIC_IP_OF_CURRENT_MACHINE>
     ports:
-      - 3610:<CHARON_PUBLIC_P2P_PORT>/tcp
+      - <CHARON_PUBLIC_P2P_PORT>:<CHARON_PUBLIC_P2P_PORT>/tcp
+      - <CHARON_RELAY_PORT>:<CHARON_RELAY_PORT>/tcp
 
   # Disable the validator clients used by the other participants
   vc0-lighthouse:
@@ -257,8 +269,12 @@ services:
 
   # Edit the relay ports
   relay:
+    environment:
+      CHARON_HTTP_ADDRESS: 0.0.0.0:<CHARON_RELAY_PORT>
+      CHARON_P2P_EXTERNAL_HOSTNAME: <STATIC_IP_OF_CURRENT_MACHINE>
     ports:
-      - 3610:<CHARON_PUBLIC_P2P_PORT>/tcp
+      - <CHARON_PUBLIC_P2P_PORT>:<CHARON_PUBLIC_P2P_PORT>/tcp
+      - <CHARON_RELAY_PORT>:<CHARON_RELAY_PORT>/tcp
 
   # Disable the validator clients used by the other participants
   vc0-lighthouse:
