@@ -36,9 +36,13 @@ Configure the firewall.
 
 ```bash
 CHARON_PUBLIC_P2P_PORT=      # Default: 3610
+CHARON_RELAY_PORT=           # Default: 3640
 
 sudo ufw allow ${CHARON_PUBLIC_P2P_PORT}/tcp comment 'Allow Charon P2P in'
 sudo ufw allow out ${CHARON_PUBLIC_P2P_PORT}/tcp comment 'Allow Charon P2P out'
+
+sudo ufw allow ${CHARON_RELAY_PORT}/tcp comment 'Allow Charon Relay in'
+sudo ufw allow out ${CHARON_RELAY_PORT}/tcp comment 'Allow Charon Relay out'
 ```
 
 ### Step 2: Clone the repo
