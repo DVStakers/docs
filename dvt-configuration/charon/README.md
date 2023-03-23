@@ -1,9 +1,9 @@
 ---
-description: How to configure different Charon Cluster configurations.
+description: How to set up different Charon Cluster configurations.
 ---
 
 # ⚙ Charon
 
-{% content-ref url="cluster-config-4-6.md" %}
-[cluster-config-4-6.md](cluster-config-4-6.md)
+{% content-ref url="cluster-config-6-9.md" %}
+[cluster-config-6-9.md](cluster-config-6-9.md)
 {% endcontent-ref %}
