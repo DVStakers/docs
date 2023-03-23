@@ -22,24 +22,24 @@ Before.
 
 ```
 ├── split_keys
-│   ├── keystore-0.json        # Two existing validator keys
-│   ├── keystore-0.txt
-│   ├── keystore-1.json
-│   ├── keystore-1.txt
+    ├── keystore-0.json        # Two existing validator keys
+    ├── keystore-0.txt
+    ├── keystore-1.json
+    ├── keystore-1.txt
 ```
 
 After.
 
 ```
 ├── split_keys
-│   ├── keystore-0.json        # Two existing validator keys
-│   ├── keystore-0.txt
-│   ├── keystore-1.json
-│   ├── keystore-1.txt
-│   ├── keystore-2.json        # Two new validator keys
-│   ├── keystore-2.txt
-│   ├── keystore-3.json
-│   ├── keystore-3.txt
+    ├── keystore-0.json        # Two existing validator keys
+    ├── keystore-0.txt
+    ├── keystore-1.json
+    ├── keystore-1.txt
+    ├── keystore-2.json        # Two new validator keys
+    ├── keystore-2.txt
+    ├── keystore-3.json
+    ├── keystore-3.txt
 ```
 
 </details>
@@ -70,13 +70,13 @@ At the end of this process, you should have a tree like this:
 
 ```
 ├── split_keys
-│   ├── keystore-0.json
-│   ├── keystore-0.txt
-│   ├── keystore-1.json
-│   ├── keystore-1.txt
-│   ...
-│   ├── keystore-*.json
-│   ├── keystore-*.txt
+    ├── keystore-0.json
+    ├── keystore-0.txt
+    ├── keystore-1.json
+    ├── keystore-1.txt
+    ...
+    ├── keystore-*.json
+    ├── keystore-*.txt
 ```
 
 ### Step 3: Split the keys into keyshares
@@ -99,12 +99,12 @@ In the `.charon` directory there will now be a `cluster` directory containing 6 
 ```
 .charon/cluster/
 ├─ node[0-*]/                   Directory for each node
-│  ├─ charon-enr-private-key    Charon networking private key for node authentication
-│  ├─ cluster-lock.json         Cluster lock defines the cluster lock file which is signed by all nodes
-│  ├─ deposit-data.json         Deposit data file is used to activate a Distributed Validator on DV Launchpad
-│  ├─ validator_keys            Validator keystores and password
-│  │  ├─ keystore-*.json        Validator private share key for duty signing
-│  │  ├─ keystore-*.txt         Keystore password files for keystore-*.json
+   ├─ charon-enr-private-key    Charon networking private key for node authentication
+   ├─ cluster-lock.json         Cluster lock defines the cluster lock file which is signed by all nodes
+   ├─ deposit-data.json         Deposit data file is used to activate a Distributed Validator on DV Launchpad
+   ├─ validator_keys            Validator keystores and password
+      ├─ keystore-*.json        Validator private share key for duty signing
+      ├─ keystore-*.txt         Keystore password files for keystore-*.json
 ```
 
 These split keys can now be shared with the other participants and used to [start a charon cluster](charon/).

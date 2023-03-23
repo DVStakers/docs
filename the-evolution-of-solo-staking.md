@@ -37,7 +37,7 @@ Still isolated systems, but the single points of failure have been reduced, not 
 
 Connect Beacon Nodes to another solo staker to increase redundancy. Further increase client diversity by running four different EC/BN pairs.
 
-<figure><img src=".gitbook/assets/image (1) (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Step 4: Obol DVT Validators (Dev - Here today📍)
 
@@ -50,7 +50,7 @@ The Cloud redundancy is useful in this setup because:
 3. It shouldn't cost much. Since the bulk of the cost of a validator is running the EC and BN clients, the actual validator clients are very lightweight. This means the Cloud node can be running on minimal hardware, significantly reducing cost.
 4. It doesn't remove any sovereignty or require any trust assumptions with the Cloud provider. If the Cloud provider goes out of business or decides to turn off the node, the two remaining nodes can function perfectly fine. Also, as the Cloud provider only has 3/9 keys, it is not a security risk, as 3 keys can't be used for anything if the signature threshold is 6/9.
 
-<figure><img src=".gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (8) (3).png" alt=""><figcaption></figcaption></figure>
 
 ### Step 5: StakeWise V3 Vaults + Obol DVT Validators
 
