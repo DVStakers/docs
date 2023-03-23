@@ -31,7 +31,7 @@ Standard solo staking on Ethereum today. Isolated solo stakers running all their
 
 Still isolated systems, but the single points of failure have been reduced, not eliminated... yet! This also improves client diversity as different EC/BN pairs can be used.
 
-<figure><img src=".gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Step 3: Redundant Remote Beacon Nodes (Prod - Here today📍)
 
@@ -50,29 +50,13 @@ The Cloud redundancy is useful in this setup because:
 3. It shouldn't cost much. Since the bulk of the cost of a validator is running the EC and BN clients, the actual validator clients are very lightweight. This means the Cloud node can be running on minimal hardware, significantly reducing cost.
 4. It doesn't remove any sovereignty or require any trust assumptions with the Cloud provider. If the Cloud provider goes out of business or decides to turn off the node, the two remaining nodes can function perfectly fine. Also, as the Cloud provider only has 3/9 keys, it is not a security risk, as 3 keys can't be used for anything if the signature threshold is 6/9.
 
-{% tabs %}
-{% tab title="Trusted" %}
-<figure><img src=".gitbook/assets/image (8) (1).png" alt=""><figcaption><p>Shared Cloud Auxiliary Client</p></figcaption></figure>
-{% endtab %}
-
-{% tab title="Trustless" %}
-<figure><img src=".gitbook/assets/image (9).png" alt=""><figcaption><p>Isolated Cloud Auxiliary Clients</p></figcaption></figure>
-{% endtab %}
-{% endtabs %}
+<figure><img src=".gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
 
 ### Step 5: StakeWise V3 Vaults + Obol DVT Validators
 
 Adding StakeWise V3 Vaults as an additional Obol DVT Cluster.
 
-{% tabs %}
-{% tab title="Trusted" %}
-<figure><img src=".gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
-{% endtab %}
-
-{% tab title="Trustless" %}
-<figure><img src=".gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
-{% endtab %}
-{% endtabs %}
+<figure><img src=".gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 ### Step 6: DVT+++
 
