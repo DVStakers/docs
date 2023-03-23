@@ -189,54 +189,72 @@ mkdir ~/charon-distributed-validator-cluster/.charon/cluster
 {% tab title="Participant 1" %}
 ```
 ~/charon-distributed-validator-cluster/.charon/cluster/
-├─ node[0]/
-│  ├─ charon-enr-private-key    
-│  ├─ cluster-lock.json        
-│  ├─ validator_keys            
-│  │  ├─ keystore-*.json      
-│  │  ├─ keystore-*.txt        
-├─ node[1]/
-│  ├─ charon-enr-private-key    
-│  ├─ cluster-lock.json        
-│  ├─ validator_keys            
-│  │  ├─ keystore-*.json      
-│  │  ├─ keystore-*.txt  
+├─ node0/
+   ├─ charon-enr-private-key    
+   ├─ cluster-lock.json        
+   ├─ validator_keys            
+      ├─ keystore-*.json      
+      ├─ keystore-*.txt        
+├─ node1/
+   ├─ charon-enr-private-key    
+   ├─ cluster-lock.json        
+   ├─ validator_keys            
+      ├─ keystore-*.json      
+      ├─ keystore-*.txt
+├─ node2/
+   ├─ charon-enr-private-key    
+   ├─ cluster-lock.json        
+   ├─ validator_keys            
+      ├─ keystore-*.json      
+      ├─ keystore-*.txt  
 ```
 {% endtab %}
 
 {% tab title="Participant 2" %}
 ```
 ~/charon-distributed-validator-cluster/.charon/cluster/
-├─ node[2]/
-│  ├─ charon-enr-private-key    
-│  ├─ cluster-lock.json        
-│  ├─ validator_keys            
-│  │  ├─ keystore-*.json      
-│  │  ├─ keystore-*.txt        
-├─ node[3]/
-│  ├─ charon-enr-private-key    
-│  ├─ cluster-lock.json        
-│  ├─ validator_keys            
-│  │  ├─ keystore-*.json      
-│  │  ├─ keystore-*.txt  
+├─ node3/
+   ├─ charon-enr-private-key    
+   ├─ cluster-lock.json        
+   ├─ validator_keys            
+      ├─ keystore-*.json      
+      ├─ keystore-*.txt        
+├─ node4/
+   ├─ charon-enr-private-key    
+   ├─ cluster-lock.json        
+   ├─ validator_keys            
+      ├─ keystore-*.json      
+      ├─ keystore-*.txt
+├─ node5/
+   ├─ charon-enr-private-key    
+   ├─ cluster-lock.json        
+   ├─ validator_keys            
+      ├─ keystore-*.json      
+      ├─ keystore-*.txt  
 ```
 {% endtab %}
 
 {% tab title="Participant 3 / Cloud Auxiliary Node" %}
 ```
 ~/charon-distributed-validator-cluster/.charon/cluster/
-├─ node[4]/
-│  ├─ charon-enr-private-key    
-│  ├─ cluster-lock.json        
-│  ├─ validator_keys            
-│  │  ├─ keystore-*.json      
-│  │  ├─ keystore-*.txt        
-├─ node[5]/
-│  ├─ charon-enr-private-key    
-│  ├─ cluster-lock.json        
-│  ├─ validator_keys            
-│  │  ├─ keystore-*.json      
-│  │  ├─ keystore-*.txt  
+├─ node6/
+   ├─ charon-enr-private-key    
+   ├─ cluster-lock.json        
+   ├─ validator_keys            
+      ├─ keystore-*.json      
+      ├─ keystore-*.txt        
+├─ node7/
+   ├─ charon-enr-private-key    
+   ├─ cluster-lock.json        
+   ├─ validator_keys            
+      ├─ keystore-*.json      
+      ├─ keystore-*.txt
+├─ node8/
+   ├─ charon-enr-private-key    
+   ├─ cluster-lock.json        
+   ├─ validator_keys            
+      ├─ keystore-*.json      
+      ├─ keystore-*.txt  
 ```
 {% endtab %}
 {% endtabs %}
@@ -248,7 +266,7 @@ Once everything has been configured, it should be as simple as running the comma
 To avoid any conflicts with container names in the future, you can give a prefix to all containers created by the `docker compose` command by using the `-p` flag:
 
 ```bash
-CONTAINER_PREFIX=        # E.g. Cluster1
+CLUSTER_PREFIX=        # E.g. Cluster1
 
-docker compose -p ${CONTAINER_PREFIX} up --build
+docker compose -p ${CLUSTER_PREFIX} up --build
 ```
