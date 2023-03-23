@@ -245,5 +245,5 @@ To avoid any conflicts with container names in the future, you can give a prefix
 ```bash
 CONTAINER_PREFIX=        # E.g. Cluster1
 
-docker compose -p ${CONTAINER_PREFIX} up
+docker compose -p ${CONTAINER_PREFIX} up --build
 ```
