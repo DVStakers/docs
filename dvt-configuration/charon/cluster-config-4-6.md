@@ -73,12 +73,15 @@ vim .env
 {% code title=".env" %}
 ```bash
 # Set the network e.g. mainnet or goerli
-ETH2_NETWORK=
+NETWORK=
 
 # Set the nodes for the current participant
 FIRST_NODE_NUMBER=0
 SECOND_NODE_NUMBER=1
 THIRD_NODE_NUMBER=2
+
+# Set the fee recipient address for the validator client e.g. 0x000...
+FEE_RECIPIENT=
 
 # Specify the IP addresses and ports used by the other participants to allow direct P2P connections
 CHARON_P2P_RELAYS="http://<LOCAL_IP_ADDRESS_OF_CURRENT_MACHINE>:<LOCAL_CHARON_RELAY_PORT>/enr,http://<PUBLIC_IP_ADDRESS_OF_PARTICIPANT_2_REMOTE_RELAY>:<PARTICIPANT_2_CHARON_RELAY_PORT>/enr,http://<PUBLIC_IP_ADDRESS_OF_PARTICIPANT_3_REMOTE_RELAY>:<PARTICIPANT_3_CHARON_RELAY_PORT>/enr"
@@ -102,17 +105,18 @@ MONITORING_PORT_GRAFANA="<GRAFANA_PUBLIC_PORT>"
 {% endtab %}
 
 {% tab title="Participant 2" %}
-Participant 2 runs Nimbus and Lighthouse validator clients.
-
 {% code title=".env" %}
 ```bash
 # Set the network e.g. mainnet or goerli
-ETH2_NETWORK=
+NETWORK=
 
 # Set the nodes for the current participant
 FIRST_NODE_NUMBER=3
 SECOND_NODE_NUMBER=4
 THIRD_NODE_NUMBER=5
+
+# Set the fee recipient address for the validator client e.g. 0x000...
+FEE_RECIPIENT=
 
 # Specify the IP addresses and ports used by the other participants to allow direct P2P connections
 CHARON_P2P_RELAYS="http://<LOCAL_IP_ADDRESS_OF_CURRENT_MACHINE>:<LOCAL_CHARON_RELAY_PORT>/enr,http://<PUBLIC_IP_ADDRESS_OF_PARTICIPANT_2_REMOTE_RELAY>:<PARTICIPANT_2_CHARON_RELAY_PORT>/enr,http://<PUBLIC_IP_ADDRESS_OF_PARTICIPANT_3_REMOTE_RELAY>:<PARTICIPANT_3_CHARON_RELAY_PORT>/enr"
@@ -136,17 +140,18 @@ MONITORING_PORT_GRAFANA="<GRAFANA_PUBLIC_PORT>"
 {% endtab %}
 
 {% tab title="Participant 3 / Cloud Auxiliary Node" %}
-Participant 3 / Cloud Auxiliary Node runs Teku and Nimbus validator clients.
-
 {% code title=".env" %}
 ```bash
 # Set the network e.g. mainnet or goerli
-ETH2_NETWORK=
+NETWORK=
 
 # Set the nodes for the current participant
 FIRST_NODE_NUMBER=6
 SECOND_NODE_NUMBER=7
 THIRD_NODE_NUMBER=8
+
+# Set the fee recipient address for the validator client e.g. 0x000...
+FEE_RECIPIENT=
 
 # Specify the IP addresses and ports used by the other participants to allow direct P2P connections
 CHARON_P2P_RELAYS="http://<LOCAL_IP_ADDRESS_OF_CURRENT_MACHINE>:<LOCAL_CHARON_RELAY_PORT>/enr,http://<PUBLIC_IP_ADDRESS_OF_PARTICIPANT_2_REMOTE_RELAY>:<PARTICIPANT_2_CHARON_RELAY_PORT>/enr,http://<PUBLIC_IP_ADDRESS_OF_PARTICIPANT_3_REMOTE_RELAY>:<PARTICIPANT_3_CHARON_RELAY_PORT>/enr"
