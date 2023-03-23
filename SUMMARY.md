@@ -14,7 +14,7 @@
 * [🔑 Validator Key Generation](dvt-configuration/validator-key-generation.md)
 * [✂ Split Validator Keys](dvt-configuration/split-validator-keys.md)
 * [⚙ Charon](dvt-configuration/charon/README.md)
-  * [🔧 Cluster Config - 6/9](dvt-configuration/charon/cluster-config-6-9.md)
+  * [🔧 Cluster Config - 6/9](dvt-configuration/charon/cluster-config-4-6.md)
 
 ## Infrastructure
 

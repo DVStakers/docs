@@ -37,7 +37,7 @@ Still isolated systems, but the single points of failure have been reduced, not 
 
 Connect Beacon Nodes to another solo staker to increase redundancy. Further increase client diversity by running four different EC/BN pairs.
 
-<figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Step 4: Obol DVT Validators (Dev - Here today📍)
 
