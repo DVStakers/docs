@@ -1,5 +1,5 @@
 ---
-description: Notes on how to configure a Charon 4/6 threshold cluster.
+description: Notes on how to configure a Charon 6/9 threshold cluster.
 ---
 
 # 🔧 Cluster Config - 6/9
@@ -83,6 +83,9 @@ THIRD_NODE_NUMBER=2
 # Set the fee recipient address for the validator client e.g. 0x000...
 FEE_RECIPIENT=
 
+# Set the graffiti for the validator client that will be attached to each proposed block
+GRAFFITI=DVStakers
+
 # Specify the IP addresses and ports used by the other participants to allow direct P2P connections
 CHARON_P2P_RELAYS="http://<LOCAL_IP_ADDRESS_OF_CURRENT_MACHINE>:<LOCAL_CHARON_RELAY_PORT>/enr,http://<PUBLIC_IP_ADDRESS_OF_PARTICIPANT_2_REMOTE_RELAY>:<PARTICIPANT_2_CHARON_RELAY_PORT>/enr,http://<PUBLIC_IP_ADDRESS_OF_PARTICIPANT_3_REMOTE_RELAY>:<PARTICIPANT_3_CHARON_RELAY_PORT>/enr"
 
@@ -118,6 +121,9 @@ THIRD_NODE_NUMBER=5
 # Set the fee recipient address for the validator client e.g. 0x000...
 FEE_RECIPIENT=
 
+# Set the graffiti for the validator client that will be attached to each proposed block
+GRAFFITI=DVStakers
+
 # Specify the IP addresses and ports used by the other participants to allow direct P2P connections
 CHARON_P2P_RELAYS="http://<LOCAL_IP_ADDRESS_OF_CURRENT_MACHINE>:<LOCAL_CHARON_RELAY_PORT>/enr,http://<PUBLIC_IP_ADDRESS_OF_PARTICIPANT_2_REMOTE_RELAY>:<PARTICIPANT_2_CHARON_RELAY_PORT>/enr,http://<PUBLIC_IP_ADDRESS_OF_PARTICIPANT_3_REMOTE_RELAY>:<PARTICIPANT_3_CHARON_RELAY_PORT>/enr"
 
@@ -152,6 +158,9 @@ THIRD_NODE_NUMBER=8
 
 # Set the fee recipient address for the validator client e.g. 0x000...
 FEE_RECIPIENT=
+
+# Set the graffiti for the validator client that will be attached to each proposed block
+GRAFFITI=DVStakers
 
 # Specify the IP addresses and ports used by the other participants to allow direct P2P connections
 CHARON_P2P_RELAYS="http://<LOCAL_IP_ADDRESS_OF_CURRENT_MACHINE>:<LOCAL_CHARON_RELAY_PORT>/enr,http://<PUBLIC_IP_ADDRESS_OF_PARTICIPANT_2_REMOTE_RELAY>:<PARTICIPANT_2_CHARON_RELAY_PORT>/enr,http://<PUBLIC_IP_ADDRESS_OF_PARTICIPANT_3_REMOTE_RELAY>:<PARTICIPANT_3_CHARON_RELAY_PORT>/enr"
