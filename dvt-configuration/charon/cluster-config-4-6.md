@@ -230,13 +230,13 @@ At this step, when each participant has their cluster configured, all that is ne
 Copy the numbered `node` directories to each participant. They should be placed in the `.charon` directory of each in a sub-directory called `cluster` will need to be created.&#x20;
 
 ```bash
-mkdir ~/charon-distributed-validator-cluster/.charon/cluster
+mkdir -p .charon/cluster
 ```
 
 {% tabs %}
 {% tab title="Participant 1" %}
 ```
-~/charon-distributed-validator-cluster/.charon/cluster/
+.charon/cluster/
 ├─ node0/
    ├─ charon-enr-private-key    
    ├─ cluster-lock.json        
@@ -260,7 +260,7 @@ mkdir ~/charon-distributed-validator-cluster/.charon/cluster
 
 {% tab title="Participant 2" %}
 ```
-~/charon-distributed-validator-cluster/.charon/cluster/
+.charon/cluster/
 ├─ node3/
    ├─ charon-enr-private-key    
    ├─ cluster-lock.json        
@@ -284,7 +284,7 @@ mkdir ~/charon-distributed-validator-cluster/.charon/cluster
 
 {% tab title="Participant 3 / Cloud Auxiliary Client" %}
 ```
-~/charon-distributed-validator-cluster/.charon/cluster/
+.charon/cluster/
 ├─ node6/
    ├─ charon-enr-private-key    
    ├─ cluster-lock.json        
