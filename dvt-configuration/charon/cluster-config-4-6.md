@@ -139,7 +139,7 @@ MONITORING_PORT_GRAFANA="<GRAFANA_PUBLIC_PORT>"
 {% endcode %}
 {% endtab %}
 
-{% tab title="Participant 3 / Cloud Auxiliary Node" %}
+{% tab title="Participant 3 / Cloud Auxiliary Client" %}
 {% code title=".env" %}
 ```bash
 # Set the network e.g. mainnet or goerli
@@ -234,7 +234,7 @@ mkdir ~/charon-distributed-validator-cluster/.charon/cluster
 ```
 {% endtab %}
 
-{% tab title="Participant 3 / Cloud Auxiliary Node" %}
+{% tab title="Participant 3 / Cloud Auxiliary Client" %}
 ```
 ~/charon-distributed-validator-cluster/.charon/cluster/
 ├─ node6/

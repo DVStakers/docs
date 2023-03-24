@@ -26,14 +26,16 @@ The journey of two Ethereum stakers from solo staking to distributed validator s
 
 ### **Are you sponsored or paid by anyone?**
 
-No. Currently, this is a side project that we're working on together. If at some point in the future, we do apply for grants or funding to support this project, we'll let you know here.
+Not yet. If at some point in the future, we do apply for grants or funding to support this project, we'll let you know here.
 
 ### Wen Ethereum mainnet?
 
-While Obol DVT isn't ready for Ethereum mainnet yet, we are aiming to be ready when it launches.
+While Obol DVT isn't ready for Ethereum mainnet yet, we are aiming to be ready when it launches.&#x20;
+
+We plan to launch a DVStakers StakeWise V3 Vault on mainnet as soon as that platform is ready.&#x20;
 
 ### Can I be involved in this project?
 
-If you are an Ethereum solo staker who is interested in being part of the DVT revolution then yes, please join us!&#x20;
+If you are an Ethereum solo staker who is interested in being part of the DVT revolution then please join us!&#x20;
 
 DVTStakers aims to be an inclusive community, so if you want to learn more about DVT and contribute in any way, please reach out to us on [Twitter - @DVStakers](https://twitter.com/DVStakers).
