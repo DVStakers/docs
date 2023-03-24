@@ -34,14 +34,26 @@ If you want to change this default charon port, it needs to be configured in the
 Configure the firewall.
 
 ```bash
-CHARON_PUBLIC_P2P_PORT=      # Default: 3610
-CHARON_RELAY_PORT=           # Default: 3640
-
-sudo ufw allow ${CHARON_PUBLIC_P2P_PORT}/tcp comment 'Allow Charon P2P in'
-sudo ufw allow out ${CHARON_PUBLIC_P2P_PORT}/tcp comment 'Allow Charon P2P out'
+CHARON_RELAY_PORT=                          # Default: 3640
+CHARON_RELAY_P2P_TCP_ADDRESS_PORT=          
+CHARON_LIGHTHOUSE_P2P_TCP_ADDRESS_PORT=
+CHARON_TEKU_P2P_TCP_ADDRESS_PORT=
+CHARON_NIMBUS_P2P_TCP_ADDRESS_PORT=
 
 sudo ufw allow ${CHARON_RELAY_PORT}/tcp comment 'Allow Charon Relay in'
 sudo ufw allow out ${CHARON_RELAY_PORT}/tcp comment 'Allow Charon Relay out'
+
+sudo ufw allow ${CHARON_RELAY_P2P_TCP_ADDRESS_PORT}/tcp comment 'Allow Charon Relay P2P in'
+sudo ufw allow out ${CHARON_RELAY_P2P_TCP_ADDRESS_PORT}/tcp comment 'Allow Charon Relay P2P out'
+
+sudo ufw allow ${CHARON_LIGHTHOUSE_P2P_TCP_ADDRESS_PORT}/tcp comment 'Allow Charon Lighthouse P2P in'
+sudo ufw allow out ${CHARON_LIGHTHOUSE_P2P_TCP_ADDRESS_PORT}/tcp comment 'Allow Charon Lighthouse P2P out'
+
+sudo ufw allow ${CHARON_TEKU_P2P_TCP_ADDRESS_PORT}/tcp comment 'Allow Charon Teku P2P in'
+sudo ufw allow out ${CHARON_TEKU_P2P_TCP_ADDRESS_PORT}/tcp comment 'Allow Charon Teku P2P out'
+
+sudo ufw allow ${CHARON_NIMBUS_P2P_TCP_ADDRESS_PORT}/tcp comment 'Allow Charon Nimbus P2P in'
+sudo ufw allow out ${CHARON_NIMBUS_P2P_TCP_ADDRESS_PORT}/tcp comment 'Allow Charon Nimbus P2P out'
 ```
 
 ### Step 2: Clone the repo
@@ -95,11 +107,20 @@ CHARON_BEACON_NODE_ENDPOINTS="http://<BEACON_NODE_IP_ADDRESS>:<BEACON_NODE_PORT>
 # Set the static IP address of the current machine so it can be reached by the other participants 
 CHARON_P2P_EXTERNAL_HOSTNAME="<STATIC_PUBLIC_IP_OF_CURRENT_MACHINE>"
 
-# Set the charon relay port that will be used by the other participants to establish a P2P connection
+# Set the relay port that will be used by the other participants to establish a P2P connection
 CHARON_RELAY_PORT="<CHARON_RELAY_PORT>"
 
-# Set the charon port used for direct P2P communication once the connection to the other participants has been established through the relay
-CHARON_P2P_TCP_ADDRESS_PORT="<CHARON_PUBLIC_P2P_PORT>"
+# Set the port used for direct P2P communication to the relay
+CHARON_RELAY_P2P_TCP_ADDRESS_PORT="<CHARON_RELAY_P2P_TCP_ADDRESS_PORT>"
+
+# Set the port used by the Lighthouse node for direct P2P communication once the connection to the other participants has been established through the relay
+CHARON_LIGHTHOUSE_P2P_TCP_ADDRESS_PORT="<CHARON_LIGHTHOUSE_P2P_TCP_ADDRESS_PORT>"
+
+# Set the port used by the Teku node for direct P2P communication once the connection to the other participants has been established through the relay
+CHARON_TEKU_P2P_TCP_ADDRESS_PORT="<CHARON_TEKU_P2P_TCP_ADDRESS_PORT>"
+
+# Set the port used by the Nimbus node for direct P2P communication once the connection to the other participants has been established through the relay
+CHARON_NIMBUS_P2P_TCP_ADDRESS_PORT="<CHARON_NIMBUS_P2P_TCP_ADDRESS_PORT>"
 
 # Set the Grafana external port to allow external access
 MONITORING_PORT_GRAFANA="<GRAFANA_PUBLIC_PORT>"
@@ -133,11 +154,20 @@ CHARON_BEACON_NODE_ENDPOINTS="http://<BEACON_NODE_IP_ADDRESS>:<BEACON_NODE_PORT>
 # Set the static IP address of the current machine so it can be reached by the other participants 
 CHARON_P2P_EXTERNAL_HOSTNAME="<STATIC_PUBLIC_IP_OF_CURRENT_MACHINE>"
 
-# Set the charon relay port that will be used by the other participants to establish a P2P connection
+# Set the relay port that will be used by the other participants to establish a P2P connection
 CHARON_RELAY_PORT="<CHARON_RELAY_PORT>"
 
-# Set the charon port used for direct P2P communication once the connection to the other participants has been established through the relay
-CHARON_P2P_TCP_ADDRESS_PORT="<CHARON_PUBLIC_P2P_PORT>"
+# Set the port used for direct P2P communication to the relay
+CHARON_RELAY_P2P_TCP_ADDRESS_PORT="<CHARON_RELAY_P2P_TCP_ADDRESS_PORT>"
+
+# Set the port used by the Lighthouse node for direct P2P communication once the connection to the other participants has been established through the relay
+CHARON_LIGHTHOUSE_P2P_TCP_ADDRESS_PORT="<CHARON_LIGHTHOUSE_P2P_TCP_ADDRESS_PORT>"
+
+# Set the port used by the Teku node for direct P2P communication once the connection to the other participants has been established through the relay
+CHARON_TEKU_P2P_TCP_ADDRESS_PORT="<CHARON_TEKU_P2P_TCP_ADDRESS_PORT>"
+
+# Set the port used by the Nimbus node for direct P2P communication once the connection to the other participants has been established through the relay
+CHARON_NIMBUS_P2P_TCP_ADDRESS_PORT="<CHARON_NIMBUS_P2P_TCP_ADDRESS_PORT>"
 
 # Set the Grafana external port to allow external access
 MONITORING_PORT_GRAFANA="<GRAFANA_PUBLIC_PORT>"
@@ -171,11 +201,20 @@ CHARON_BEACON_NODE_ENDPOINTS="http://<BEACON_NODE_IP_ADDRESS>:<BEACON_NODE_PORT>
 # Set the static IP address of the current machine so it can be reached by the other participants 
 CHARON_P2P_EXTERNAL_HOSTNAME="<STATIC_PUBLIC_IP_OF_CURRENT_MACHINE>"
 
-# Set the charon relay port that will be used by the other participants to establish a P2P connection
+# Set the relay port that will be used by the other participants to establish a P2P connection
 CHARON_RELAY_PORT="<CHARON_RELAY_PORT>"
 
-# Set the charon port used for direct P2P communication once the connection to the other participants has been established through the relay
-CHARON_P2P_TCP_ADDRESS_PORT="<CHARON_PUBLIC_P2P_PORT>"
+# Set the port used for direct P2P communication to the relay
+CHARON_RELAY_P2P_TCP_ADDRESS_PORT="<CHARON_RELAY_P2P_TCP_ADDRESS_PORT>"
+
+# Set the port used by the Lighthouse node for direct P2P communication once the connection to the other participants has been established through the relay
+CHARON_LIGHTHOUSE_P2P_TCP_ADDRESS_PORT="<CHARON_LIGHTHOUSE_P2P_TCP_ADDRESS_PORT>"
+
+# Set the port used by the Teku node for direct P2P communication once the connection to the other participants has been established through the relay
+CHARON_TEKU_P2P_TCP_ADDRESS_PORT="<CHARON_TEKU_P2P_TCP_ADDRESS_PORT>"
+
+# Set the port used by the Nimbus node for direct P2P communication once the connection to the other participants has been established through the relay
+CHARON_NIMBUS_P2P_TCP_ADDRESS_PORT="<CHARON_NIMBUS_P2P_TCP_ADDRESS_PORT>"
 
 # Set the Grafana external port to allow external access
 MONITORING_PORT_GRAFANA="<GRAFANA_PUBLIC_PORT>"
