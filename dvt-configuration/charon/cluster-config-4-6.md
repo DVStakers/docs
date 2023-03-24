@@ -74,7 +74,7 @@ If you want to use that template as a starting point, make a copy.
 cp .env.sample .env
 ```
 
-Edit the `.env` file.
+Then edit the `.env` file.
 
 ```bash
 vim .env
