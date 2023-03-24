@@ -7,8 +7,8 @@ description: Notes on how to configure a Charon 6/9 threshold cluster.
 * [Pre-requisites](cluster-config-4-6.md#pre-requisites)
 * [Step 1: Router & Firewall Configuration](cluster-config-4-6.md#step-1-router-and-firewall-configuration)
 * [Step 2: Clone the repo](cluster-config-4-6.md#step-2-clone-the-repo)
-* [Step 3: Edit .env](cluster-config-4-6.md#step-3-edit-.env)
-* [Step 4: Split existing validator keys](cluster-config-4-6.md#step-4-import-keyshares)
+* [Step 3: Configure the environment variables](cluster-config-4-6.md#step-3-configure-the-environment-variables)
+* [Step 4: Import the keyshares](cluster-config-4-6.md#step-4-import-the-keyshares)
 * [Step 5: Run the Cluster](cluster-config-4-6.md#step-5-run-the-cluster)
 
 DVStakers has a [GitHub repo](https://github.com/DVStakers/charon-distributed-validator-cluster) that contains the docker configuration needed to set up three identical clusters, each with three nodes. Without performing a DKG and simply splitting existing validator keys, this repository can be used to construct the required cluster configuration for a 6/9 threshold DVT validator.
@@ -64,7 +64,7 @@ git clone https://github.com/DVStakers/charon-distributed-validator-cluster.git
 cd charon-distributed-validator-cluster
 ```
 
-### Step 3: Edit `.env`
+### Step 3: Configure the environment variables
 
 The repo comes with a `.env.sample` file that can be used as a template.
 
@@ -223,7 +223,7 @@ MONITORING_PORT_GRAFANA="<GRAFANA_PUBLIC_PORT>"
 {% endtab %}
 {% endtabs %}
 
-### Step 4: Import keyshares
+### Step 4: Import the keyshares
 
 At this step, when each participant has their cluster configured, all that is needed is to import the keyshares. These should have already been [generated](../validator-key-generation.md) and [split](../split-validator-keys.md).
 
