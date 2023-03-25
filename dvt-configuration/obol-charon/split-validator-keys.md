@@ -64,7 +64,7 @@ mkdir split_keys
 
 ### Step 2: Create a directory containing keys to split
 
-Copy the existing validator `keystore.json` files into this new folder. Alongside them, with a matching filename but ending with `.txt` should be the password to the keystore. E.g., `keystore-0.json` `keystore-0.txt`. These matching txt files can be generated with a bash script.
+Copy the existing validator `keystore.json` files into this new folder. Alongside them, with a matching filename but ending with `.txt` should be the password to the keystore. E.g., `keystore-0.json` `keystore-0.txt`. These matching `.txt` files can be generated with a bash script.
 
 At the start of this process, you should have a tree that looks something like this.
 
