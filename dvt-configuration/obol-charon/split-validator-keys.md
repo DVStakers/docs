@@ -6,8 +6,8 @@ description: Notes on how to split validator keys into charon keyshares.
 
 Make sure you have your validator keys ready to be split. Instructions on how to generate validator keys can be found here:
 
-{% content-ref url="validator-key-generation.md" %}
-[validator-key-generation.md](validator-key-generation.md)
+{% content-ref url="../validator-key-generation.md" %}
+[validator-key-generation.md](../validator-key-generation.md)
 {% endcontent-ref %}
 
 Create a new directory that will be used for all keys in this cluster. This is useful if in the future you want to add additional validators, as you will need to keep the original keys to run them all on the same charon cluster.
@@ -107,4 +107,4 @@ In the `.charon` directory there will now be a `cluster` directory containing 6 
       ├─ keystore-*.txt         Keystore password files for keystore-*.json
 ```
 
-These split keys can now be shared with the other participants and used to [start a charon cluster](charon/).
+These split keys can now be shared with the other participants and used to [start a charon cluster](./).

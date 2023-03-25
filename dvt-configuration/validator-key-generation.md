@@ -48,4 +48,4 @@ You will see the CLI tool generate your keys in real-time, and when completed yo
 
 <figure><img src="../.gitbook/assets/image (20).png" alt=""><figcaption><p>Success!</p></figcaption></figure>
 
-These newly generated validator keys can now be [split into keyshares](split-validator-keys.md) ready to be used in a DVT validator.
+These newly generated validator keys can now be [split into keyshares](obol-charon/split-validator-keys.md) ready to be used in a DVT validator.

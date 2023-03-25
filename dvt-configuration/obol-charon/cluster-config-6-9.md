@@ -4,13 +4,13 @@ description: Notes on how to configure a Charon 6/9 threshold cluster.
 
 # 🔧 Cluster Config - 6/9
 
-* [Pre-requisites](cluster-config-4-6.md#pre-requisites)
-* [Create Aliases](cluster-config-4-6.md#create-aliases)
-* [Step 1: Router & Firewall Configuration](cluster-config-4-6.md#step-1-router-and-firewall-configuration)
-* [Step 2: Clone the repo](cluster-config-4-6.md#step-2-clone-the-repo)
-* [Step 3: Configure the environment variables](cluster-config-4-6.md#step-3-configure-the-environment-variables)
-* [Step 4: Import the keyshares](cluster-config-4-6.md#step-4-import-the-keyshares)
-* [Step 5: Run the Cluster](cluster-config-4-6.md#step-5-run-the-cluster)
+* [Pre-requisites](cluster-config-6-9.md#pre-requisites)
+* [Create Aliases](cluster-config-6-9.md#create-aliases)
+* [Step 1: Router & Firewall Configuration](cluster-config-6-9.md#step-1-router-and-firewall-configuration)
+* [Step 2: Clone the repo](cluster-config-6-9.md#step-2-clone-the-repo)
+* [Step 3: Configure the environment variables](cluster-config-6-9.md#step-3-configure-the-environment-variables)
+* [Step 4: Import the keyshares](cluster-config-6-9.md#step-4-import-the-keyshares)
+* [Step 5: Run the Cluster](cluster-config-6-9.md#step-5-run-the-cluster)
 
 DVStakers has a [GitHub repo](https://github.com/DVStakers/charon-distributed-validator-cluster) that contains the docker configuration needed to set up three identical clusters, each with three nodes. Without performing a DKG and simply splitting existing validator keys, this repository can be used to construct the required cluster configuration for a 6/9 threshold DVT validator.
 
@@ -23,7 +23,7 @@ Where each participant holds three keyshares. Obol doesn't currently support 2/3
 
 ### Pre-requisites
 
-* An existing validator key (or set of keys) that has been [split into DVT keyshares](../split-validator-keys.md).
+* An existing validator key (or set of keys) that has been [split into DVT keyshares](split-validator-keys.md).
 * Existing EL and BN clients are synced and ready for connections from charon.
 
 ### Create Aliases
@@ -238,7 +238,7 @@ MONITORING_PORT_GRAFANA="<GRAFANA_PUBLIC_PORT>"
 
 ### Step 4: Import the keyshares
 
-At this step, when each participant has their cluster configured, all that is needed is to import the keyshares. These should have already been [generated](../validator-key-generation.md) and [split](../split-validator-keys.md).
+At this step, when each participant has their cluster configured, all that is needed is to import the keyshares. These should have already been [generated](../validator-key-generation.md) and [split](split-validator-keys.md).
 
 Copy the numbered `node` directories to each participant. They should be placed in the `.charon` directory of each in a sub-directory called `cluster` will need to be created.&#x20;
 
