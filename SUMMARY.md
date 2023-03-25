@@ -12,11 +12,13 @@
 ## DVT Configuration
 
 * [🔑 Validator Key Generation](dvt-configuration/validator-key-generation.md)
-* [⚙ Obol - Charon](dvt-configuration/obol-charon/README.md)
-  * [🐳 Install Docker](dvt-configuration/obol-charon/install-docker.md)
-  * [✂ Split Validator Keys](dvt-configuration/obol-charon/split-validator-keys.md)
-  * [🔧 Cluster Config - 6/9](dvt-configuration/obol-charon/cluster-config-6-9.md)
-  * [⌨ Useful commands](dvt-configuration/obol-charon/useful-commands.md)
+* [⚙ Obol DVT](dvt-configuration/obol-dvt/README.md)
+  * [🐳 Install Docker](dvt-configuration/obol-dvt/install-docker.md)
+  * [🗝 Validator Keyshares](dvt-configuration/obol-dvt/validator-keyshares/README.md)
+    * [✂ Split Existing Keys](dvt-configuration/obol-dvt/validator-keyshares/split-existing-keys.md)
+    * [🕯 Obol DKG Ceremony](dvt-configuration/obol-dvt/validator-keyshares/obol-dkg-ceremony.md)
+  * [🔧 Cluster Config - 6/9](dvt-configuration/obol-dvt/cluster-config-6-9.md)
+  * [⌨ Useful commands](dvt-configuration/obol-dvt/useful-commands.md)
 
 ## Infrastructure
 

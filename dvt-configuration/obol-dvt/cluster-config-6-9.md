@@ -23,7 +23,7 @@ Where each participant holds three keyshares. Obol doesn't currently support 2/3
 
 ### Pre-requisites
 
-* An existing validator key (or set of keys) that has been [split into DVT keyshares](split-validator-keys.md).
+* An existing validator key (or set of keys) that has been [split into DVT keyshares](validator-keyshares/split-existing-keys.md).
 * Existing EL and BN clients are synced and ready for connections from charon.
 
 ### Create Aliases
@@ -238,9 +238,9 @@ MONITORING_PORT_GRAFANA="<GRAFANA_PUBLIC_PORT>"
 
 ### Step 4: Import the keyshares
 
-At this step, when each participant has their cluster configured, all that is needed is to import the keyshares. These should have already been [generated](../validator-key-generation.md) and [split](split-validator-keys.md).
+At this step, when each participant has their cluster configured, all that is needed is to import the keyshares. These should have already been created at a previous step, either by [splitting existing validator keys](validator-keyshares/split-existing-keys.md) or using a [DKG ceremony](validator-keyshares/obol-dkg-ceremony.md).
 
-Copy the numbered `node` directories to each participant. They should be placed in the `.charon` directory of each in a sub-directory called `cluster` will need to be created.&#x20;
+The numbered `node*` directories should be placed in the `.charon/cluster` directory.&#x20;
 
 ```bash
 mkdir -p .charon/cluster

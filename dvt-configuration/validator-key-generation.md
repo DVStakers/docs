@@ -4,6 +4,10 @@ description: Notes on how to generate validator keys using the Ethereum CLI tool
 
 # 🔑 Validator Key Generation
 
+{% hint style="info" %}
+These are notes on how to generate validator keys using the Ethereum staking deposit CLI tool. If you plan to generate your validator keys another way (e.g. using a DKG ceremony) then you can skip this section.
+{% endhint %}
+
 ### Staking deposit CLI
 
 Generating new validator keys can be achieved using the Ethereum staking deposit CLI tool. This tool can be found on the [Ethereum GitHub page](https://github.com/ethereum/staking-deposit-cli).&#x20;
@@ -47,5 +51,3 @@ Once the command has been executed, you may be asked a few follow-up questions s
 You will see the CLI tool generate your keys in real-time, and when completed you will be informed of which folder the keys are in. Make sure you keep your mnemonic safe as if you lose your validator keys, you won't be able to recover your ETH!
 
 <figure><img src="../.gitbook/assets/image (20).png" alt=""><figcaption><p>Success!</p></figcaption></figure>
-
-These newly generated validator keys can now be [split into keyshares](obol-charon/split-validator-keys.md) ready to be used in a DVT validator.

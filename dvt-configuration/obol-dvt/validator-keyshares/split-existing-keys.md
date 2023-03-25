@@ -1,13 +1,17 @@
 ---
-description: Notes on how to split validator keys into charon keyshares.
+description: Notes on how to split existing validator keys into charon keyshares.
 ---
 
-# ✂ Split Validator Keys
+# ✂ Split Existing Keys
+
+{% hint style="info" %}
+If you want to use the Obol DKG ceremony to create new validator keyshares directly on each machine, you can find those instructions [here](obol-dkg-ceremony.md).
+{% endhint %}
 
 Make sure you have your validator keys ready to be split. Instructions on how to generate validator keys can be found here:
 
-{% content-ref url="../validator-key-generation.md" %}
-[validator-key-generation.md](../validator-key-generation.md)
+{% content-ref url="../../validator-key-generation.md" %}
+[validator-key-generation.md](../../validator-key-generation.md)
 {% endcontent-ref %}
 
 Create a new directory that will be used for all keys in this cluster. This is useful if in the future you want to add additional validators, as you will need to keep the original keys to run them all on the same charon cluster.
@@ -16,7 +20,7 @@ Create a new directory that will be used for all keys in this cluster. This is u
 
 <summary>How to add more validators to an existing cluster</summary>
 
-To add more keys, add the additional keys to the existing keys in the `split_keys` directory, repeating [Step 2](split-validator-keys.md#step-2-create-a-directory-containing-keys-to-split) and [Step 3](split-validator-keys.md#step-3-split-the-keys-into-keyshares).
+To add more keys, add the additional keys to the existing keys in the `split_keys` directory, repeating [Step 2](split-existing-keys.md#step-2-create-a-directory-containing-keys-to-split) and [Step 3](split-existing-keys.md#step-3-split-the-keys-into-keyshares).
 
 Before.
 
@@ -46,9 +50,9 @@ After.
 
 These steps should only be carried out by one participant, who will then share the keyshares with the others.
 
-* [Step 1: Clone the charon repo](split-validator-keys.md#step-1-clone-the-charon-repo)
-* [Step 2: Create a directory containing keys to split](split-validator-keys.md#step-2-create-a-directory-containing-keys-to-split)
-* [Step 3: Split the keys into keyshares](split-validator-keys.md#step-3-split-the-keys-into-keyshares)
+* [Step 1: Clone the charon repo](split-existing-keys.md#step-1-clone-the-charon-repo)
+* [Step 2: Create a directory containing keys to split](split-existing-keys.md#step-2-create-a-directory-containing-keys-to-split)
+* [Step 3: Split the keys into keyshares](split-existing-keys.md#step-3-split-the-keys-into-keyshares)
 
 ### Step 1: Clone the charon repo
 
@@ -155,4 +159,4 @@ In the `.charon` directory there will now be a `cluster` directory containing 6 
       ├─ keystore-*.txt         Keystore password files for keystore-*.json
 ```
 
-These split keys can now be shared with the other participants and used to [start a charon cluster](./).
+These split keys can now be shared with the other participants and used to [start a charon cluster](../).

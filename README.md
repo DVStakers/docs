@@ -6,6 +6,7 @@ description: The journey of two Ethereum solo stakers to distributed validator s
 
 <figure><img src=".gitbook/assets/Road.jpg" alt="Image of a road"><figcaption><p>Ethereum path shared, two stakers quest for DVT, blockchain harmony.</p></figcaption></figure>
 
+* [🖥 The Evolution of Solo Staking](the-evolution-of-solo-staking.md)
 * [🚀 About Us](./#about-us)
 * [🎯 Our Vision](./#our-vision)
 * [🔍 Why Obol DVT?](./#why-obol-dvt)
@@ -68,7 +69,7 @@ Here's a glimpse of what you can expect from our content:
 
 ### 💬 Be part of our Community
 
-We believe that collaboration and knowledge sharing are essential for the growth and success of the Ethereum ecosystem. We invite you to join our vibrant community of stakers, developers, and enthusiasts.
+We believe that collaboration and knowledge sharing are essential for the growth and success of the Ethereum ecosystem. We invite you to join our community of stakers, developers, and enthusiasts.
 
 Get ready to embark on this exciting adventure with us, as we delve into the world of Distributed Validator Technology and contribute to the evolution of Ethereum. Together, we can ensure the future of Ethereum is decentralized.
 
