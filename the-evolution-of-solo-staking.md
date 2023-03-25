@@ -16,8 +16,8 @@ description: How to move from isolated solo staking setups to a redundant DVT sy
 
 * [Step 1: Standard Solo Staking](the-evolution-of-solo-staking.md#step-1-standard-solo-staking)
 * [Step 2: Redundant Local Hardware](the-evolution-of-solo-staking.md#step-2-redundant-local-hardware)
-* [Step 3: Redundant Remote Beacon Nodes (Prod - Here today📍)](the-evolution-of-solo-staking.md#step-3-redundant-remote-beacon-nodes-prod-here-today)
-* [Step 4: Obol DVT Validators (Dev - Here today📍)](the-evolution-of-solo-staking.md#step-4-obol-dvt-validators-dev-here-today)
+* [Step 3: Redundant Remote Beacon Nodes (Mainnet - Here today📍)](the-evolution-of-solo-staking.md#step-3-redundant-remote-beacon-nodes-mainnet-here-today)
+* [Step 4: Obol DVT Validators (Goerli - Here today📍)](the-evolution-of-solo-staking.md#step-4-obol-dvt-validators-goerli-here-today)
 * [Step 5: StakeWise V3 Vaults + Obol DVT Validators](the-evolution-of-solo-staking.md#step-5-stakewise-v3-vaults-+-obol-dvt-validators)
 * [Step 6: DVT+++](the-evolution-of-solo-staking.md#step-6-dvt+++)
 
@@ -35,13 +35,13 @@ Still isolated systems, but the single points of failure have been reduced, thou
 
 <figure><img src=".gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-### Step 3: Redundant Remote Beacon Nodes (Prod - Here today📍)
+### Step 3: Redundant Remote Beacon Nodes (Mainnet - Here today📍)
 
 Connect Beacon Nodes to another solo staker to increase redundancy. Further increasing client diversity by running four different EC/BN pairs.
 
 <figure><img src=".gitbook/assets/image (1) (2).png" alt=""><figcaption></figcaption></figure>
 
-### Step 4: Obol DVT Validators (Dev - Here today📍)
+### Step 4: Obol DVT Validators (Goerli - Here today📍)
 
 By splitting the keys of any existing validators into 9 keyshares each, a 6/9 Obol DVT cluster can be created. This means, that if any one system goes offline (e.g. due to power cuts, natural disaster, or the Cloud provider deciding that supporting the future of [decentralized finance isn't for them...](https://www.coindesk.com/business/2022/08/26/ethereum-could-get-kicked-off-cloud-host-that-powers-10-of-crypto-network/)) the validators will continue to attest. True DVT!
 
