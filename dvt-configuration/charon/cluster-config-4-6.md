@@ -5,6 +5,7 @@ description: Notes on how to configure a Charon 6/9 threshold cluster.
 # 🔧 Cluster Config - 6/9
 
 * [Pre-requisites](cluster-config-4-6.md#pre-requisites)
+* [Create Aliases](cluster-config-4-6.md#create-aliases)
 * [Step 1: Router & Firewall Configuration](cluster-config-4-6.md#step-1-router-and-firewall-configuration)
 * [Step 2: Clone the repo](cluster-config-4-6.md#step-2-clone-the-repo)
 * [Step 3: Configure the environment variables](cluster-config-4-6.md#step-3-configure-the-environment-variables)
@@ -15,8 +16,8 @@ DVStakers has a [GitHub repo](https://github.com/DVStakers/charon-distributed-va
 
 In this cluster configuration section, we will show how to create a 6/9 cluster that can be split between:
 
-* 2 participants + 1 cloud auxiliary node
-* 3 participants
+* 2 Participants + 1 Cloud Auxiliary Client
+* 3 Participants
 
 Where each participant holds three keyshares. Obol doesn't currently support 2/3 thresholds, so 6/9 was chosen so that each of the three participants is running 3 different validator clients, increasing client diversity.
 
@@ -25,43 +26,55 @@ Where each participant holds three keyshares. Obol doesn't currently support 2/3
 * An existing validator key (or set of keys) that has been [split into DVT keyshares](../split-validator-keys.md).
 * Existing EL and BN clients are synced and ready for connections from charon.
 
-### Step 1: Router & Firewall Configuration
-
-The default port used by charon is `3610`. This port needs to be configured on the router to allow `tcp` connections to be forwarded to your machine.
-
-If you want to change this default charon port, it needs to be configured in the `.env` ([shown in Step 3](cluster-config-4-6.md#step-3-edit-.env)).
-
-Configure the firewall.
+### Create Aliases
 
 ```bash
-CHARON_RELAY_PORT=                          # Default: 3640
-CHARON_RELAY_P2P_TCP_ADDRESS_PORT=          
+CLUSTER_PREFIX=        # E.g. obol
+
+echo "alias ${CLUSTER_PREFIX}-log='docker compose -f ~/${CLUSTER_PREFIX}/docker-compose.yml -p ${CLUSTER_PREFIX} logs -f'" >> ~/.bashrc
+echo "alias ${CLUSTER_PREFIX}-start='docker compose -f ~/${CLUSTER_PREFIX}/docker-compose.yml -p ${CLUSTER_PREFIX} up -d'" >> ~/.bashrc
+echo "alias ${CLUSTER_PREFIX}-build='docker compose -f ~/${CLUSTER_PREFIX}/docker-compose.yml -p ${CLUSTER_PREFIX} up -d --build'" >> ~/.bashrc
+echo "alias ${CLUSTER_PREFIX}-stop='docker compose -f ~/${CLUSTER_PREFIX}/docker-compose.yml -p ${CLUSTER_PREFIX} down'" >> ~/.bashrc
+echo "alias ${CLUSTER_PREFIX}-status='docker ps --filter \"name=${CLUSTER_PREFIX}\"'" >> ~/.bashrc
+echo "alias ${CLUSTER_PREFIX}-config='vim ~/${CLUSTER_PREFIX}/.env'" >> ~/.bashrc
+
+source ~/.bashrc
+```
+
+### Step 1: Router & Firewall Configuration
+
+Configure the firewall for this cluster.
+
+```bash
+CHARON_RELAY_PORT=
+CHARON_RELAY_P2P_TCP_ADDRESS_PORT=
 CHARON_LIGHTHOUSE_P2P_TCP_ADDRESS_PORT=
 CHARON_TEKU_P2P_TCP_ADDRESS_PORT=
 CHARON_NIMBUS_P2P_TCP_ADDRESS_PORT=
 
-sudo ufw allow ${CHARON_RELAY_PORT}/tcp comment 'Allow Charon Relay in'
-sudo ufw allow out ${CHARON_RELAY_PORT}/tcp comment 'Allow Charon Relay out'
+sudo ufw allow ${CHARON_RELAY_PORT}/tcp comment "Allow ${CLUSTER_PREFIX} Charon Relay in"
+sudo ufw allow out ${CHARON_RELAY_PORT}/tcp comment "Allow ${CLUSTER_PREFIX} Charon Relay out"
 
-sudo ufw allow ${CHARON_RELAY_P2P_TCP_ADDRESS_PORT}/tcp comment 'Allow Charon Relay P2P in'
-sudo ufw allow out ${CHARON_RELAY_P2P_TCP_ADDRESS_PORT}/tcp comment 'Allow Charon Relay P2P out'
+sudo ufw allow ${CHARON_RELAY_P2P_TCP_ADDRESS_PORT}/tcp comment "Allow ${CLUSTER_PREFIX} Charon Relay P2P in"
+sudo ufw allow out ${CHARON_RELAY_P2P_TCP_ADDRESS_PORT}/tcp comment "Allow ${CLUSTER_PREFIX} Charon Relay P2P out"
 
-sudo ufw allow ${CHARON_LIGHTHOUSE_P2P_TCP_ADDRESS_PORT}/tcp comment 'Allow Charon Lighthouse P2P in'
-sudo ufw allow out ${CHARON_LIGHTHOUSE_P2P_TCP_ADDRESS_PORT}/tcp comment 'Allow Charon Lighthouse P2P out'
+sudo ufw allow ${CHARON_LIGHTHOUSE_P2P_TCP_ADDRESS_PORT}/tcp comment "Allow ${CLUSTER_PREFIX} Charon Lighthouse P2P in"
+sudo ufw allow out ${CHARON_LIGHTHOUSE_P2P_TCP_ADDRESS_PORT}/tcp comment "Allow ${CLUSTER_PREFIX} Charon Lighthouse P2P out"
 
-sudo ufw allow ${CHARON_TEKU_P2P_TCP_ADDRESS_PORT}/tcp comment 'Allow Charon Teku P2P in'
-sudo ufw allow out ${CHARON_TEKU_P2P_TCP_ADDRESS_PORT}/tcp comment 'Allow Charon Teku P2P out'
+sudo ufw allow ${CHARON_TEKU_P2P_TCP_ADDRESS_PORT}/tcp comment "Allow ${CLUSTER_PREFIX} Charon Teku P2P in"
+sudo ufw allow out ${CHARON_TEKU_P2P_TCP_ADDRESS_PORT}/tcp comment "Allow ${CLUSTER_PREFIX} Charon Teku P2P out"
 
-sudo ufw allow ${CHARON_NIMBUS_P2P_TCP_ADDRESS_PORT}/tcp comment 'Allow Charon Nimbus P2P in'
-sudo ufw allow out ${CHARON_NIMBUS_P2P_TCP_ADDRESS_PORT}/tcp comment 'Allow Charon Nimbus P2P out'
+sudo ufw allow ${CHARON_NIMBUS_P2P_TCP_ADDRESS_PORT}/tcp comment "Allow ${CLUSTER_PREFIX} Charon Nimbus P2P in"
+sudo ufw allow out ${CHARON_NIMBUS_P2P_TCP_ADDRESS_PORT}/tcp comment "Allow ${CLUSTER_PREFIX} Charon Nimbus P2P out"
 ```
 
 ### Step 2: Clone the repo
 
 ```bash
 cd ~
-git clone https://github.com/DVStakers/charon-distributed-validator-cluster.git
-cd charon-distributed-validator-cluster
+mkdir ${CLUSTER_PREFIX}
+cd ${CLUSTER_PREFIX}
+git clone https://github.com/DVStakers/charon-distributed-validator-cluster.git .
 ```
 
 ### Step 3: Configure the environment variables
@@ -311,10 +324,28 @@ mkdir -p .charon/cluster
 
 Once everything has been configured, it should be as simple as running the command to start the docker containers.
 
-To avoid any conflicts with container names in the future, you can give a prefix to all containers created by the `docker compose` command by using the `-p` flag:
+To avoid any conflicts with container names in the future, you can give a prefix to all containers created by the `docker compose` command by using the `-p` flag.&#x20;
 
+Starting the cluster with the `-d` flag means the containers will be detached and start in the background. The logs can then be viewed using the `logs -f` command flag.
+
+Start the containers and check it's working as expected.
+
+{% tabs %}
+{% tab title="Command Aliases" %}
 ```bash
-CLUSTER_PREFIX=        # E.g. Cluster1
+<CLUSTER_PREFIX>-start          # Start the cluster
+<CLUSTER_PREFIX>-status         # View the containers running with the name "<CLUSTER_PREFIX>"
 
-docker compose -p ${CLUSTER_PREFIX} up --build
+<CLUSTER_PREFIX>-log            # View the cluster logs
 ```
+{% endtab %}
+
+{% tab title="Full Commands" %}
+```bash
+docker compose -f ~/${CLUSTER_PREFIX}/docker-compose.yml -p ${CLUSTER_PREFIX} up -d      # Start the cluster
+docker ps --filter "name=${CLUSTER_PREFIX}"                                              # View the containers running with the name "<CLUSTER_PREFIX>"
+
+docker compose -f ~/${CLUSTER_PREFIX}/docker-compose.yml -p ${CLUSTER_PREFIX} logs -f    # View the cluster logs
+```
+{% endtab %}
+{% endtabs %}
