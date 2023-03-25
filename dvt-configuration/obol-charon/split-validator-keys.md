@@ -64,9 +64,57 @@ mkdir split_keys
 
 ### Step 2: Create a directory containing keys to split
 
-Copy the existing validator `keystore.json` files into this new folder. Alongside them, with a matching filename but ending with `.txt` should be the password to the keystore. E.g., `keystore-0.json` `keystore-0.txt`
+Copy the existing validator `keystore.json` files into this new folder. Alongside them, with a matching filename but ending with `.txt` should be the password to the keystore. E.g., `keystore-0.json` `keystore-0.txt`. These matching txt files can be generated with a bash script.
 
-At the end of this process, you should have a tree like this:
+At the start of this process, you should have a tree that looks something like this.
+
+```
+├── split_keys
+    ├── keystore-0.json
+    ├── keystore-1.json
+    ...
+    ├── keystore-*.json
+```
+
+Create the bash script file.
+
+```bash
+cd split_keys
+vim generate_txt_files.sh
+```
+
+```bash
+#!/bin/bash
+
+# Get the input string (password) from the user
+echo "Enter the string (password) to be used in all the .txt files:"
+read input_string
+
+# Iterate through all .json files in the directory
+for file in *.json; do
+    # Check if the file is a regular file (not a directory)
+    if [[ -f "$file" ]]; then
+        # Get the file name without the extension
+        filename="${file%.*}"
+        # Create a .txt file with the same name and add the input string to it
+        echo "$input_string" > "${filename}.txt"
+    fi
+done
+```
+
+Save this script as and make it executable.
+
+```bash
+chmod +x generate_txt_files.sh
+```
+
+Run the script.
+
+```bash
+./generate_txt_files.sh
+```
+
+At the end of this process, you should have a tree like this.
 
 ```
 ├── split_keys
@@ -84,14 +132,14 @@ At the end of this process, you should have a tree like this:
 Split the validator keys into keyshares.
 
 ```bash
-CHARON_VERSION=                # E.g. 0.14.0
+CHARON_VERSION=                # E.g. v0.14.0
 CLUSTER_NAME=                  # E.g. DVStakers
 WITHDRAWAL_ADDRESS=            # Set withdrawal address
 FEE_RECIPIENT_ADDRESS=         # Set fee recipient address
-THRESHOLD=                     # E.g. 4
-NODES=                         # E.g. 6                
+THRESHOLD=                     # E.g. 6
+NODES=                         # E.g. 9                
 
-docker run --rm -v $(pwd):/opt/charon obolnetwork/charon:v${CHARON_VERSION} create cluster --name="${CLUSTER_NAME}" --withdrawal-addresses="${WITHDRAWAL_ADDRESS}" --fee-recipient-addresses="${FEE_RECIPIENT_ADDRESS}" --split-existing-keys --split-keys-dir=/opt/charon/split_keys --threshold ${THRESHOLD} --nodes ${NODES}
+docker run --rm -v $(pwd):/opt/charon obolnetwork/charon:${CHARON_VERSION} create cluster --name="${CLUSTER_NAME}" --withdrawal-addresses="${WITHDRAWAL_ADDRESS}" --fee-recipient-addresses="${FEE_RECIPIENT_ADDRESS}" --split-existing-keys --split-keys-dir=/opt/charon/split_keys --threshold ${THRESHOLD} --nodes ${NODES}
 ```
 
 In the `.charon` directory there will now be a `cluster` directory containing 6 sub-directories, each named `node0`, `node1`, etc.&#x20;
