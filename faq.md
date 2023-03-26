@@ -38,4 +38,7 @@ We plan to launch a DVStakers StakeWise V3 Vault on mainnet as soon as that plat
 
 If you are an Ethereum solo staker who is interested in being part of the DVT revolution then please join us!&#x20;
 
-DVTStakers aims to be an inclusive community, so if you want to learn more about DVT and contribute in any way, please reach out to us on [Twitter - @DVStakers](https://twitter.com/DVStakers).
+DVTStakers aims to be an inclusive community, so if you want to learn more about DVT and contribute in any way, please reach out to us:
+
+* [Twitter - @DVStakers](https://twitter.com/DVStakers)
+* [Discord - DVStakers](https://discord.gg/VbVwqgSdFD)

@@ -73,6 +73,7 @@ We believe that collaboration and knowledge sharing are essential for the growth
 
 Get ready to embark on this exciting adventure with us, as we delve into the world of Distributed Validator Technology and contribute to the evolution of Ethereum. Together, we can ensure the future of Ethereum is decentralized.
 
-Follow us now, and let the journey begin! 🌟
+Connect with us now, and let the journey begin! 🌟
 
 * [Twitter - @DVStakers](https://twitter.com/DVStakers)
+* [Discord - DVStakers](https://discord.gg/VbVwqgSdFD)
