@@ -11,12 +11,12 @@ description: >-
 * [💾 Installing Linux](installation.md#installing-linux)
 * [🚪 Change Default SSH Port](installation.md#change-default-ssh-port)
 * [🔧 System Configuration](installation.md#system-configuration)
-* [📏 Confirm Available Disk Space](installation.md#confirm-available-disk-space)
+* [📏 Use all Available Disk Space](installation.md#use-all-available-disk-space)
 * [🫣 Hide Welcome Message on Login](installation.md#hide-welcome-message-on-login)
 * [⏱️ Increases Service Shutdown Timer](installation.md#increases-service-shutdown-timer)
 * [🚧 Firewall Configuration](installation.md#firewall-configuration)
-* [🛑 Enable Brute-Force and DDoS Protection](installation.md#enable-brute-force-and-ddos-protection)
-* [🔒 Enable Automatic Security Updates](installation.md#enable-automatic-security-updates)
+* [🛑 Brute-Force SSH Protection](installation.md#brute-force-ssh-protection)
+* [🔒 Automatic Security Updates](installation.md#automatic-security-updates)
 * [📱 SSH Security - 2FA](installation.md#ssh-security-2fa)
 * [🚦 Git Configuration](installation.md#git-configuration)
 * [📝 Systemd Journal Logs](installation.md#systemd-journal-logs)
@@ -25,7 +25,9 @@ description: >-
 
 To avoid duplication these details can be found on the EthStaker Knowledge Base.
 
-* [Installing Linux](https://ethstaker.gitbook.io/ethstaker-knowledge-base/tutorials/installing-linux)
+{% content-ref url="http://localhost:5000/s/KnJhWg57YoZq2MPfatKE/tutorials/installing-linux" %}
+[Installing Linux](http://localhost:5000/s/KnJhWg57YoZq2MPfatKE/tutorials/installing-linux)
+{% endcontent-ref %}
 
 ### 🚪 Change Default SSH Port
 
@@ -147,11 +149,13 @@ Check `ntp` is running - There should be some results shown.
 ntpq -p
 ```
 
-### 📏 Confirm Available Disk Space
+### 📏 Use all Available Disk Space
 
 To avoid duplication these details can be found on the EthStaker Knowledge Base.
 
-* [Confirm Available Disk Space](https://ethstaker.gitbook.io/ethstaker-knowledge-base/tutorials/confirm-available-disk-space)
+{% content-ref url="http://localhost:5000/s/KnJhWg57YoZq2MPfatKE/tutorials/use-all-available-disk-space" %}
+[Use all available disk space](http://localhost:5000/s/KnJhWg57YoZq2MPfatKE/tutorials/use-all-available-disk-space)
+{% endcontent-ref %}
 
 ### 🫣 Hide Welcome Message on Login
 
@@ -227,23 +231,29 @@ sudo ufw --force enable
 sudo ufw status verbose
 ```
 
-### 🛑 Enable Brute-Force and DDoS Protection
+### 🛑 Brute-Force SSH Protection
 
 To avoid duplication these details can be found on the EthStaker Knowledge Base.
 
-* [DDoS & Brute-Force Protection](https://ethstaker.gitbook.io/ethstaker-knowledge-base/networking/ddos-and-brute-force-protection)
+{% content-ref url="http://localhost:5000/s/KnJhWg57YoZq2MPfatKE/networking/brute-force-ssh-protection" %}
+[Brute-force SSH protection](http://localhost:5000/s/KnJhWg57YoZq2MPfatKE/networking/brute-force-ssh-protection)
+{% endcontent-ref %}
 
-### 🔒 Enable Automatic Security Updates
+### 🔒 Automatic Security Updates
 
 To avoid duplication these details can be found on the EthStaker Knowledge Base.
 
-* [Automatic Security Updates](https://ethstaker.gitbook.io/ethstaker-knowledge-base/tutorials/automatic-security-updates)
+{% content-ref url="http://localhost:5000/s/KnJhWg57YoZq2MPfatKE/tutorials/automatic-security-updates" %}
+[Automatic security updates](http://localhost:5000/s/KnJhWg57YoZq2MPfatKE/tutorials/automatic-security-updates)
+{% endcontent-ref %}
 
 ### 📱 SSH Security - 2FA
 
 To avoid duplication these details can be found on the EthStaker Knowledge Base.
 
-* [SSH Security - 2FA](https://ethstaker.gitbook.io/ethstaker-knowledge-base/tutorials/ssh-security-2fa)
+{% content-ref url="http://localhost:5000/s/KnJhWg57YoZq2MPfatKE/tutorials/ssh-security-2fa" %}
+[SSH security - 2FA](http://localhost:5000/s/KnJhWg57YoZq2MPfatKE/tutorials/ssh-security-2fa)
+{% endcontent-ref %}
 
 ### 🚦 Git Configuration
 

@@ -79,162 +79,32 @@ git clone https://github.com/DVStakers/charon-distributed-validator-cluster.git 
 
 ### Step 3: Configure the environment variables
 
-The repo comes with a `.env.sample` file that can be used as a template.
-
-If you want to use that template as a starting point, make a copy.
+The repo comes with a `.env.sample` file that should be used as a template.
 
 ```bash
 cp .env.sample .env
 ```
 
-Then edit the `.env` file.
+Edit the `.env` file and set all the required variables.
 
 ```bash
 vim .env
 ```
 
-{% tabs %}
-{% tab title="Participant 1" %}
-{% code title=".env" %}
-```bash
-# Set the network e.g. mainnet or goerli
-NETWORK=
+For the `*_NODE_NUMBER` variables, use the following values for each participant.
 
-# Set the nodes for the current participant
-FIRST_NODE_NUMBER=0
+| Participant 1                                                                                                                 | Participant 2                                                                                                                 | Participant 3 / Cloud Auxiliary Client                                                                                        |
+| ----------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
+| <pre class="language-bash"><code class="lang-bash">FIRST_NODE_NUMBER=0
 SECOND_NODE_NUMBER=1
 THIRD_NODE_NUMBER=2
-
-# Set the fee recipient address for the validator client e.g. 0x000...
-FEE_RECIPIENT=
-
-# Set the graffiti for the validator client that will be attached to each proposed block
-GRAFFITI=DVStakers
-
-# Specify the IP addresses and ports used by the other participants to allow direct P2P connections
-CHARON_P2P_RELAYS="http://<LOCAL_IP_ADDRESS_OF_CURRENT_MACHINE>:<LOCAL_CHARON_RELAY_PORT>/enr,http://<PUBLIC_IP_ADDRESS_OF_PARTICIPANT_2_REMOTE_RELAY>:<PARTICIPANT_2_CHARON_RELAY_PORT>/enr,http://<PUBLIC_IP_ADDRESS_OF_PARTICIPANT_3_REMOTE_RELAY>:<PARTICIPANT_3_CHARON_RELAY_PORT>/enr"
-
-# Set the IP address and port of the Beacon Node client(s)
-CHARON_BEACON_NODE_ENDPOINTS="http://<BEACON_NODE_IP_ADDRESS>:<BEACON_NODE_PORT>"
-
-# Set the static IP address of the current machine so it can be reached by the other participants 
-CHARON_P2P_EXTERNAL_HOSTNAME="<STATIC_PUBLIC_IP_OF_CURRENT_MACHINE>"
-
-# Set the relay port that will be used by the other participants to establish a P2P connection
-CHARON_RELAY_PORT="<CHARON_RELAY_PORT>"
-
-# Set the port used for direct P2P communication to the relay
-CHARON_RELAY_P2P_TCP_ADDRESS_PORT="<CHARON_RELAY_P2P_TCP_ADDRESS_PORT>"
-
-# Set the port used by the Lighthouse node for direct P2P communication once the connection to the other participants has been established through the relay
-CHARON_LIGHTHOUSE_P2P_TCP_ADDRESS_PORT="<CHARON_LIGHTHOUSE_P2P_TCP_ADDRESS_PORT>"
-
-# Set the port used by the Teku node for direct P2P communication once the connection to the other participants has been established through the relay
-CHARON_TEKU_P2P_TCP_ADDRESS_PORT="<CHARON_TEKU_P2P_TCP_ADDRESS_PORT>"
-
-# Set the port used by the Nimbus node for direct P2P communication once the connection to the other participants has been established through the relay
-CHARON_NIMBUS_P2P_TCP_ADDRESS_PORT="<CHARON_NIMBUS_P2P_TCP_ADDRESS_PORT>"
-
-# Set the Grafana external port to allow external access
-MONITORING_PORT_GRAFANA="<GRAFANA_PUBLIC_PORT>"
-```
-{% endcode %}
-{% endtab %}
-
-{% tab title="Participant 2" %}
-{% code title=".env" %}
-```bash
-# Set the network e.g. mainnet or goerli
-NETWORK=
-
-# Set the nodes for the current participant
-FIRST_NODE_NUMBER=3
+</code></pre> | <pre class="language-bash"><code class="lang-bash">FIRST_NODE_NUMBER=3
 SECOND_NODE_NUMBER=4
 THIRD_NODE_NUMBER=5
-
-# Set the fee recipient address for the validator client e.g. 0x000...
-FEE_RECIPIENT=
-
-# Set the graffiti for the validator client that will be attached to each proposed block
-GRAFFITI=DVStakers
-
-# Specify the IP addresses and ports used by the other participants to allow direct P2P connections
-CHARON_P2P_RELAYS="http://<LOCAL_IP_ADDRESS_OF_CURRENT_MACHINE>:<LOCAL_CHARON_RELAY_PORT>/enr,http://<PUBLIC_IP_ADDRESS_OF_PARTICIPANT_1_REMOTE_RELAY>:<PARTICIPANT_1_CHARON_RELAY_PORT>/enr,http://<PUBLIC_IP_ADDRESS_OF_PARTICIPANT_3_REMOTE_RELAY>:<PARTICIPANT_3_CHARON_RELAY_PORT>/enr"
-
-# Set the IP address and port of the Beacon Node client(s)
-CHARON_BEACON_NODE_ENDPOINTS="http://<BEACON_NODE_IP_ADDRESS>:<BEACON_NODE_PORT>"
-
-# Set the static IP address of the current machine so it can be reached by the other participants 
-CHARON_P2P_EXTERNAL_HOSTNAME="<STATIC_PUBLIC_IP_OF_CURRENT_MACHINE>"
-
-# Set the relay port that will be used by the other participants to establish a P2P connection
-CHARON_RELAY_PORT="<CHARON_RELAY_PORT>"
-
-# Set the port used for direct P2P communication to the relay
-CHARON_RELAY_P2P_TCP_ADDRESS_PORT="<CHARON_RELAY_P2P_TCP_ADDRESS_PORT>"
-
-# Set the port used by the Lighthouse node for direct P2P communication once the connection to the other participants has been established through the relay
-CHARON_LIGHTHOUSE_P2P_TCP_ADDRESS_PORT="<CHARON_LIGHTHOUSE_P2P_TCP_ADDRESS_PORT>"
-
-# Set the port used by the Teku node for direct P2P communication once the connection to the other participants has been established through the relay
-CHARON_TEKU_P2P_TCP_ADDRESS_PORT="<CHARON_TEKU_P2P_TCP_ADDRESS_PORT>"
-
-# Set the port used by the Nimbus node for direct P2P communication once the connection to the other participants has been established through the relay
-CHARON_NIMBUS_P2P_TCP_ADDRESS_PORT="<CHARON_NIMBUS_P2P_TCP_ADDRESS_PORT>"
-
-# Set the Grafana external port to allow external access
-MONITORING_PORT_GRAFANA="<GRAFANA_PUBLIC_PORT>"
-```
-{% endcode %}
-{% endtab %}
-
-{% tab title="Participant 3 / Cloud Auxiliary Client" %}
-{% code title=".env" %}
-```bash
-# Set the network e.g. mainnet or goerli
-NETWORK=
-
-# Set the nodes for the current participant
-FIRST_NODE_NUMBER=6
+</code></pre> | <pre class="language-bash"><code class="lang-bash">FIRST_NODE_NUMBER=6
 SECOND_NODE_NUMBER=7
 THIRD_NODE_NUMBER=8
-
-# Set the fee recipient address for the validator client e.g. 0x000...
-FEE_RECIPIENT=
-
-# Set the graffiti for the validator client that will be attached to each proposed block
-GRAFFITI=DVStakers
-
-# Specify the IP addresses and ports used by the other participants to allow direct P2P connections
-CHARON_P2P_RELAYS="http://<LOCAL_IP_ADDRESS_OF_CURRENT_MACHINE>:<LOCAL_CHARON_RELAY_PORT>/enr,http://<PUBLIC_IP_ADDRESS_OF_PARTICIPANT_1_REMOTE_RELAY>:<PARTICIPANT_1_CHARON_RELAY_PORT>/enr,http://<PUBLIC_IP_ADDRESS_OF_PARTICIPANT_2_REMOTE_RELAY>:<PARTICIPANT_2_CHARON_RELAY_PORT>/enr"
-
-# Set the IP address and port of the Beacon Node client(s)
-CHARON_BEACON_NODE_ENDPOINTS="http://<BEACON_NODE_IP_ADDRESS>:<BEACON_NODE_PORT>"
-
-# Set the static IP address of the current machine so it can be reached by the other participants 
-CHARON_P2P_EXTERNAL_HOSTNAME="<STATIC_PUBLIC_IP_OF_CURRENT_MACHINE>"
-
-# Set the relay port that will be used by the other participants to establish a P2P connection
-CHARON_RELAY_PORT="<CHARON_RELAY_PORT>"
-
-# Set the port used for direct P2P communication to the relay
-CHARON_RELAY_P2P_TCP_ADDRESS_PORT="<CHARON_RELAY_P2P_TCP_ADDRESS_PORT>"
-
-# Set the port used by the Lighthouse node for direct P2P communication once the connection to the other participants has been established through the relay
-CHARON_LIGHTHOUSE_P2P_TCP_ADDRESS_PORT="<CHARON_LIGHTHOUSE_P2P_TCP_ADDRESS_PORT>"
-
-# Set the port used by the Teku node for direct P2P communication once the connection to the other participants has been established through the relay
-CHARON_TEKU_P2P_TCP_ADDRESS_PORT="<CHARON_TEKU_P2P_TCP_ADDRESS_PORT>"
-
-# Set the port used by the Nimbus node for direct P2P communication once the connection to the other participants has been established through the relay
-CHARON_NIMBUS_P2P_TCP_ADDRESS_PORT="<CHARON_NIMBUS_P2P_TCP_ADDRESS_PORT>"
-
-# Set the Grafana external port to allow external access
-MONITORING_PORT_GRAFANA="<GRAFANA_PUBLIC_PORT>"
-```
-{% endcode %}
-{% endtab %}
-{% endtabs %}
+</code></pre> |
 
 ### Step 4: Import the keyshares
 
