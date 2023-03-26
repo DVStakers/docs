@@ -1,5 +1,5 @@
 ---
-description: How to move from isolated solo staking setups to a redundant DVT system.
+description: How to evolve from isolated solo staking setups to a redundant DVT system.
 ---
 
 # 🖥 The Evolution of Solo Staking
