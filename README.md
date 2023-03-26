@@ -55,7 +55,7 @@ The versatility and customizability of Obol DVT are key factors in selecting the
 
 ### 📚 Our Journey
 
-As we prepare for Obol DVT's mainnet launch, we will be documenting our entire journey. From understanding the technology to setting up the node and participating in the network, we will provide comprehensive, step-by-step guides for fellow stakers and crypto-enthusiasts.
+As we prepare for Obol DVT's mainnet launch, we will be documenting our entire journey. From understanding the technology to setting up the charon nodes and participating in the network, we will provide comprehensive, step-by-step guides for fellow stakers and crypto-enthusiasts.
 
 Here's a glimpse of what you can expect from our content:
 
@@ -63,15 +63,15 @@ Here's a glimpse of what you can expect from our content:
 * Hardware and software recommendations
 * Security best practices
 * Performance optimization tips
-* Frequently asked questions (FAQs)
-* Videos of our setup process
-* Regular updates on our Obol DVT node performance
+* Frequently asked questions (FAQ)
+* Updates on new staking protocols
+* Regular updates on our validator performance
 
 ### 💬 Be part of our Community
 
 We believe that collaboration and knowledge sharing are essential for the growth and success of the Ethereum ecosystem. We invite you to join our community of stakers, developers, and enthusiasts.
 
-Get ready to embark on this exciting adventure with us, as we delve into the world of Distributed Validator Technology and contribute to the evolution of Ethereum. Together, we can ensure the future of Ethereum is decentralized.
+Get ready to embark on this adventure with us, as we delve into the world of Distributed Validator Technology and contribute to the evolution of Ethereum. Together, we can ensure the future of Ethereum is decentralized.
 
 Connect with us now, and let the journey begin! 🌟
 
