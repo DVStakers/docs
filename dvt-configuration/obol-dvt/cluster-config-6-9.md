@@ -23,7 +23,7 @@ Where each participant holds three keyshares. Obol doesn't currently support 2/3
 
 ### Pre-requisites
 
-* An existing validator key (or set of keys) that has been [split into DVT keyshares](validator-keyshares/split-existing-keys.md).
+* An existing validator key (or set of keys) that has been split into [validator keyshares](validator-keyshares/).
 * Existing EL and BN clients are synced and ready for connections from charon.
 
 ### Create Aliases
