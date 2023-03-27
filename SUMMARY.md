@@ -54,4 +54,7 @@
   * [💿 Linux software](infrastructure/spacesider/linux-software.md)
   * [⛓ Client software](infrastructure/spacesider/client-software.md)
 * [☁ Cloud Auxiliary Client](infrastructure/cloud-auxiliary-client.md)
-* [Privacy Policy](infrastructure/privacy-policy.md)
+
+***
+
+* [Privacy Policy](privacy-policy.md)
