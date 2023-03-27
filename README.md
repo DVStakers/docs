@@ -55,7 +55,7 @@ The versatility and customizability of Obol DVT are key factors in selecting the
 
 ### 📚 Our Journey
 
-As we prepare for Obol DVT's mainnet launch, we will be documenting our entire journey. From understanding the technology to setting up the charon nodes and participating in the network, we will provide comprehensive, step-by-step guides for fellow stakers and crypto-enthusiasts.
+As we prepare for Obol's DVT mainnet launch, we will be documenting our journey. From understanding the technical concepts to setting up the charon nodes and participating in the network, we will provide comprehensive, step-by-step guides for fellow stakers and crypto-enthusiasts.
 
 Here's a glimpse of what you can expect from our content:
 
@@ -64,7 +64,7 @@ Here's a glimpse of what you can expect from our content:
 * Security best practices
 * Performance optimization tips
 * Frequently asked questions (FAQ)
-* Updates on new staking protocols
+* Updates on new staking protocols and DVT solutions
 * Regular updates on our validator performance
 
 ### 💬 Be part of our Community
