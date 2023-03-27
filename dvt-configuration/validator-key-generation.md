@@ -4,6 +4,16 @@ description: Notes on how to generate validator keys using the Ethereum CLI tool
 
 # 🔑 Validator Key Generation
 
+<div>
+
+<figure><img src="https://raw.githubusercontent.com/DVStakers/docs/main/.gitbook/assets/Eridian.png" alt=""><figcaption><p>Eridian</p></figcaption></figure>
+
+ 
+
+<figure><img src="../.gitbook/assets/Spacesider.png" alt=""><figcaption><p>Spacesider</p></figcaption></figure>
+
+</div>
+
 {% hint style="info" %}
 These are notes on how to generate validator keys using the Ethereum staking deposit CLI tool. If you plan to generate your validator keys another way (e.g. using a DKG ceremony) then you can skip this section.
 {% endhint %}

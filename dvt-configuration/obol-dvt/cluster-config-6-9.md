@@ -4,6 +4,16 @@ description: Notes on how to configure a Charon 6/9 threshold cluster.
 
 # 🔧 Cluster Config - 6/9
 
+<div>
+
+<figure><img src="https://raw.githubusercontent.com/DVStakers/docs/main/.gitbook/assets/Eridian.png" alt=""><figcaption><p>Eridian</p></figcaption></figure>
+
+ 
+
+<figure><img src="../../.gitbook/assets/Spacesider.png" alt=""><figcaption><p>Spacesider</p></figcaption></figure>
+
+</div>
+
 * [Pre-requisites](cluster-config-6-9.md#pre-requisites)
 * [Create Aliases](cluster-config-6-9.md#create-aliases)
 * [Step 1: Router & Firewall Configuration](cluster-config-6-9.md#step-1-router-and-firewall-configuration)
