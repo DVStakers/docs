@@ -126,6 +126,10 @@ sudo systemctl start lighthousevalidator.service
 
 Create `Lighthouse` deploy script checker script.
 
+```bash
+vim ~/lighthouse-deploy-check.sh
+```
+
 {% code title="~/lighthouse-deploy-check.sh" %}
 ```bash
 #!/bin/bash

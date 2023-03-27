@@ -269,6 +269,10 @@ chmod u+x ~/geth-update-check.sh
 
 Use `--preload` to load pre-written commands and functions stored in a script file.
 
+```bash
+vim ~/geth-console-script.js
+```
+
 {% code title="~/geth-console-script.js" %}
 ```bash
 function blockInfo() {

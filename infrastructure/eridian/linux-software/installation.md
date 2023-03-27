@@ -120,6 +120,11 @@ fwupdmgr refresh; fwupdmgr get-updates; fwupdmgr update                         
 
 Set up `btop`.
 
+```bash
+btop
+```
+
+* Press `ESC` key to see menu and select `OPTIONS`.
 * Change them to TTY.
 * Change time interval to 1000ms.
 
@@ -131,7 +136,7 @@ The firewall is set to allow NTP calls out, so that's why it needs to be used.
 sudo timedatectl set-ntp no
 ```
 
-Verify `timedatectl` is disabled - The result should say `NTP service: n/a`.
+Verify `timedatectl` is disabled - The result should say `NTP service: inactvie`.
 
 ```bash
 timedatectl
