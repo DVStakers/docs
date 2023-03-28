@@ -16,7 +16,7 @@ description: Our infrastructure is resilient to failures on multiple fronts.
 
 ### Local failovers
 
-We are running two Ethereum stacks each (a stack being a Beacon Node that is paired with an Execution Layer client), one being the primary and the other being the secondary. The validator client is configured to use both, so should the primary stack go offline then it will automatically use the secondary stack until the primary becomes available again.
+We are running two Ethereum stacks each (a stack being a Beacon Node that is paired with an Execution Client), one being the primary and the other being the secondary. The validator client is configured to use both, so should the primary stack go offline then it will automatically use the secondary stack until the primary becomes available again.
 
 ### Global failovers
 
