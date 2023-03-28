@@ -54,8 +54,9 @@
   * [💿 Linux software](infrastructure/spacesider/linux-software.md)
   * [⛓ Client software](infrastructure/spacesider/client-software.md)
 * [☁ Cloud Auxiliary Client](infrastructure/cloud-auxiliary-client.md)
-* [🚧 Known issues](infrastructure/known-issues/README.md)
-  * [Failovers](infrastructure/known-issues/failovers.md)
+* [🎛 Operations](infrastructure/operations/README.md)
+  * [📡 Failovers](infrastructure/operations/failovers.md)
+* [🚧 Known issues](infrastructure/known-issues.md)
 
 ***
 
