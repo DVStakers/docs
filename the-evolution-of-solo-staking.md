@@ -64,7 +64,7 @@ Adding StakeWise V3 Vaults as an additional Obol DVT Cluster on existing hardwar
 
 This is where the DVT puzzle pieces begin to form a bigger picture. Once this node configuration has been created, additional staking protocols can easily be added to the same hardware. In this step, we're starting with StakeWise V3 Vaults.
 
-<figure><img src=".gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
 
 ### Step 6: Add additional DVT solutions & staking protocols
 

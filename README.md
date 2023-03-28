@@ -21,7 +21,7 @@ Join us on an adventure as two dedicated Ethereum solo stakers prepare to run [O
 [the-evolution-of-solo-staking.md](the-evolution-of-solo-staking.md)
 {% endcontent-ref %}
 
-<figure><img src=".gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
 {% endtab %}
 {% endtabs %}
 
