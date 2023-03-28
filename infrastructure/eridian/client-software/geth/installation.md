@@ -47,7 +47,7 @@ RPC_PORT=
 sudo ufw allow ${GETH_P2P_PORT} comment 'Allow Geth P2P in'
 sudo ufw allow out ${GETH_P2P_PORT} comment 'Allow Geth P2P out'
 
-sudo ufw allow ${RPC_PORT} comment 'MetaMask RPC Port in'
+sudo ufw allow ${RPC_PORT} comment 'Allow MetaMask RPC Port in'
 ```
 
 ### Go - Install

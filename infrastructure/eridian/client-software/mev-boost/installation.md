@@ -121,12 +121,12 @@ Start the service and check it's working as expected.
 {% tabs %}
 {% tab title="Command Aliases" %}
 ```bash
-daemon-reload       # Reload any changes made to the mevboost.service
-mevboost-enable     # Enable the mevboost.service
-mevboost-start      # Start the mevboost.service
-mevboost-status     # View the status of the mevboost.service
+daemon-reload      # Reload any changes made to the mevboost.service
+mev-enable         # Enable the mevboost.service
+mev-start          # Start the mevboost.service
+mev-status         # View the status of the mevboost.service
 
-mevboost-log        # View the mevboost.service logs
+mev-log            # View the mevboost.service logs
 ```
 {% endtab %}
 
