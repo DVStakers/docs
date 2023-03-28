@@ -56,7 +56,7 @@
 * [☁ Cloud Auxiliary Client](infrastructure/cloud-auxiliary-client.md)
 * [🎛 Operations](infrastructure/operations/README.md)
   * [📡 Failovers](infrastructure/operations/failovers.md)
-* [🚧 Known issues](infrastructure/known-issues.md)
+* [🚧 Known Issues](infrastructure/known-issues.md)
 
 ***
 
