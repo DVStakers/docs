@@ -45,6 +45,8 @@ Connect to the Beacon Nodes of another solo staker to increase redundancy. Furth
 
 By splitting the keys of any existing validators into 9 keyshares each, a 6/9 Obol DVT cluster can be created. This means, that if any one system goes offline (e.g. due to power cuts, natural disaster, or the Cloud provider deciding that supporting the future of [decentralized finance isn't for them...](https://www.coindesk.com/business/2022/08/26/ethereum-could-get-kicked-off-cloud-host-that-powers-10-of-crypto-network/)) the validators will continue to perform their duties. True DVT!
 
+The configuration instructions for this 6/9 cluster [can be found here](dvt-configuration/obol-dvt/cluster-config-6-9.md).
+
 The Cloud Auxiliary Client is useful in this setup because:
 
 1. There are only two stakers part of DVStakers at launch, so there needs to be a split of keyshares that doesn't allow for a slashing event. If the keys were split 3/6 with each staker holding half the keys, then if the connection between their Charon nodes dropped out, they would still both be able to perform their duties at the same time (a slashable offense!).

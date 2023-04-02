@@ -20,8 +20,8 @@ update-firmware  # Update firmware
 
 {% tab title="Full Commands" %}
 ```bash
-sudo apt-get update -y; sudo apt-get upgrade -y; sudo apt-get dist-upgrade -y    # Update all system packages
-fwupdmgr refresh; fwupdmgr get-updates; fwupdmgr update                          # Update firmware
+sudo apt-get update -y && sudo apt-get upgrade -y && sudo apt-get dist-upgrade -y    # Update all system packages
+fwupdmgr refresh && fwupdmgr get-updates && fwupdmgr update                          # Update firmware
 ```
 {% endtab %}
 {% endtabs %}
