@@ -42,7 +42,7 @@ Uncomment `#Port 22` and change it to your modified ssh port.
 Restart the `sshd` service.
 
 ```bash
-systemctl restart sshd
+sudo systemctl restart sshd
 ```
 
 ### 🔧 System Configuration
@@ -125,7 +125,7 @@ btop
 ```
 
 * Press `ESC` key to see menu and select `OPTIONS`.
-* Change them to TTY.
+* Change theme to TTY.
 * Change time interval to 1000ms.
 
 Use `ntpd` instead of the default time synchronization `timedatectl`.
