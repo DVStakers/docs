@@ -22,7 +22,7 @@ However, with Distributed Validator Technology (DVT), a group of stakers work to
 
 ### What is the purpose of DVStakers?
 
-The journey of two Ethereum stakers from solo staking to distributed validator staking.
+To document and share the journey of two Ethereum stakers from solo staking to distributed validator staking.
 
 ### **Are you sponsored or paid by anyone?**
 
