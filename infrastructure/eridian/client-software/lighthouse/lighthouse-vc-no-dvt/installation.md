@@ -7,7 +7,6 @@ description: My Lighthouse Validator Client installation guide.
 <figure><img src="https://raw.githubusercontent.com/DVStakers/docs/main/.gitbook/assets/Eridian.png" alt=""><figcaption><p>Eridian</p></figcaption></figure>
 
 * [Create Aliases](installation.md#create-aliases)
-* [Firewall Configuration](installation.md#firewall-configuration)
 * [Lighthouse VC - Configure Service](installation.md#lighthouse-vc-configure-service)
 
 ### Create Aliases
@@ -23,24 +22,6 @@ echo "alias validator-enable='sudo systemctl enable lighthousevalidator.service'
 echo "alias validator-disable='sudo systemctl disable lighthousevalidator.service'" >> ~/.bashrc
 
 source ~/.bashrc
-```
-
-### Firewall Configuration
-
-Configure the firewall.
-
-```bash
-LIGHTHOUSE_HTTP_PORT=             # Default: 5052         
-TEKU_HTTP_PORT=
-SPACESIDER_LIGHTHOUSE_PORT=
-SPACESIDER_TEKU_PORT=
-
-sudo ufw allow out ${LIGHTHOUSE_HTTP_PORT}/tcp comment 'Allow Lighthouse VC out to Lighthouse BN'
-sudo ufw allow out ${TEKU_HTTP_PORT}/tcp comment 'Allow Lighthouse VC out to TEKU BN'
-
-# <SPACESIDER CONNECTIONS>
-sudo ufw allow out ${SPACESIDER_TEKU_PORT}/tcp comment 'Allow Lighthouse VC out to Spacesider Teku BN'
-sudo ufw allow out ${SPACESIDER_LIGHTHOUSE_PORT}/tcp comment 'Allow Lighthouse VC out to Spacesider Lighthouse BN'
 ```
 
 ### Lighthouse VC - Configure Service

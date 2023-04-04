@@ -36,7 +36,6 @@ Configure the firewall.
 MEV_PORT=        # Default: 18550
 
 sudo ufw allow ${MEV_PORT} comment 'Allow MEV Boost in'
-sudo ufw allow out ${MEV_PORT} comment 'Allow MEV Boost out'
 ```
 
 ### MEV Boost - Install

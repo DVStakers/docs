@@ -69,19 +69,10 @@ CHARON_TEKU_P2P_TCP_ADDRESS_PORT=
 CHARON_NIMBUS_P2P_TCP_ADDRESS_PORT=
 
 sudo ufw allow ${CHARON_RELAY_PORT}/tcp comment "Allow ${CLUSTER_PREFIX} Charon Relay in"
-sudo ufw allow out ${CHARON_RELAY_PORT}/tcp comment "Allow ${CLUSTER_PREFIX} Charon Relay out"
-
 sudo ufw allow ${CHARON_RELAY_P2P_TCP_ADDRESS_PORT}/tcp comment "Allow ${CLUSTER_PREFIX} Charon Relay P2P in"
-sudo ufw allow out ${CHARON_RELAY_P2P_TCP_ADDRESS_PORT}/tcp comment "Allow ${CLUSTER_PREFIX} Charon Relay P2P out"
-
 sudo ufw allow ${CHARON_LIGHTHOUSE_P2P_TCP_ADDRESS_PORT}/tcp comment "Allow ${CLUSTER_PREFIX} Charon Lighthouse P2P in"
-sudo ufw allow out ${CHARON_LIGHTHOUSE_P2P_TCP_ADDRESS_PORT}/tcp comment "Allow ${CLUSTER_PREFIX} Charon Lighthouse P2P out"
-
 sudo ufw allow ${CHARON_TEKU_P2P_TCP_ADDRESS_PORT}/tcp comment "Allow ${CLUSTER_PREFIX} Charon Teku P2P in"
-sudo ufw allow out ${CHARON_TEKU_P2P_TCP_ADDRESS_PORT}/tcp comment "Allow ${CLUSTER_PREFIX} Charon Teku P2P out"
-
 sudo ufw allow ${CHARON_NIMBUS_P2P_TCP_ADDRESS_PORT}/tcp comment "Allow ${CLUSTER_PREFIX} Charon Nimbus P2P in"
-sudo ufw allow out ${CHARON_NIMBUS_P2P_TCP_ADDRESS_PORT}/tcp comment "Allow ${CLUSTER_PREFIX} Charon Nimbus P2P out"
 ```
 
 ### Step 2: Clone the repo

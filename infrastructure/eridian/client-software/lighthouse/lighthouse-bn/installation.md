@@ -35,7 +35,6 @@ LOCAL_VALIDATOR_IP=
 SPACESIDER_IP=                
 
 sudo ufw allow ${LIGHTHOUSE_P2P_PORT} comment 'Allow Lighthouse P2P in'
-sudo ufw allow out ${LIGHTHOUSE_P2P_PORT} comment 'Allow Lighthouse P2P out'
 sudo ufw allow from ${LOCAL_VALIDATOR_IP} to any proto tcp port ${LIGHTHOUSE_HTTP_PORT} comment 'Allow Lighthouse http in from local validator IP'
 
 # <SPACESIDER CONNECTIONS>

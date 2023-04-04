@@ -203,16 +203,11 @@ MOSH_ENDING_PORT=                 # Default: 61000
 GRAFANA_PORT=
 
 sudo ufw default deny incoming comment 'Deny all incoming traffic'
-sudo ufw default deny outgoing comment 'Deny all outgoing traffic'
+sudo ufw default allow outgoing comment 'Allow all outgoing traffic'
 
 sudo ufw allow ${CUSTOM_SSH_PORT} comment 'Allow custom ssh in'
 sudo ufw allow ${MOSH_STARTING_PORT}:${MOSH_ENDING_PORT}/udp comment 'Allow Mosh in'
 sudo ufw allow ${GRAFANA_PORT} comment 'Allow Grafana in'
-
-sudo ufw allow out 53 comment 'Allow DNS calls out'
-sudo ufw allow out 123 comment 'Allow NTP out'
-sudo ufw allow out http comment 'Allow HTTP traffic out'
-sudo ufw allow out https comment 'Allow HTTPS traffic out'
 ```
 
 Edit the UFW settings to disable IPV6. This isn't for any particular security reason, it just makes the UFW status easier to read when it prints out on screen.
