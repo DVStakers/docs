@@ -228,10 +228,10 @@ Start the containers and check it's working as expected.
 
 {% tab title="Full Commands" %}
 ```bash
-docker compose -f ~/${CLUSTER_PREFIX}/docker-compose.yml -p ${CLUSTER_PREFIX} up -d      # Start the cluster
-docker ps --filter "name=${CLUSTER_PREFIX}"                                              # View the containers running with the name "<CLUSTER_PREFIX>"
+docker compose -f ~/${CLUSTER_PREFIX}/docker-compose.yml -p ${CLUSTER_PREFIX} up --detach    # Start the cluster
+docker ps --filter "name=${CLUSTER_PREFIX}"                                                  # View the containers running with the name "<CLUSTER_PREFIX>"
 
-docker compose -f ~/${CLUSTER_PREFIX}/docker-compose.yml -p ${CLUSTER_PREFIX} logs -f    # View the cluster logs
+docker compose -f ~/${CLUSTER_PREFIX}/docker-compose.yml -p ${CLUSTER_PREFIX} logs -f        # View the cluster logs
 ```
 {% endtab %}
 {% endtabs %}
