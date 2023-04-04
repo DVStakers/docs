@@ -13,14 +13,13 @@ description: My Lighthouse client installation guide.
 
 ### Create Aliases
 
-```bash
-echo "alias lighthouse-version-current='cd /usr/local/bin/; ./lighthouse --version; cd;'" >> ~/.bashrc
-echo "alias lighthouse-build='cd; ./lighthouse-build.sh'" >> ~/.bashrc
-echo "alias lighthouse-version-new='cd ~/.cargo/bin/; ./lighthouse --version; cd;'" >> ~/.bashrc
-echo "alias lighthouse-deploy='cd; ./lighthouse-deploy-check.sh'" >> ~/.bashrc
+<pre class="language-bash"><code class="lang-bash"><strong>echo "alias lighthouse-version-current='/usr/local/bin/lighthouse --version'" >> ~/.bashrc
+</strong>echo "alias lighthouse-build='~/lighthouse-build.sh'" >> ~/.bashrc
+echo "alias lighthouse-version-new='~/.cargo/bin/lighthouse --version'" >> ~/.bashrc
+echo "alias lighthouse-deploy='~/lighthouse-deploy-check.sh'" >> ~/.bashrc
 
 source ~/.bashrc
-```
+</code></pre>
 
 ### Rust - Install
 
@@ -60,9 +59,6 @@ sudo cp ~/.cargo/bin/lighthouse /usr/local/bin
 Check version.
 
 ```bash
-cd /usr/local/bin/
-./lighthouse --version
-
 /usr/local/bin/lighthouse --version
 ```
 

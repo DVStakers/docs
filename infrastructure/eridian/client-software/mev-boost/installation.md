@@ -23,7 +23,7 @@ echo "alias mev-status='sudo systemctl status mevboost.service'" >> ~/.bashrc
 echo "alias mev-config='sudo vim /etc/systemd/system/mevboost.service'" >> ~/.bashrc
 echo "alias mev-enable='sudo systemctl enable mevboost.service'" >> ~/.bashrc
 echo "alias mev-disable='sudo systemctl disable mevboost.service'" >> ~/.bashrc
-echo "alias mev-update='cd; ./mev-update-check.sh'" >> ~/.bashrc
+echo "alias mev-update='~/mev-update-check.sh'" >> ~/.bashrc
 
 source ~/.bashrc
 ```
@@ -192,7 +192,7 @@ vim ~/mev-update-check.sh
 while true; do
     read -p "Are you sure you want to update MEV Boost? (Y/N) " yn
     case $yn in
-        [Yy]* ) cd; ./mev-update.sh; break;;
+        [Yy]* ) ~/mev-update.sh; break;;
         [Nn]* ) exit;;
         * ) echo "Please answer Y or N.";;
     esac

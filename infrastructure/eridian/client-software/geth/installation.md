@@ -27,7 +27,7 @@ echo "alias geth-status='sudo systemctl status geth.service'" >> ~/.bashrc
 echo "alias geth-config='sudo vim /etc/systemd/system/geth.service'" >> ~/.bashrc
 echo "alias geth-enable='sudo systemctl enable geth.service'" >> ~/.bashrc
 echo "alias geth-disable='sudo systemctl disable geth.service'" >> ~/.bashrc
-echo "alias geth-update='cd; ./geth-update-check.sh'" >> ~/.bashrc
+echo "alias geth-update='~/geth-update-check.sh'" >> ~/.bashrc
 echo "alias geth-attach='sudo geth attach --preload ~/geth-console-script.js /var/lib/goethereum/geth.ipc'" >> ~/.bashrc
 echo "alias geth-blockNumber='sudo geth --exec \"eth.blockNumber\" attach /var/lib/goethereum/geth.ipc'" >> ~/.bashrc
 echo "alias geth-peerCount='sudo geth --exec \"net.peerCount\" attach /var/lib/goethereum/geth.ipc'" >> ~/.bashrc
@@ -248,7 +248,7 @@ vim ~/geth-update-check.sh
 while true; do
     read -p "Are you sure you want to update Geth? (Y/N) " yn
     case $yn in
-        [Yy]* ) cd; ./geth-update.sh; break;;
+        [Yy]* ) ~/geth-update.sh; break;;
         [Nn]* ) exit;;
         * ) echo "Please answer Y or N.";;
     esac
