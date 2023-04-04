@@ -48,8 +48,8 @@ echo "alias ${CLUSTER_PREFIX}-log-node-nimbus='docker logs obol-node-nimbus-1 -f
 echo "alias ${CLUSTER_PREFIX}-log-vc-lighthouse='docker logs obol-vc-lighthouse-1 -f'" >> ~/.bashrc
 echo "alias ${CLUSTER_PREFIX}-log-vc-teku='docker logs obol-vc-teku-1 -f'" >> ~/.bashrc
 echo "alias ${CLUSTER_PREFIX}-log-vc-nimbus='docker logs obol-vc-nimbus-1 -f'" >> ~/.bashrc
-echo "alias ${CLUSTER_PREFIX}-start='docker compose -f ~/${CLUSTER_PREFIX}/docker-compose.yml -p ${CLUSTER_PREFIX} up -d'" >> ~/.bashrc
-echo "alias ${CLUSTER_PREFIX}-build='docker compose -f ~/${CLUSTER_PREFIX}/docker-compose.yml -p ${CLUSTER_PREFIX} up -d --build'" >> ~/.bashrc
+echo "alias ${CLUSTER_PREFIX}-start='docker compose -f ~/${CLUSTER_PREFIX}/docker-compose.yml -p ${CLUSTER_PREFIX} up --detach'" >> ~/.bashrc
+echo "alias ${CLUSTER_PREFIX}-build='docker compose -f ~/${CLUSTER_PREFIX}/docker-compose.yml -p ${CLUSTER_PREFIX} up --detach --build'" >> ~/.bashrc
 echo "alias ${CLUSTER_PREFIX}-stop='docker compose -f ~/${CLUSTER_PREFIX}/docker-compose.yml -p ${CLUSTER_PREFIX} down'" >> ~/.bashrc
 echo "alias ${CLUSTER_PREFIX}-status='docker ps --filter \"name=${CLUSTER_PREFIX}\"'" >> ~/.bashrc
 echo "alias ${CLUSTER_PREFIX}-config='vim ~/${CLUSTER_PREFIX}/.env'" >> ~/.bashrc
@@ -212,7 +212,7 @@ Once everything has been configured, it should be as simple as running the comma
 
 To avoid any conflicts with container names in the future, you can give a prefix to all containers created by the `docker compose` command by using the `-p` flag.&#x20;
 
-Starting the cluster with the `-d` flag means the containers will be detached and start in the background. The logs can then be viewed using the `logs -f` command flag.
+Starting the cluster with the `--detach` flag means the containers will be detached and start in the background. The logs can then be viewed using the `logs -f` command flag.
 
 Start the containers and check it's working as expected.
 
