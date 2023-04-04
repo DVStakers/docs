@@ -48,12 +48,12 @@ docker logs obol-vc-lighthouse-1 -f      # View the logs for the Lighthouse VC
 docker logs obol-vc-teku-1 -f            # View the logs for the Teki VC
 docker logs obol-vc-nimbus-1 -f          # View the logs for the Nimbus VC
 
-docker compose -f ~/${CLUSTER_PREFIX}/docker-compose.yml -p ${CLUSTER_PREFIX} up -d          # Start the cluster
-docker compose -f ~/${CLUSTER_PREFIX}/docker-compose.yml -p ${CLUSTER_PREFIX} up -d --build  # Start the cluster and build any new versions
-docker compose -f ~/${CLUSTER_PREFIX}/docker-compose.yml -p ${CLUSTER_PREFIX} down           # Stop the cluster
+docker compose -f ~/${CLUSTER_PREFIX}/docker-compose.yml -p ${CLUSTER_PREFIX} up --detach          # Start the cluster
+docker compose -f ~/${CLUSTER_PREFIX}/docker-compose.yml -p ${CLUSTER_PREFIX} up --detach --build  # Start the cluster and build any new versions
+docker compose -f ~/${CLUSTER_PREFIX}/docker-compose.yml -p ${CLUSTER_PREFIX} down                 # Stop the cluster
 
-docker ps --filter "name=${CLUSTER_PREFIX}"                                                  # View the containers running with the name "<CLUSTER_PREFIX>"
-vim ~/${CLUSTER_PREFIX}/.env                                                                 # Edit the cluster .env
+docker ps --filter "name=${CLUSTER_PREFIX}"    # View the containers running with the name "<CLUSTER_PREFIX>"
+vim ~/${CLUSTER_PREFIX}/.env                   # Edit the cluster .env
 ```
 {% endtab %}
 {% endtabs %}
