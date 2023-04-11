@@ -24,6 +24,7 @@ echo "alias geth-start='sudo systemctl start geth.service'" >> ~/.bashrc
 echo "alias geth-stop='sudo systemctl stop geth.service'" >> ~/.bashrc
 echo "alias geth-restart='sudo systemctl restart geth.service'" >> ~/.bashrc
 echo "alias geth-status='sudo systemctl status geth.service'" >> ~/.bashrc
+echo "alias geth-version='sudo /usr/local/bin/geth --version'" >> ~/.bashrc
 echo "alias geth-config='sudo vim /etc/systemd/system/geth.service'" >> ~/.bashrc
 echo "alias geth-enable='sudo systemctl enable geth.service'" >> ~/.bashrc
 echo "alias geth-disable='sudo systemctl disable geth.service'" >> ~/.bashrc
