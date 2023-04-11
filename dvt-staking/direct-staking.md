@@ -14,9 +14,13 @@ description: Direct staking through DVStakers is currently under development.
 
 </div>
 
-Direct staking with DVStakers is currently being tested with our existing validators to develop a robust DVT process. As Obol DVT is not currently live on mainnet, the DVT validator testing is being run on Goerli.
+**Status: **<mark style="color:orange;">**In Development**</mark>** 🏗️**
 
-All of the details on how these validators are configured can be found here:
+Direct staking with DVStakers is currently being tested with our existing validators to develop a robust DVT process.
+
+Testing is being conducted on Goerli using both Obol and SSV DVT solutions as neither is currently live on mainnet.
+
+Details on how the infrastructure for these validators are configured can be found here:
 
 {% content-ref url="broken-reference" %}
 [Broken link](broken-reference)
