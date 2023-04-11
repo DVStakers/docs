@@ -26,6 +26,7 @@ geth-start      # Start the geth.service
 geth-stop       # Stop the geth.service
 geth-restart    # Restart the geth.service
 geth-status     # View the status of the geth.service
+geth-version    # Check the version of geth in use
 geth-enable     # Enable the geth.service
 geth-disable    # Disable the geth.service
 
@@ -41,6 +42,7 @@ sudo systemctl start geth.service                     # Start the geth.service
 sudo systemctl stop geth.service                      # Stop the geth.service
 sudo systemctl restart geth.service                   # Restart the geth.service
 sudo systemctl status geth.service                    # View the status of the geth.service
+sudo /usr/local/bin/geth --version                    # Check the version of geth in use
 sudo systemctl enable geth.service                    # Enable the geth.service
 sudo systemctl disable geth.service                   # Disable the geth.service
 
