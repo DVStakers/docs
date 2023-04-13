@@ -1,3 +1,7 @@
+---
+description: How to use DVT to staking on Diva.
+---
+
 # 💧 Diva Staking
 
 <div>

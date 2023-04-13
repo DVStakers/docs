@@ -1,5 +1,5 @@
 ---
-description: How to use DVT to stake on RocketPool.
+description: How to use DVT to stake on Lido.
 ---
 
 # 🏖 Lido Community Staking

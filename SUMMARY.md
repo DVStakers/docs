@@ -13,6 +13,7 @@
 * [🏖 Lido Community Staking](dvt-staking/lido-community-staking.md)
 * [💡 Ether.fi Staking](dvt-staking/ether.fi-staking.md)
 * [💧 Diva Staking](dvt-staking/diva-staking.md)
+* [⭐ Stader](dvt-staking/stader.md)
 
 ## DVT Configuration
 

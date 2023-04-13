@@ -1,8 +1,8 @@
 ---
-description: How to use DVT to stake on Ether.fi.
+description: How to use DVT to staking on Stader.
 ---
 
-# 💡 Ether.fi Staking
+# ⭐ Stader
 
 <div>
 
@@ -16,11 +16,9 @@ description: How to use DVT to stake on Ether.fi.
 
 **Status: **<mark style="color:orange;">**In Development**</mark>** 🏗️**
 
-{% embed url="https://ether.fi" %}
+{% embed url="https://linktr.ee/stader.eth" %}
 
-Ether.fi is a liquid staking protocol where stakers keep control of their keys while delegating staking to node operators and earning rewards.
-
-If you are interested in learning more about our plans for Ether.fi DVT staking, please connect with us:
+If you are interested in learning more about our plans for Stader DVT staking, please connect with us:
 
 * [Discord - DVStakers](https://discord.gg/VbVwqgSdFD)
 * [Twitter - @DVStakers](https://twitter.com/DVStakers)
