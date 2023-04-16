@@ -65,7 +65,6 @@ Here's a glimpse of what you can expect from our content:
 * Performance optimization tips
 * Frequently asked questions (FAQ)
 * Updates on new staking protocols and DVT solutions
-* Regular updates on our validator performance
 
 ### 💬 Be part of our Community
 
