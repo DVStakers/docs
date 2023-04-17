@@ -4,16 +4,6 @@ description: How to evolve from isolated solo staking setups to a redundant DVT 
 
 # 🖥 The Evolution of Solo Staking
 
-<div>
-
-<figure><img src="https://raw.githubusercontent.com/DVStakers/docs/main/.gitbook/assets/Eridian.png" alt=""><figcaption><p>Eridian</p></figcaption></figure>
-
- 
-
-<figure><img src=".gitbook/assets/Spacesider.png" alt=""><figcaption><p>Spacesider</p></figcaption></figure>
-
-</div>
-
 * [Step 1: Standard Solo Staking](the-evolution-of-solo-staking.md#step-1-standard-solo-staking)
 * [Step 2: Redundant Local Hardware](the-evolution-of-solo-staking.md#step-2-redundant-local-hardware)
 * [Step 3: Redundant Remote Beacon Nodes (Mainnet - Here today📍)](the-evolution-of-solo-staking.md#step-3-redundant-remote-beacon-nodes-mainnet-here-today)
@@ -33,7 +23,7 @@ The DVT solutions described in the subsequent steps are additive to this first s
 
 Still isolated systems, but the single points of failure have been reduced, though not eliminated... yet! This also improves client diversity as different EC/BN pairs can be used.
 
-<figure><img src=".gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Step 3: Redundant Remote Beacon Nodes (Mainnet - Here today📍)
 
@@ -54,11 +44,11 @@ The Cloud Auxiliary Client is useful in this setup because:
 3. It shouldn't cost much. Since the bulk of the cost of a validator is running the EC and BN clients, the actual validator clients are very lightweight. This means the Cloud node can be run on minimal hardware, significantly reducing cost.
 4. It doesn't remove any sovereignty or require any trust assumptions by using the Cloud provider. If the Cloud provider goes out of business or decides to turn off the node, the two remaining nodes can function perfectly fine. Also, as the Cloud provider only has 3/9 keys, it is not a security risk, as 3 keys can't be used for anything if the signature threshold is 6/9.
 
-<figure><img src=".gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (13) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Operational Examples&#x20;
 
-<table data-card-size="large" data-column-title-hidden data-view="cards"><thead><tr><th align="center"></th><th align="center"></th><th data-hidden data-card-cover data-type="files"></th></tr></thead><tbody><tr><td align="center"><strong>Normal operation</strong></td><td align="center">Validators Operational ✅</td><td><a href=".gitbook/assets/image (14).png">image (14).png</a></td></tr><tr><td align="center"><strong>Cloud Auxiliary Client Offline</strong></td><td align="center">Validators Operational ✅</td><td><a href=".gitbook/assets/image (15).png">image (15).png</a></td></tr><tr><td align="center"><strong>Eridian</strong> <strong>Offline</strong></td><td align="center">Validators Operational ✅</td><td><a href=".gitbook/assets/image (3).png">image (3).png</a></td></tr><tr><td align="center"><strong>Spacesider</strong> <strong>Offline</strong></td><td align="center">Validators Operational ✅</td><td><a href=".gitbook/assets/image (7).png">image (7).png</a></td></tr><tr><td align="center"><strong>VC Client Failure</strong></td><td align="center">Validators Operational ✅</td><td><a href=".gitbook/assets/image (2).png">image (2).png</a></td></tr><tr><td align="center"><strong>Multi-System Failure</strong></td><td align="center">Validators Operational ✅</td><td><a href=".gitbook/assets/image (6).png">image (6).png</a></td></tr></tbody></table>
+<table data-card-size="large" data-column-title-hidden data-view="cards"><thead><tr><th align="center"></th><th align="center"></th><th data-hidden data-card-cover data-type="files"></th></tr></thead><tbody><tr><td align="center"><strong>Normal operation</strong></td><td align="center">Validators Operational ✅</td><td><a href=".gitbook/assets/image (14).png">image (14).png</a></td></tr><tr><td align="center"><strong>Cloud Auxiliary Client Offline</strong></td><td align="center">Validators Operational ✅</td><td><a href=".gitbook/assets/image (15).png">image (15).png</a></td></tr><tr><td align="center"><strong>Eridian</strong> <strong>Offline</strong></td><td align="center">Validators Operational ✅</td><td><a href=".gitbook/assets/image (3) (1).png">image (3) (1).png</a></td></tr><tr><td align="center"><strong>Spacesider</strong> <strong>Offline</strong></td><td align="center">Validators Operational ✅</td><td><a href=".gitbook/assets/image (7) (2).png">image (7) (2).png</a></td></tr><tr><td align="center"><strong>VC Client Failure</strong></td><td align="center">Validators Operational ✅</td><td><a href=".gitbook/assets/image (2) (1).png">image (2) (1).png</a></td></tr><tr><td align="center"><strong>Multi-System Failure</strong></td><td align="center">Validators Operational ✅</td><td><a href=".gitbook/assets/image (6) (2).png">image (6) (2).png</a></td></tr></tbody></table>
 
 ### Step 5: StakeWise V3 Vaults + Obol DVT Validators
 

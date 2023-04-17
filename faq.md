@@ -4,16 +4,6 @@ description: Answering all your DVT questions like "What is DVT?" and more!
 
 # ❔ FAQ
 
-<div>
-
-<figure><img src="https://raw.githubusercontent.com/DVStakers/docs/main/.gitbook/assets/Eridian.png" alt=""><figcaption><p>Eridian</p></figcaption></figure>
-
- 
-
-<figure><img src=".gitbook/assets/Spacesider.png" alt=""><figcaption><p>Spacesider</p></figcaption></figure>
-
-</div>
-
 ### What is DVT?
 
 Distributed Validator Technology. In a traditional solo staking setup, if a single validator node goes offline due to technical issues or maintenance, it immediately stops performing its validator duties (attestations, block proposals, etc.). This can lead to missed rewards and penalties for the staker.
@@ -22,7 +12,7 @@ However, with Distributed Validator Technology (DVT), a group of stakers work to
 
 ### What is the purpose of DVStakers?
 
-To document and share the journey of two Ethereum stakers from solo staking to distributed validator staking.
+To document and share the journey of Ethereum stakers from solo staking to distributed validator staking.
 
 ### **Are you sponsored or paid by anyone?**
 
@@ -30,9 +20,7 @@ Not yet. If at some point in the future, we do apply for grants or funding to su
 
 ### Wen Ethereum mainnet?
 
-While Obol DVT isn't ready for Ethereum mainnet yet, we are aiming to be ready when it launches.&#x20;
-
-We plan to launch a DVStakers StakeWise V3 Vault on mainnet as soon as that platform is ready.&#x20;
+While no DVT protocol is currently ready for Ethereum mainnet yet, we are aiming to be ready when it launches.&#x20;
 
 ### Can I be involved in this project?
 

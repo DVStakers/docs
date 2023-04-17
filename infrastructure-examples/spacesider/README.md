@@ -4,7 +4,7 @@ description: A bit more about me
 
 # 📘 Spacesider
 
-<figure><img src="../.gitbook/assets/Spacesider.png" alt=""><figcaption><p>Spacesider</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Spacesider.png" alt=""><figcaption><p>Spacesider</p></figcaption></figure>
 
 Passionate about Ethereum and staking.
 

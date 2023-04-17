@@ -4,16 +4,6 @@ description: Notes on the configuration of the Cloud infrastructure.
 
 # ☁ Cloud Auxiliary Client
 
-<div>
-
-<figure><img src="https://raw.githubusercontent.com/DVStakers/docs/main/.gitbook/assets/Eridian.png" alt=""><figcaption><p>Eridian</p></figcaption></figure>
-
- 
-
-<figure><img src="../.gitbook/assets/Spacesider.png" alt=""><figcaption><p>Spacesider</p></figcaption></figure>
-
-</div>
-
 {% hint style="info" %}
 The Cloud Auxiliary Client is used to support and enhance the reliability and effectiveness of the DVT validator. It is not a critical part of the system, and if it fails, the validator will continue to perform duties with the two remaining participants. More details on why a Cloud Auxiliary Client is used can be found [here](../the-evolution-of-solo-staking.md#step-4-obol-dvt-validators-goerli-here-today).
 {% endhint %}

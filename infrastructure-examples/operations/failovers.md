@@ -1,26 +1,16 @@
 ---
-description: Our infrastructure is resilient to failures on multiple fronts.
+description: Infrastructure resilient to failures on multiple fronts.
 ---
 
 # 📡 Failovers
 
-<div>
-
-<figure><img src="https://raw.githubusercontent.com/DVStakers/docs/main/.gitbook/assets/Eridian.png" alt=""><figcaption><p>Eridian</p></figcaption></figure>
-
- 
-
-<figure><img src="../../.gitbook/assets/Spacesider.png" alt=""><figcaption><p>Spacesider</p></figcaption></figure>
-
-</div>
-
 ### Local failovers
 
-We are running two Ethereum stacks each (a stack being a Beacon Node that is paired with an Execution Client), one being the primary and the other being the secondary. The validator client is configured to use both, so should the primary stack go offline then it will automatically use the secondary stack until the primary becomes available again.
+Running two Ethereum stacks (a stack being a Beacon Node that is paired with an Execution Client), one being the primary and the other being the secondary. The validator client is configured to use both, so should the primary stack go offline then it will automatically use the secondary stack until the primary becomes available again.
 
 ### Global failovers
 
-We have configured our validator clients to also use the other DVStakers beacon nodes too, so in the case where a DVStaker has both their local Ethereum stacks become unavailable, then the validator client will still continue to perform its duties by failing over to the other available stacks.
+Validator clients are configured to also use other DVStakers beacon nodes too, so in the case where a DVStaker has both their local Ethereum stacks become unavailable, then the validator client will still continue to perform its duties by failing over to the other available stacks.
 
 The global failover has some constraints such as increased latency due to geographic distances between the DVStakers.
 

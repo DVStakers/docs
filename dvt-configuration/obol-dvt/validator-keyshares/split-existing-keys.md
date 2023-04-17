@@ -4,16 +4,6 @@ description: Notes on how to split existing validator keys into charon keyshares
 
 # ✂ Split Existing Keys
 
-<div>
-
-<figure><img src="https://raw.githubusercontent.com/DVStakers/docs/main/.gitbook/assets/Eridian.png" alt=""><figcaption><p>Eridian</p></figcaption></figure>
-
- 
-
-<figure><img src="../../../.gitbook/assets/Spacesider.png" alt=""><figcaption><p>Spacesider</p></figcaption></figure>
-
-</div>
-
 {% hint style="info" %}
 If you want to use the Obol DKG ceremony to create new validator keyshares directly on each machine, you can find those instructions [here](obol-dkg-ceremony.md).
 {% endhint %}

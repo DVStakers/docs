@@ -158,8 +158,8 @@ ntpq -p
 
 To avoid duplication these details can be found on the EthStaker Knowledge Base.
 
-{% content-ref url="http://localhost:5000/s/KnJhWg57YoZq2MPfatKE/tutorials/use-all-available-disk-space" %}
-[Use all available disk space](http://localhost:5000/s/KnJhWg57YoZq2MPfatKE/tutorials/use-all-available-disk-space)
+{% content-ref url="http://localhost:5000/s/KnJhWg57YoZq2MPfatKE/tutorials/confirm-available-disk-space" %}
+[Use all available disk space](http://localhost:5000/s/KnJhWg57YoZq2MPfatKE/tutorials/confirm-available-disk-space)
 {% endcontent-ref %}
 
 ### 🫣 Hide Welcome Message on Login
