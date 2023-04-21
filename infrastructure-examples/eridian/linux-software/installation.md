@@ -200,14 +200,12 @@ Configure the firewall.
 CUSTOM_SSH_PORT=                  # Default: 22
 MOSH_STARTING_PORT=               # Default: 60000
 MOSH_ENDING_PORT=                 # Default: 61000
-GRAFANA_PORT=
 
 sudo ufw default deny incoming comment 'Deny all incoming traffic'
 sudo ufw default allow outgoing comment 'Allow all outgoing traffic'
 
 sudo ufw allow ${CUSTOM_SSH_PORT} comment 'Allow custom ssh in'
 sudo ufw allow ${MOSH_STARTING_PORT}:${MOSH_ENDING_PORT}/udp comment 'Allow Mosh in'
-sudo ufw allow ${GRAFANA_PORT} comment 'Allow Grafana in'
 ```
 
 Edit the UFW settings to disable IPV6. This isn't for any particular security reason, it just makes the UFW status easier to read when it prints out on screen.
