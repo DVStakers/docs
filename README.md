@@ -9,7 +9,6 @@ description: The journey of Ethereum solo stakers to distributed validator staki
 * [🖥 The Evolution of Solo Staking](the-evolution-of-solo-staking.md)
 * [🚀 About Us](./#about-us)
 * [🎯 Our Vision](./#our-vision)
-* [🔍 Why Obol DVT?](./#why-obol-dvt)
 * [📚 Our Journey](./#our-journey)
 * [💬 Be part of our Community](./#be-part-of-our-community)
 
