@@ -40,7 +40,7 @@ Our passion for blockchain technology and decentralized systems led us to explor
 
  
 
-<figure><img src=".gitbook/assets/image (3).png" alt=""><figcaption><p>Metanull</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (3) (2).png" alt=""><figcaption><p>Metanull</p></figcaption></figure>
 
  
 
