@@ -20,7 +20,7 @@ Join us on an adventure as dedicated Ethereum solo stakers prepare to run Distri
 [the-evolution-of-solo-staking.md](the-evolution-of-solo-staking.md)
 {% endcontent-ref %}
 
-<figure><img src=".gitbook/assets/image (9) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 {% endtab %}
 {% endtabs %}
 

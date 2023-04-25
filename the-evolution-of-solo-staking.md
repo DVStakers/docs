@@ -22,7 +22,7 @@ The DVT solutions described in the subsequent steps are additive to this first s
 
 Still isolated systems, but the single points of failure have been reduced, though not eliminated... yet! This also improves client diversity as different EC/BN pairs can be used.
 
-<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Step 3: Redundant Remote Beacon Nodes (Mainnet - Here today📍)
 
@@ -36,7 +36,7 @@ By splitting the keys of any existing validators into 9 keyshares each, a 6/9 Ob
 
 The configuration instructions for this 6/9 cluster [can be found here](dvt-configuration/obol-dvt/cluster-config-6-9.md).
 
-<figure><img src=".gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
 
 ### Step 5: Add additional DVT solutions & staking protocols
 
