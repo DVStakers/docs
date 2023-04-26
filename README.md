@@ -9,6 +9,7 @@ description: The journey of Ethereum solo stakers to distributed validator staki
 * [🖥 The Evolution of Solo Staking](the-evolution-of-solo-staking.md)
 * [🚀 About Us](./#about-us)
 * [🎯 Our Vision](./#our-vision)
+* [🔍 Current state of the DVT ecosystem](./#current-state-of-the-dvt-ecosystem)
 * [📚 Our Journey](./#our-journey)
 * [💬 Be part of our Community](./#be-part-of-our-community)
 
@@ -54,7 +55,7 @@ Our passion for blockchain technology and decentralized systems led us to explor
 
 DVStakers' vision is to become a community of leading DVT non-custodial node operators within the Ethereum ecosystem, running validators using multiple DVT protocols such as Obol, SSV and Diva. By working with platforms such as StakeWise, RocketPool, ether.fi, Lido, and more, we aim to support a diverse range of staking opportunities. Our commitment to leveraging the best of each protocol will enable us to offer optimal staking experiences, maximizing rewards, and minimizing risks for all stakeholders involved. As we continue our journey, we strive to stay at the forefront of innovation and contribute to the growth and resilience of the Ethereum network, building a more decentralized and secure future.
 
-### 🔍 Current state of DVT?
+### 🔍 Current state of the DVT ecosystem
 
 {% content-ref url="dvt-staking/direct-staking.md" %}
 [direct-staking.md](dvt-staking/direct-staking.md)
