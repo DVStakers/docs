@@ -1,18 +1,34 @@
+---
+description: Notes on how to install, use and maintain multiple validator clients.
+---
+
 # ⛓ Client software
+
+<figure><img src="https://raw.githubusercontent.com/DVStakers/docs/main/.gitbook/assets/Eridian.png" alt=""><figcaption><p>Eridian</p></figcaption></figure>
+
+{% content-ref url="geth/" %}
+[geth](geth/)
+{% endcontent-ref %}
+
+{% content-ref url="lighthouse/" %}
+[lighthouse](lighthouse/)
+{% endcontent-ref %}
+
+{% content-ref url="mev-boost/" %}
+[mev-boost](mev-boost/)
+{% endcontent-ref %}
+
+
 
 <figure><img src="../../.gitbook/assets/Spacesider.png" alt=""><figcaption><p>Spacesider</p></figcaption></figure>
 
 Four clients are running on the machine, all of which are [minority clients](https://clientdiversity.org/).
-
-
 
 The first pair is [Lighthouse ](https://github.com/sigp/lighthouse/releases)and [Nethermind](https://github.com/NethermindEth/nethermind/releases).
 
 The second pair is [Teku ](https://github.com/ConsenSys/teku/releases)and [Besu](https://github.com/hyperledger/besu/releases/tag/23.1.1).
 
 Only one validator client software is running, that being Lighthouse.
-
-
 
 Teku-Besu is the primary pair as I have found it to be much more stable with less missed attestations (Specifically Besu over Nethermind), meaning Lighthouse-Nethermind is my secondary pair.
 
