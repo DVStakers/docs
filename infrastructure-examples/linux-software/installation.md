@@ -1,12 +1,10 @@
 ---
 description: >-
-  My Linux software installation guide, starting with a new machine through to
-  the point of installing the validator clients.
+  Linux software installation guide, starting with a new machine through to the
+  point of installing the validator clients.
 ---
 
 # 💾 Installation
-
-<figure><img src="https://raw.githubusercontent.com/DVStakers/docs/main/.gitbook/assets/Eridian.png" alt=""><figcaption><p>Eridian</p></figcaption></figure>
 
 * [💾 Installing Linux](installation.md#installing-linux)
 * [🚪 Change Default SSH Port](installation.md#change-default-ssh-port)

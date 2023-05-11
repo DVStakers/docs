@@ -1,10 +1,8 @@
 ---
-description: Notes on how to maintain and update my Linux system.
+description: Notes on how to maintain and update a Linux system.
 ---
 
 # 🏗 Maintenance
-
-<figure><img src="https://raw.githubusercontent.com/DVStakers/docs/main/.gitbook/assets/Eridian.png" alt=""><figcaption><p>Eridian</p></figcaption></figure>
 
 ### General System Updates
 

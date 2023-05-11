@@ -1,10 +1,8 @@
 ---
-description: Notes on how to maintain and update my Lighthouse client.
+description: Notes on how to maintain and update a Lighthouse client.
 ---
 
 # 🏗 Maintenance
-
-<figure><img src="https://raw.githubusercontent.com/DVStakers/docs/main/.gitbook/assets/Eridian.png" alt=""><figcaption><p>Eridian</p></figcaption></figure>
 
 ### Lighthouse - Update Client
 

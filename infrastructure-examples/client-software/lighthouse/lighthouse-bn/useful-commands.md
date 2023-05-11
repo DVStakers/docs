@@ -1,10 +1,8 @@
 ---
-description: Notes on how to use my Lighthouse Beacon Node.
+description: Notes on how to use a Lighthouse Beacon Node.
 ---
 
 # ⌨ Useful commands
-
-<figure><img src="https://raw.githubusercontent.com/DVStakers/docs/main/.gitbook/assets/Eridian.png" alt=""><figcaption><p>Eridian</p></figcaption></figure>
 
 ### lighthousebeacon.service
 

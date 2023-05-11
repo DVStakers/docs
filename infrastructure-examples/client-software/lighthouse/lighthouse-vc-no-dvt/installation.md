@@ -1,10 +1,8 @@
 ---
-description: My Lighthouse Validator Client installation guide.
+description: Lighthouse Validator Client installation guide.
 ---
 
 # 💾 Installation
-
-<figure><img src="https://raw.githubusercontent.com/DVStakers/docs/main/.gitbook/assets/Eridian.png" alt=""><figcaption><p>Eridian</p></figcaption></figure>
 
 * [Create Aliases](installation.md#create-aliases)
 * [Lighthouse VC - Configure Service](installation.md#lighthouse-vc-configure-service)

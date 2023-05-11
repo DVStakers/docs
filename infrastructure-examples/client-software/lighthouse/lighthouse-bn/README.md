@@ -1,10 +1,8 @@
 ---
-description: Notes on how to install and maintain my Lighthouse Beacon Node.
+description: Notes on how to install and maintain a Lighthouse Beacon Node.
 ---
 
 # Lighthouse BN
-
-<figure><img src="https://raw.githubusercontent.com/DVStakers/docs/main/.gitbook/assets/Eridian.png" alt=""><figcaption><p>Eridian</p></figcaption></figure>
 
 {% content-ref url="installation.md" %}
 [installation.md](installation.md)

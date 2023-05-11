@@ -1,10 +1,8 @@
 ---
-description: My Lighthouse Beacon Node installation guide.
+description: Lighthouse Beacon Node installation guide.
 ---
 
 # 💾 Installation
-
-<figure><img src="https://raw.githubusercontent.com/DVStakers/docs/main/.gitbook/assets/Eridian.png" alt=""><figcaption><p>Eridian</p></figcaption></figure>
 
 * [Create Aliases](installation.md#create-aliases)
 * [Lighthouse BN - Configure Service](installation.md#lighthouse-bn-configure-service)

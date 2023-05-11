@@ -1,10 +1,8 @@
 ---
-description: My MEV Boost client installation guide.
+description: MEV Boost client installation guide.
 ---
 
 # 💾 Installation
-
-<figure><img src="https://raw.githubusercontent.com/DVStakers/docs/main/.gitbook/assets/Eridian.png" alt=""><figcaption><p>Eridian</p></figcaption></figure>
 
 * [Create Aliases](installation.md#create-aliases)
 * [Firewall Configuration](installation.md#firewall-configuration)

@@ -1,10 +1,8 @@
 ---
-description: Notes on how to use my Geth Client.
+description: Notes on how to use a Geth Client.
 ---
 
 # ⌨ Useful commands
-
-<figure><img src="https://raw.githubusercontent.com/DVStakers/docs/main/.gitbook/assets/Eridian.png" alt=""><figcaption><p>Eridian</p></figcaption></figure>
 
 {% hint style="info" %}
 All of the alias commands have been defined as aliases in \~/`.bashrc when`[`installing Geth`](installation.md)

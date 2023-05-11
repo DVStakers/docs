@@ -1,10 +1,8 @@
 ---
-description: My Lighthouse client installation guide.
+description: Lighthouse client installation guide.
 ---
 
 # 💾 Installation
-
-<figure><img src="https://raw.githubusercontent.com/DVStakers/docs/main/.gitbook/assets/Eridian.png" alt=""><figcaption><p>Eridian</p></figcaption></figure>
 
 * [Create Aliases](installation.md#create-aliases)
 * [Rust - Install](installation.md#rust-install)
