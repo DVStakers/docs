@@ -4,7 +4,11 @@ description: Notes on my hardware.
 
 # 💻 Hardware
 
+<div align="left">
+
 <figure><img src="https://raw.githubusercontent.com/DVStakers/docs/main/.gitbook/assets/Eridian.png" alt=""><figcaption><p>Eridian</p></figcaption></figure>
+
+</div>
 
 To avoid duplication these details can be found on the EthStaker Knowledge Base.
 
@@ -14,7 +18,11 @@ To avoid duplication these details can be found on the EthStaker Knowledge Base.
 
 <figure><img src="../.gitbook/assets/image (12) (1).png" alt="Eridian NUC"><figcaption><p>Eridian Hardware - NUC</p></figcaption></figure>
 
+<div align="left">
+
 <figure><img src="../.gitbook/assets/Spacesider.png" alt=""><figcaption><p>Spacesider</p></figcaption></figure>
+
+</div>
 
 Spacesider is using a custom-built machine with an AMD Ryzen 7 5700G CPU and 64GB of DDR4 RAM which is incredibly powerful for staking purposes and gets the job done without breaking a sweat.
 

@@ -10,6 +10,8 @@ description: How to evolve from isolated solo staking setups to a redundant DVT 
 * [Step 4: Obol DVT Validators (Goerli - Here today📍)](the-evolution-of-solo-staking.md#step-4-obol-dvt-validators-goerli-here-today)
 * [Step 5: Add additional DVT solutions & staking protocols](the-evolution-of-solo-staking.md#step-5-add-additional-dvt-solutions-and-staking-protocols)
 
+<figure><img src=".gitbook/assets/image.png" alt="Home Stakers Meme" width="410"><figcaption></figcaption></figure>
+
 ### Step 1: Standard Solo Staking
 
 Standard solo staking on Ethereum today. Isolated solo stakers running all their own equipment. This is the standard staking setup, on a protocol designed to not harshly punish downtime.&#x20;
@@ -22,7 +24,7 @@ The DVT solutions described in the subsequent steps are additive to this first s
 
 Still isolated systems, but the single points of failure have been reduced, though not eliminated... yet! This also improves client diversity as different EC/BN pairs can be used.
 
-<figure><img src=".gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Step 3: Redundant Remote Beacon Nodes (Mainnet - Here today📍)
 

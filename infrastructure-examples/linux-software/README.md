@@ -4,7 +4,11 @@ description: Notes on how to install and maintain Linux software.
 
 # 💿 Linux software
 
+<div align="left">
+
 <figure><img src="https://raw.githubusercontent.com/DVStakers/docs/main/.gitbook/assets/Eridian.png" alt=""><figcaption><p>Eridian</p></figcaption></figure>
+
+</div>
 
 {% content-ref url="installation.md" %}
 [installation.md](installation.md)
@@ -16,7 +20,11 @@ description: Notes on how to install and maintain Linux software.
 
 
 
+<div align="left">
+
 <figure><img src="../../.gitbook/assets/Spacesider.png" alt=""><figcaption><p>Spacesider</p></figcaption></figure>
+
+</div>
 
 [Proxmox ](https://www.proxmox.com/en/proxmox-ve)has been deployed as a hypervisor where multiple virtual machines are being managed, all of which are running [Ubuntu Server](https://ubuntu.com/download/server) where they serve a specific purpose.
 

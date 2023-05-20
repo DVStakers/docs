@@ -21,7 +21,7 @@ Join us on an adventure as dedicated Ethereum solo stakers prepare to run Distri
 [the-evolution-of-solo-staking.md](the-evolution-of-solo-staking.md)
 {% endcontent-ref %}
 
-<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 {% endtab %}
 {% endtabs %}
 
@@ -31,7 +31,7 @@ We are long-time cryptocurrency enthusiasts and experienced Ethereum solo staker
 
 Our passion for blockchain technology and decentralized systems led us to explore the exciting world of DVT. Our mission is to contribute to the Ethereum ecosystem by running a secure and efficient DVT setup while engaging with the staking community and sharing our knowledge.
 
-<div>
+<div align="center">
 
 <figure><img src=".gitbook/assets/Eridian.png" alt="Eridian"><figcaption><p>Eridian</p></figcaption></figure>
 

@@ -4,7 +4,11 @@ description: Notes on how to install, use and maintain multiple validator client
 
 # ⛓ Client software
 
+<div align="left">
+
 <figure><img src="https://raw.githubusercontent.com/DVStakers/docs/main/.gitbook/assets/Eridian.png" alt=""><figcaption><p>Eridian</p></figcaption></figure>
+
+</div>
 
 {% content-ref url="geth/" %}
 [geth](geth/)
@@ -20,7 +24,11 @@ description: Notes on how to install, use and maintain multiple validator client
 
 
 
+<div align="left">
+
 <figure><img src="../../.gitbook/assets/Spacesider.png" alt=""><figcaption><p>Spacesider</p></figcaption></figure>
+
+</div>
 
 Four clients are running on the machine, all of which are [minority clients](https://clientdiversity.org/).
 
