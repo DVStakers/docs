@@ -90,18 +90,16 @@ vim .env
 
 For the `*_NODE_NUMBER` variables, use the following values for each participant.
 
-| Participant 1                                                                                                                 | Participant 2                                                                                                                 | Participant 3 / Cloud Auxiliary Client                                                                                        |
-| ----------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
-| <pre class="language-bash"><code class="lang-bash">FIRST_NODE_NUMBER=0
+<table><thead><tr><th width="243">Participant 1</th><th width="226.33333333333331">Participant 2</th><th>Participant 3 / Cloud Auxiliary Client</th></tr></thead><tbody><tr><td><pre class="language-bash"><code class="lang-bash">FIRST_NODE_NUMBER=0
 SECOND_NODE_NUMBER=1
 THIRD_NODE_NUMBER=2
-</code></pre> | <pre class="language-bash"><code class="lang-bash">FIRST_NODE_NUMBER=3
+</code></pre></td><td><pre class="language-bash"><code class="lang-bash">FIRST_NODE_NUMBER=3
 SECOND_NODE_NUMBER=4
 THIRD_NODE_NUMBER=5
-</code></pre> | <pre class="language-bash"><code class="lang-bash">FIRST_NODE_NUMBER=6
+</code></pre></td><td><pre class="language-bash"><code class="lang-bash">FIRST_NODE_NUMBER=6
 SECOND_NODE_NUMBER=7
 THIRD_NODE_NUMBER=8
-</code></pre> |
+</code></pre></td></tr></tbody></table>
 
 ### Step 4: Import the keyshares
 

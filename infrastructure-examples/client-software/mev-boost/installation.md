@@ -103,13 +103,7 @@ WantedBy=multi-user.target
 {% endtab %}
 
 {% tab title="MEV Boost Flags Explained" %}
-| `/usr/local/bin/mev-boost` | Starts MEV Boost.                                                                                                                                                                                       |
-| -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `-${NETWORK}`              | Specifies the target network.                                                                                                                                                                           |
-| `-addr`                    | Set listening port.                                                                                                                                                                                     |
-| `-min-bid`                 | <p>Sets the minimum bid that needs to be offered to accept a block from the relay.<br><br>If no offer is higher than the <code>min-bid</code> then the validator will build its own block locally. </p> |
-| `-relay-check`             | MEV Boost pings the relays to check they are still alive.                                                                                                                                               |
-| `-relays`                  | Comma separated list of relay addresses.                                                                                                                                                                |
+<table data-header-hidden><thead><tr><th width="294">Flag</th><th>Description</th></tr></thead><tbody><tr><td><code>/usr/local/bin/mev-boost</code></td><td>Starts MEV Boost.</td></tr><tr><td><code>-${NETWORK}</code></td><td>Specifies the target network.</td></tr><tr><td><code>-addr</code></td><td>Set listening port.</td></tr><tr><td><code>-min-bid</code></td><td>Sets the minimum bid that needs to be offered to accept a block from the relay.<br><br>If no offer is higher than the <code>min-bid</code> then the validator will build its own block locally. </td></tr><tr><td><code>-relay-check</code></td><td>MEV Boost pings the relays to check they are still alive.</td></tr><tr><td><code>-relays</code></td><td>Comma separated list of relay addresses.</td></tr></tbody></table>
 {% endtab %}
 {% endtabs %}
 

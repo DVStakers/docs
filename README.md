@@ -65,8 +65,8 @@ DVStakers' vision is to become a community of leading DVT non-custodial node ope
 [stakewise-v3-vault.md](dvt-staking/stakewise-v3-vault.md)
 {% endcontent-ref %}
 
-{% content-ref url="dvt-staking/ssv-operators.md" %}
-[ssv-operators.md](dvt-staking/ssv-operators.md)
+{% content-ref url="dvt-staking/ssv-operators/" %}
+[ssv-operators](dvt-staking/ssv-operators/)
 {% endcontent-ref %}
 
 {% content-ref url="dvt-staking/rocketpool-staking.md" %}

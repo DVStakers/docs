@@ -8,7 +8,8 @@
 
 * [➡ Direct Staking 🏗️](dvt-staking/direct-staking.md)
 * [🏦 StakeWise V3 Vault 🏗️](dvt-staking/stakewise-v3-vault.md)
-* [🤖 SSV Operators 🏗️](dvt-staking/ssv-operators.md)
+* [🤖 SSV Operators 🏗️](dvt-staking/ssv-operators/README.md)
+  * [SSV Node - Installation](dvt-staking/ssv-operators/ssv-node-installation.md)
 * [🚀 RocketPool Staking 🏗️](dvt-staking/rocketpool-staking.md)
 * [🏖 Lido Community Staking 🏗️](dvt-staking/lido-community-staking.md)
 * [💡 Ether.fi Staking 🏗️](dvt-staking/ether.fi-staking.md)
