@@ -132,7 +132,7 @@ Be careful when you select and copy the entire **Secret Key (SK)** and make sure
 {% endhint %}
 
 {% hint style="danger" %}
-Make sure to store and back up your operator's **Secret Key (SK)** in a safe place.\\
+Make sure to store and back up your operator's **Secret Key (SK)** in a safe place.
 
 **Do not share** this key with anyone.
 {% endhint %}
