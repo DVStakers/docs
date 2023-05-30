@@ -32,12 +32,12 @@ Where each participant holds three keyshares. Obol doesn't currently support 2/3
 CLUSTER_PREFIX=        # E.g. obol
 
 echo "alias ${CLUSTER_PREFIX}-log='docker compose -f ~/${CLUSTER_PREFIX}/docker-compose.yml -p ${CLUSTER_PREFIX} logs -f'" >> ~/.bashrc
-echo "alias ${CLUSTER_PREFIX}-log-node-lighthouse='docker logs obol-node-lighthouse-1 -f'" >> ~/.bashrc
-echo "alias ${CLUSTER_PREFIX}-log-node-teku='docker logs obol-node-teku-1 -f'" >> ~/.bashrc
-echo "alias ${CLUSTER_PREFIX}-log-node-nimbus='docker logs obol-node-nimbus-1 -f'" >> ~/.bashrc
-echo "alias ${CLUSTER_PREFIX}-log-vc-lighthouse='docker logs obol-vc-lighthouse-1 -f'" >> ~/.bashrc
-echo "alias ${CLUSTER_PREFIX}-log-vc-teku='docker logs obol-vc-teku-1 -f'" >> ~/.bashrc
-echo "alias ${CLUSTER_PREFIX}-log-vc-nimbus='docker logs obol-vc-nimbus-1 -f'" >> ~/.bashrc
+echo "alias ${CLUSTER_PREFIX}-log-node-lighthouse='docker logs ${CLUSTER_PREFIX}-node-lighthouse-1 -f'" >> ~/.bashrc
+echo "alias ${CLUSTER_PREFIX}-log-node-teku='docker logs ${CLUSTER_PREFIX}-node-teku-1 -f'" >> ~/.bashrc
+echo "alias ${CLUSTER_PREFIX}-log-node-nimbus='docker logs ${CLUSTER_PREFIX}-node-nimbus-1 -f'" >> ~/.bashrc
+echo "alias ${CLUSTER_PREFIX}-log-vc-lighthouse='docker logs ${CLUSTER_PREFIX}-vc-lighthouse-1 -f'" >> ~/.bashrc
+echo "alias ${CLUSTER_PREFIX}-log-vc-teku='docker logs ${CLUSTER_PREFIX}-vc-teku-1 -f'" >> ~/.bashrc
+echo "alias ${CLUSTER_PREFIX}-log-vc-nimbus='docker logs ${CLUSTER_PREFIX}-vc-nimbus-1 -f'" >> ~/.bashrc
 echo "alias ${CLUSTER_PREFIX}-start='docker compose -f ~/${CLUSTER_PREFIX}/docker-compose.yml -p ${CLUSTER_PREFIX} up --detach'" >> ~/.bashrc
 echo "alias ${CLUSTER_PREFIX}-build='docker compose -f ~/${CLUSTER_PREFIX}/docker-compose.yml -p ${CLUSTER_PREFIX} up --detach --build'" >> ~/.bashrc
 echo "alias ${CLUSTER_PREFIX}-stop='docker compose -f ~/${CLUSTER_PREFIX}/docker-compose.yml -p ${CLUSTER_PREFIX} down'" >> ~/.bashrc
@@ -160,7 +160,7 @@ mkdir -p .charon/cluster
 ```
 {% endtab %}
 
-{% tab title="Participant 3 / Cloud Auxiliary Client" %}
+{% tab title="Participant 3" %}
 ```
 .charon/cluster/
 ├─ node6/
