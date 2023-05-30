@@ -148,6 +148,17 @@ docker run --rm -v $(pwd):/opt/charon obolnetwork/charon:${CHARON_VERSION} creat
 
 In the `.charon` directory there will now be a `cluster` directory containing 6 sub-directories, each named `node0`, `node1`, etc.&#x20;
 
+{% hint style="info" %}
+**I can't see the `.charon` directory?! 👀**
+
+On most filesystems, files and directories that start with a . are hidden by default.
+
+On a Unix system (Mac or Linux) on the command line you can see hidden files and directories using the `-a` flag for the `ls` command:
+
+<pre><code><strong>ls -la
+</strong></code></pre>
+{% endhint %}
+
 ```
 .charon/cluster/
 ├─ node[0-*]/                   Directory for each node
