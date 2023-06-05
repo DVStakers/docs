@@ -2,9 +2,9 @@
 description: Direct staking through DVStakers is currently under development.
 ---
 
-# ➡ Direct Staking 🏗️
+# ➡ Direct Staking 🧪
 
-**Status: **<mark style="color:orange;">**In Development**</mark>** 🏗️**
+**Status: **<mark style="color:yellow;">**Testing**</mark> 🧪
 
 Direct staking with DVStakers is currently being tested with our existing validators to develop a robust DVT process.
 

@@ -2,9 +2,9 @@
 description: How to stake with the DVStakers StakeWise V3 Vault.
 ---
 
-# 🏦 StakeWise V3 Vault 🏗️
+# 🏦 StakeWise V3 Vault 🧪
 
-**Status: **<mark style="color:orange;">**In Development**</mark>** 🏗️**
+**Status: **<mark style="color:yellow;">**Testing**</mark> 🧪
 
 {% embed url="https://stakewise.io" %}
 

@@ -139,25 +139,41 @@ Make sure to store and back up your operator's **Secret Key (SK)** in a safe pla
 
 ### Create Configuration File
 
-Fill all the placeholders (DB\_FOLDER, ETH2\_NODE, etc.) with actual values, and run the command below to create a `config.yaml` file.
+Fill all the placeholders (DB\_FOLDER, ETH2\_NODE, etc.) with actual values, and run the commands below to create a `config.yaml` file.
+
+Replace `<DB_FOLDER>` with the location you want the database to be stored e.g. `./data/db`&#x20;
 
 ```bash
-DB_FOLDER=                # e.g. ./data/db
-NETWORK=prater          
-ETH2_NODE=                # e.g. http://localhost:5052
-ETH1_WEBSOCKET_ADDRESS=   # e.g. ws://localhost:8546
-OPERATOR_SECRET_KEY=      # e.g. LS0tLS1CRUdJTiBSU0EgUFJJVkFURSBLRVktLS0tLQpNSUlFcEFJQkFBS0NBUUVBMCswYVdEK3RibndzYVdLYjF3UnEzTGF5bysvV1J4aHdpUnRpcWwvR2ZkajNodjRSCnh5K1FwVzhFRUNRK1dJNmJ1VFc4bzN8YmsydDMwNUlQRTdCVFlHdmhKem4wU2hiaUdVdVBxenFCdVJOMHo5NTEKV3VlcEJwV3RkeTdUaDVsT0w1cTQ3REFqbFFDdi95NlJLZzM5T2dNdmdnUFo2VE1YcllwV0g2UmpreGhVTG9ZcwpxTEVBN05pU3JHU3JqdGxCTlZiRHR5d3lGWFp0SnNkM6gykTM2TDRqdkd3YjRGOGpOaXNJRTl5YUt3YnVKZXq0RnpGdjY1YXRiV25hVFdzbmg1bDNrZ05uMlJLWktqZ1pycmRGdG5Pa3dWaHozYkNFMVRlam5rWTAvM3hBMEhaNU4KNC9IU666Rit2TllYb040aDBicnVTdlVmZTBLTndvMDNFQ3l3SXdJREFRQUJBb0lCQUQvbW9XZjBvMlhLR1ZZWgpmcVlCMWZzQk43SkkwaEtUNHZMa2lBYVpaRzl6NlljUnV1aVZoZ2JzQjR5RENSWWd3Z0hCbTBTc1NFamFRY0pRCnF5MGpvTEJWTndtdDV1UWtMRDYyVXZhdGFJb1d2TVVrN2J2Z1dFMzgrZFlURDRNMmphVzdBSUZ2TG50eVBwOHkKT21FMDRLTUtiTnZHTDRHcWZ6dzdseVpwV2dEeTY0bWdkMk8rd21aZFNhdkR0TGNza666bHVSTEQxYklKVDQxSApwY3hKVk5qVmhFU3NGM1NGdXM4ZmpERXJiYmFQbnNTNWI3Z0hGUUJpZG5iYWhjOG5MOGFkT2M5Nks4a2FIWEFYCjJlSEloQitwSmdwUjU0bXY1bjZWTFljTUhXVTVyWE14emNicXQxVGFuMjI3MTA2NTRRQmIzY1ByT1V5UkI3REkKU1NEUzc0a0NnWUVBN1U4M0t4cWJpQy9mR2c4VUxMVjAzWktrOCtHWlNKZFlhN2ZnS2dXVCsvQjJLa2xPY2Y0TAoxcHYxMmlFbTdnVE5FYnNhaElpTm8wYlo5eEx2aG9NdTZoNSp==
+yq n db.Path "<DB_FOLDER>" | tee config.yaml
+```
 
-yq n db.Path "${DB_FOLDER}" | tee config.yaml \
-&& yq w -i config.yaml eth2.Network "${NETWORK}" \
-&& yq w -i config.yaml eth2.BeaconNodeAddr "${ETH2_NODE}" \
-&& yq w -i config.yaml eth1.ETH1Addr "${ETH1_WEBSOCKET_ADDRESS}" \
-&& yq w -i config.yaml OperatorPrivateKey "${OPERATOR_SECRET_KEY}"
+Set the network to `prater`
+
+```bash
+yq w -i config.yaml eth2.Network "prater"
+```
+
+Replace `<ETH2_NODE>` with the location of your Beacon Client e.g `http://localhost:5052` &#x20;
+
+```bash
+yq w -i config.yaml eth2.BeaconNodeAddr "<ETH2_NODE>"
+```
+
+Replace `<ETH1_WEBSOCKET_ADDRESS>` with the location of your Execution Client e.g. `ws://localhost:8546`&#x20;
+
+```bash
+yq w -i config.yaml eth1.ETH1Addr "<ETH1_WEBSOCKET_ADDRESS>"
 ```
 
 {% hint style="warning" %}
 Make sure your `ETH1Addr` endpoint is communicating **over WebSocket** and **not over HTTP** in order to support subscriptions and notifications.
 {% endhint %}
+
+Replace `<OPERATOR_SECRET_KEY>` with your operator secret key [generated above](ssv-node-installation.md#generate-operator-keys) e.g. `LS0tLS1CRUdJTiBSU0EgUFJJVkF...`
+
+```bash
+yq w -i config.yaml OperatorPrivateKey "<OPERATOR_SECRET_KEY>"
+```
 
 <details>
 
