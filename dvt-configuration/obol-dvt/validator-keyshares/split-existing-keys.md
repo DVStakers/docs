@@ -70,14 +70,15 @@ mkdir split_keys
 
 Copy the existing validator `keystore.json` files into this new folder. Alongside them, with a matching filename but ending with `.txt` should be the password to the keystore. E.g., `keystore-0.json` `keystore-0.txt`. These matching `.txt` files can be generated with a bash script.
 
-At the start of this process, you should have a tree that looks something like this.
+At the start of this process, you should have a file tree that looks something like this.
 
 ```
-├── split_keys
-    ├── keystore-0.json
-    ├── keystore-1.json
-    ...
-    ├── keystore-*.json
+├── charon-key-splitter
+      ├── split_keys
+          ├── keystore-0.json
+          ├── keystore-1.json
+          ...
+          ├── keystore-*.json
 ```
 
 Create the bash script file.
@@ -106,7 +107,7 @@ for file in *.json; do
 done
 ```
 
-Save this script as and make it executable.
+Save this script and make it executable.
 
 ```bash
 chmod +x generate_txt_files.sh
@@ -146,7 +147,7 @@ NODES=                         # E.g. 9
 docker run --rm -v $(pwd):/opt/charon obolnetwork/charon:${CHARON_VERSION} create cluster --name="${CLUSTER_NAME}" --withdrawal-addresses="${WITHDRAWAL_ADDRESS}" --fee-recipient-addresses="${FEE_RECIPIENT_ADDRESS}" --split-existing-keys --split-keys-dir=/opt/charon/split_keys --threshold ${THRESHOLD} --nodes ${NODES}
 ```
 
-In the `.charon` directory there will now be a `cluster` directory containing 6 sub-directories, each named `node0`, `node1`, etc.&#x20;
+In the `.charon` directory there will now be a `cluster` directory containing sub-directories, each named `node0`, `node1`, etc.&#x20;
 
 {% hint style="info" %}
 **I can't see the `.charon` directory?! 👀**
