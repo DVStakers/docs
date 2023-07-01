@@ -4,7 +4,7 @@ description: The journey of Ethereum solo stakers to distributed validator staki
 
 # 🗺 DVStakers
 
-<figure><img src=".gitbook/assets/Road.jpg" alt="Image of a road"><figcaption><p>Ethereum path shared, squad stakers quest for DVT, blockchain harmony.</p></figcaption></figure>
+<figure><img src=".gitbook/assets/Road.jpg" alt="Image of a road"><figcaption><p>Ethereum path shared, ETH stakers quest for DVT, blockchain harmony.</p></figcaption></figure>
 
 * [🖥 The Evolution of Solo Staking](the-evolution-of-solo-staking.md)
 * [🚀 About Us](./#about-us)
