@@ -27,7 +27,7 @@ Join us on an adventure as dedicated Ethereum solo stakers prepare to run Distri
 
 ### 🚀 About Us
 
-We are long-time cryptocurrency enthusiasts and experienced Ethereum solo stakers. Our contributors write and maintain the [EthStaker Knowledge Base](https://ethstaker.gitbook.io/ethstaker-knowledge-base/), providing an unbiased, open-source collection of useful information and concepts about Ethereum staking. We've also partnered with [SquadStaking](https://twitter.com/squadstaking) to combine DVT knowledge and news.
+We are long-time cryptocurrency enthusiasts and experienced Ethereum solo stakers. Our contributors write and maintain the [EthStaker Knowledge Base](https://ethstaker.gitbook.io/ethstaker-knowledge-base/), providing an unbiased, open-source collection of useful information and concepts about Ethereum staking.
 
 Our passion for blockchain technology and decentralized systems led us to explore the exciting world of DVT. Our mission is to contribute to the Ethereum ecosystem by running a secure and efficient DVT setup while engaging with the staking community and sharing our knowledge.
 
@@ -42,10 +42,6 @@ Our passion for blockchain technology and decentralized systems led us to explor
  
 
 <figure><img src=".gitbook/assets/image (3) (2).png" alt=""><figcaption><p>Metanull</p></figcaption></figure>
-
- 
-
-<figure><img src=".gitbook/assets/image (2).png" alt=""><figcaption><p>SquadStaking</p></figcaption></figure>
 
 </div>
 
