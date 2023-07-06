@@ -6,11 +6,11 @@
 
 ### About the Kenyan Node
 
-Everyone knows that the continued decentralization of Ethereum is critical and DVStakers wanted to do something about it.
+Everyone knows that the continued decentralization of Ethereum is critical, and DVStakers wanted to do something about it.
 
 Through personal contacts in Kenya, we arranged a small office space in Nairobi to set up a proof of concept node operator.
 
-As DVStakers is a distributed node operator community providing education about DVT, it seemed like a perfect fit for our vision.
+DVStakers is a distributed node operator community providing education about DVT, so it seemed like a perfect fit for our vision.
 
 This setup is not the final version but simply a 3-day proof of concept to show Ethereum DVT validators running in Kenya.
 
@@ -73,5 +73,9 @@ The setup team:
  
 
 <figure><img src="../.gitbook/assets/Spacesider.png" alt="Spacesider"><figcaption><p>Spacesider</p></figcaption></figure>
+
+ 
+
+<figure><img src="../.gitbook/assets/Screenshot 2023-07-06 at 23.13.10-modified.png" alt=""><figcaption><p>Snapcrackle</p></figcaption></figure>
 
 </div>

@@ -38,13 +38,17 @@ description: >-
 
 <figure><img src="../.gitbook/assets/image (3) (2).png" alt=""><figcaption><p>Metanull</p></figcaption></figure>
 
+ 
+
+<figure><img src="../.gitbook/assets/Screenshot 2023-07-06 at 23.13.10-modified.png" alt=""><figcaption><p>Snapcrackle</p></figcaption></figure>
+
 </div>
 
 ### Become a DVStakers Node Operator
 
-We believe that collaboration and knowledge sharing are essential for the growth and success of the Ethereum ecosystem. We invite you to join our community of stakers, developers, and enthusiasts.
+We believe that collaboration and knowledge sharing are essential for the growth and success of the Ethereum ecosystem. We invite you to join our stakers, developers, and enthusiasts community.
 
-Get ready to embark on this adventure with us, as we delve into the world of Distributed Validator Technology and contribute to the evolution of Ethereum. Together, we can ensure the future of Ethereum is decentralized.
+Get ready to embark on this adventure with us as we delve into the world of Distributed Validator Technology and contribute to the evolution of Ethereum. Together, we can ensure the future of Ethereum is decentralized.
 
 Connect with us now, and let the journey begin! 🌟
 

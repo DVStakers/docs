@@ -4,8 +4,6 @@ description: Leveling the playing field of the Ethereum staking ecosystem
 
 # 🗺 DVStakers
 
-<figure><img src=".gitbook/assets/image (3).png" alt="" width="563"><figcaption><p>DVStakers Global Nodes</p></figcaption></figure>
-
 * [📍 DVStakers Global](dvstakers-global/)
 * [🖥 The Evolution of Solo Staking](the-evolution-of-solo-staking.md)
 * [🚀 About Us](./#about-us)
@@ -14,13 +12,13 @@ description: Leveling the playing field of the Ethereum staking ecosystem
 * [📚 Our Journey](./#our-journey)
 * [💬 Be part of our Community](./#be-part-of-our-community)
 
-Join us on an adventure as dedicated Ethereum solo stakers prepare to run Distributed Validator Technology (DVT) on the Ethereum mainnet. We aim to document of our journey, offering valuable insights, sharing our experiences, and fostering a supportive community for enthusiasts and experts alike.
+Join us on an adventure as dedicated Ethereum solo stakers prepare to run Distributed Validator Technology (DVT) on the Ethereum mainnet. We aim to document our journey, offering valuable insights, sharing our experiences, and fostering a supportive community for enthusiasts and experts alike.
 
 ### 🚀 About Us
 
 We are long-time cryptocurrency enthusiasts and experienced Ethereum solo stakers. Our contributors write and maintain the [EthStaker Knowledge Base](https://ethstaker.gitbook.io/ethstaker-knowledge-base/), providing an unbiased, open-source collection of useful information and concepts about Ethereum staking.
 
-Our passion for blockchain technology and decentralized systems led us to explore the exciting world of DVT. Our mission is to contribute to the Ethereum ecosystem by running a secure and efficient DVT setup while engaging with the staking community and sharing our knowledge.
+Our passion for blockchain technology and decentralized systems led us to explore the exciting world of DVT. We aim to contribute to the Ethereum ecosystem by running a secure and efficient DVT setup while engaging with the staking community and sharing our knowledge.
 
 <div align="center">
 
@@ -34,13 +32,21 @@ Our passion for blockchain technology and decentralized systems led us to explor
 
 <figure><img src=".gitbook/assets/image (3) (2).png" alt=""><figcaption><p>Metanull</p></figcaption></figure>
 
+ 
+
+<figure><img src=".gitbook/assets/Screenshot 2023-07-06 at 23.13.10-modified.png" alt=""><figcaption><p>Snapcrackle</p></figcaption></figure>
+
 </div>
 
 ### 🎯 Our Vision
 
 **To become a leading community of DVT node operators**
 
-DVStakers' vision is to become a community of leading DVT non-custodial node operators within the Ethereum ecosystem, running validators using multiple DVT protocols such as Obol, SSV and Diva. By working with platforms such as StakeWise, RocketPool, ether.fi, Lido, and more, we aim to support a diverse range of staking opportunities. Our commitment to leveraging the best of each protocol will enable us to offer optimal staking experiences, maximizing rewards, and minimizing risks for all stakeholders involved. As we continue our journey, we strive to stay at the forefront of innovation and contribute to the growth and resilience of the Ethereum network, building a more decentralized and secure future.
+DVStakers' vision is to become a community of leading DVT non-custodial node operators within the Ethereum ecosystem, running validators using multiple DVT protocols such as Obol, SSV and Diva. By working with platforms such as StakeWise, RocketPool, ether.fi, Lido, and more, we aim to support a diverse range of staking opportunities.&#x20;
+
+Our commitment to leveraging the best of each protocol will enable us to offer optimal staking experiences, maximizing rewards, and minimizing risks for all stakeholders involved.&#x20;
+
+As we continue our journey, we strive to stay at the forefront of innovation and contribute to the growth and resilience of the Ethereum network, building a more decentralized and secure future.
 
 ### 🔍 Current state of the DVT ecosystem
 
