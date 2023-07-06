@@ -50,4 +50,4 @@ Once the command has been executed, you may be asked a few follow-up questions s
 
 You will see the CLI tool generate your keys in real-time, and when completed you will be informed of which folder the keys are in. Make sure you keep your mnemonic safe as if you lose your validator keys, you won't be able to recover your ETH!
 
-<figure><img src="../.gitbook/assets/image (20).png" alt=""><figcaption><p>Success!</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (20) (1).png" alt=""><figcaption><p>Success!</p></figcaption></figure>

@@ -1,11 +1,12 @@
 ---
-description: The journey of Ethereum solo stakers to distributed validator staking.
+description: Leveling the playing field of the Ethereum staking ecosystem
 ---
 
 # 🗺 DVStakers
 
-<figure><img src=".gitbook/assets/Road.jpg" alt="Image of a road"><figcaption><p>Ethereum path shared, ETH stakers quest for DVT, blockchain harmony.</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (3).png" alt="" width="563"><figcaption><p>DVStakers Global Nodes</p></figcaption></figure>
 
+* [📍 DVStakers Global](dvstakers-global/)
 * [🖥 The Evolution of Solo Staking](the-evolution-of-solo-staking.md)
 * [🚀 About Us](./#about-us)
 * [🎯 Our Vision](./#our-vision)
@@ -14,16 +15,6 @@ description: The journey of Ethereum solo stakers to distributed validator staki
 * [💬 Be part of our Community](./#be-part-of-our-community)
 
 Join us on an adventure as dedicated Ethereum solo stakers prepare to run Distributed Validator Technology (DVT) on the Ethereum mainnet. We aim to document of our journey, offering valuable insights, sharing our experiences, and fostering a supportive community for enthusiasts and experts alike.
-
-{% tabs %}
-{% tab title="View our progress by clicking on the link below:" %}
-{% content-ref url="the-evolution-of-solo-staking.md" %}
-[the-evolution-of-solo-staking.md](the-evolution-of-solo-staking.md)
-{% endcontent-ref %}
-
-<figure><img src=".gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
-{% endtab %}
-{% endtabs %}
 
 ### 🚀 About Us
 
@@ -47,7 +38,7 @@ Our passion for blockchain technology and decentralized systems led us to explor
 
 ### 🎯 Our Vision
 
-**To become a Multi-Protocol DVT Node Operator**
+**To become a leading community of DVT node operators**
 
 DVStakers' vision is to become a community of leading DVT non-custodial node operators within the Ethereum ecosystem, running validators using multiple DVT protocols such as Obol, SSV and Diva. By working with platforms such as StakeWise, RocketPool, ether.fi, Lido, and more, we aim to support a diverse range of staking opportunities. Our commitment to leveraging the best of each protocol will enable us to offer optimal staking experiences, maximizing rewards, and minimizing risks for all stakeholders involved. As we continue our journey, we strive to stay at the forefront of innovation and contribute to the growth and resilience of the Ethereum network, building a more decentralized and secure future.
 
