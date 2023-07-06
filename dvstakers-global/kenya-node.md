@@ -28,8 +28,6 @@ We arrived in Nairobi and went to source local equipment.
 
 ![](<../.gitbook/assets/image (12).png>)
 
-
-
 With all the equipment sourced, we started setting everything up.
 
 <div align="left">
@@ -62,7 +60,7 @@ The setup team:
 
 <div align="left">
 
-<figure><img src="../.gitbook/assets/image (1).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1).png" alt="" width="375"><figcaption><p>Eridian &#x26; James</p></figcaption></figure>
 
 </div>
 
