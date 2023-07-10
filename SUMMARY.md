@@ -1,6 +1,7 @@
 # Table of contents
 
 * [🗺 DVStakers](README.md)
+  * [What is Distributed Validator Technolgy](readme/what-is-distributed-validator-technolgy.md)
 * [📍 DVStakers Global](dvstakers-global/README.md)
   * [🇰🇪 Kenya Node](dvstakers-global/kenya-node.md)
   * [🇦🇺 Australia Node](dvstakers-global/australia-node.md)
