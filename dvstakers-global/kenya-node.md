@@ -6,29 +6,45 @@
 
 ### About the Kenyan Node
 
+**Why Kenya?**&#x20;
+
+DVStakers operate nodes in Australia, Germany, the UK, and the USA, effectively covering the current geographical demographics of node distribution.&#x20;
+
 Everyone knows that the continued decentralization of Ethereum is critical, and DVStakers wanted to do something about it.
 
-Through personal contacts in Kenya, we arranged a small office space in Nairobi to set up a proof of concept node operator.
+We wanted to showcase the global reach of DVT and decided to expand our presence to Africa.  DVStakers is a distributed node operator community providing education about DVT, so it seemed like a perfect fit for our vision.
 
-DVStakers is a distributed node operator community providing education about DVT, so it seemed like a perfect fit for our vision.
+Navigating through this mission was not without its challenges. Our exhaustive two-month exploration to identify an appropriate node operator did not yield the desired results. However, we remained unfazed and adopted the "build it, and they will come" approach.
+
+Our approach was centred around identifying a community or a user interested in adopting our node.&#x20;
+
+Among all the possible African nations, Kenya emerged as the most suitable destination for our expansion. The country was not random; we leveraged pre-existing relationships with Snapcrackle and Eridian.&#x20;
+
+Furthermore, we were buoyed by the forthcoming ETH Safari in 2023, a global event anticipated to draw enthusiasts from across continents, thereby increasing Kenya's visibility in the crypto world in our quest to find a home for the nodes.&#x20;
+
+As of now, DVStakers is remotely managing the node.&#x20;
+
+The setting up process was not a smooth sailing journey; it threw a few unanticipated challenges our way.  We intend to delve into these challenges in a moment.&#x20;
+
+Nonetheless, this experience underscored the need for detailed node guides to consider the distinct situations encountered in different regions around the globe. This way, we can mitigate such challenges in our future expansions and continue to broaden the reach of home stakers and DVT.
+
+Special thanks to [Dappnode](https://dappnode.com/) and [HomeNode](https://homenode.org/), who provided the node hardware for this initiative and Duncan, who we met online and is helping us with physical IT operations in Nairobi.
 
 This setup is not the final version but simply a 3-day proof of concept to show Ethereum DVT validators running in Kenya.
 
-Special thanks to [Dappnode](https://dappnode.com/) and [HomeNode](https://homenode.org/) who provided the node hardware for this initiative.
-
 ### What's running on the nodes?
 
-🏗️ Content coming soon™ 🏗️
+
 
 ### Setup process
 
-We arrived in Nairobi and went to source local equipment.
+We arrived in Nairobi and went to source local equipment. We could buy equipment cheaper or at the same price as back in Europe.
 
 ![](<../.gitbook/assets/image (6).png>)![](<../.gitbook/assets/image (11).png>)
 
 ![](<../.gitbook/assets/image (12).png>)
 
-With all the equipment sourced, we started setting everything up.
+With all the equipment sourced (we made several trips and would not have found many parts with the help of Duncan), we started setting everything up.
 
 <div align="left">
 
