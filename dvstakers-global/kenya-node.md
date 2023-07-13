@@ -34,7 +34,10 @@ This setup is not the final version but simply a 3-day proof of concept to show 
 
 ### What's running on the nodes?
 
-
+* Geth & Lighthouse
+* Nethermind & Prysm
+* SSV Operator: [https://explorer.ssv.network/operators/615](https://explorer.ssv.network/operators/615)
+* DVStakers Obol Cluster
 
 ### Setup process
 
