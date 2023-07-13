@@ -14,7 +14,7 @@ Validator clients are configured to also use other DVStakers beacon nodes too, s
 
 The global failover has some constraints such as increased latency due to geographic distances between the DVStakers.
 
-In rare situations where an attestation is not submitted in the four-second window that it has, this could lead to the attestation being missed or having a [non-optimal inclusion distance](http://localhost:5000/s/KnJhWg57YoZq2MPfatKE/staking-glossary#inclusion-distance), but it will prevent the validator(s) from being offline.
+In rare situations where an attestation is not submitted in the four-second window that it has, this could lead to the attestation being missed or having a [non-optimal inclusion distance](http://127.0.0.1:5000/s/KnJhWg57YoZq2MPfatKE/staking-glossary#inclusion-distance), but it will prevent the validator(s) from being offline.
 
 In our experiences, we have not seen the latency between Validator Clients and Beacon Nodes cause any issues, but it is worth noting that there could be some.
 

@@ -4,6 +4,8 @@
 
 <figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p>DVStakers Kenya Node - Webcam View</p></figcaption></figure>
 
+<figure><img src="../.gitbook/assets/KenyaNode.gif" alt=""><figcaption><p>DVStakers Kenya Node - Webcam View</p></figcaption></figure>
+
 ### About the Kenyan Node
 
 **Why Kenya?**&#x20;
