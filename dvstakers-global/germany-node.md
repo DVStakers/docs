@@ -2,5 +2,5 @@
 description: Content coming soon...
 ---
 
-# 🇦🇺 Australia Node
+# 🇩🇪 Germany Node
 

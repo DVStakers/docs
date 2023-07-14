@@ -1,8 +1,6 @@
 # 🇰🇪 Kenya Node
 
-<figure><img src="../.gitbook/assets/image (14).png" alt="" width="563"><figcaption><p>DVStakers Global - Kenya Node Location</p></figcaption></figure>
-
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p>DVStakers Kenya Node - Webcam View</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption><p>DVStakers Kenya Node - Webcam View</p></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/KenyaNode.gif" alt=""><figcaption><p>DVStakers Kenya Node - Webcam View</p></figcaption></figure>
 
@@ -81,7 +79,7 @@ The setup team:
 
 <div align="left">
 
-<figure><img src="../.gitbook/assets/image (1).png" alt="" width="375"><figcaption><p>Eridian &#x26; James</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (6).png" alt="" width="375"><figcaption><p>Eridian &#x26; James</p></figcaption></figure>
 
 </div>
 

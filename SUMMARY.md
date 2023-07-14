@@ -5,6 +5,7 @@
 * [📍 DVStakers Global](dvstakers-global/README.md)
   * [🇰🇪 Kenya Node](dvstakers-global/kenya-node.md)
   * [🇦🇺 Australia Node](dvstakers-global/australia-node.md)
+  * [🇩🇪 Germany Node](dvstakers-global/germany-node.md)
   * [🇬🇧 UK Node](dvstakers-global/uk-node.md)
   * [🇺🇸 USA Node](dvstakers-global/usa-node.md)
 * [🖥 The Evolution of Solo Staking](the-evolution-of-solo-staking.md)

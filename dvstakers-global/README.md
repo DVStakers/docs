@@ -6,7 +6,7 @@ description: >-
 
 # 📍 DVStakers Global
 
-<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption><p>DVStakers Global Nodes</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p>DVStakers Global Nodes</p></figcaption></figure>
 
 {% content-ref url="kenya-node.md" %}
 [kenya-node.md](kenya-node.md)
@@ -14,6 +14,10 @@ description: >-
 
 {% content-ref url="australia-node.md" %}
 [australia-node.md](australia-node.md)
+{% endcontent-ref %}
+
+{% content-ref url="germany-node.md" %}
+[germany-node.md](germany-node.md)
 {% endcontent-ref %}
 
 {% content-ref url="uk-node.md" %}
