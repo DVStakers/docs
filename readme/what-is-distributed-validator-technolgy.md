@@ -1,5 +1,11 @@
 # What is Distributed Validator Technolgy
 
+### What is DVT?
+
+Distributed Validator Technology. In a traditional solo staking setup, if a single validator node goes offline due to technical issues or maintenance, it immediately stops performing its validator duties (attestations, block proposals, etc.). This can lead to missed rewards and penalties for the staker.
+
+However, with Distributed Validator Technology (DVT), a group of stakers work together as a single unit. If one of the stakers within the group experiences node downtime, the remaining stakers in the group continue to perform the validator duties collectively. This ensures that the staking process remains uninterrupted, maintaining network stability and allowing the group to continue earning rewards while minimizing the risks associated with individual node failures.
+
 Distributed validator technology (DVT) allows a solo staker with one machine to spread one validator out to multiple machines worldwide.
 
 Groups can collectively pool financial and computational resources to run validators.
@@ -24,11 +30,9 @@ Some use cases:
 
 * DVT clusters could form and collectively deposit the 32ETH.
 * Four DVT users could form Rocketpool mini node by depositing 2ETH each.
-* DVT cluster could join larger staking pools by pairing with existing node operators to increase the decentralised nature of the pool.
+* DVT cluster could join larger staking pools by pairing with existing node operators to increase the decentralized nature of the pool.
 
 \
 How do DVT withdrawals work?
 
 How much do you need to trust others in your cluster?
-
-\

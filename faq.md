@@ -12,15 +12,11 @@ However, with Distributed Validator Technology (DVT), a group of stakers work to
 
 ### What is the purpose of DVStakers?
 
-To document and share the journey of Ethereum stakers from solo staking to distributed validator staking.
+DVStakers is a growing global network of solo stakers, running Ethereum nodes and DVT validators. We provide educational resources and support to anyone interested in learning more about DVT.
 
 ### **Are you sponsored or paid by anyone?**
 
 Not yet. If at some point in the future, we do apply for grants or funding to support this project, we'll let you know here.
-
-### Wen Ethereum mainnet?
-
-While no DVT protocol is currently ready for Ethereum mainnet yet, we are aiming to be ready when it launches.&#x20;
 
 ### Can I be involved in this project?
 

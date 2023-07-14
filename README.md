@@ -4,6 +4,10 @@ description: Leveling the playing field of the Ethereum staking ecosystem
 
 # 🗺 DVStakers
 
+DVStakers is a growing global network of solo stakers, running Ethereum nodes and DVT validators.
+
+<figure><img src=".gitbook/assets/image.png" alt=""><figcaption><p>DVStakers Global Nodes</p></figcaption></figure>
+
 * [📍 DVStakers Global](dvstakers-global/)
 * [🖥 The Evolution of Solo Staking](the-evolution-of-solo-staking.md)
 * [🚀 About Us](./#about-us)

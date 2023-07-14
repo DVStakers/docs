@@ -6,7 +6,7 @@ description: >-
 
 # 📍 DVStakers Global
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p>DVStakers Global Nodes</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption><p>DVStakers Global Nodes</p></figcaption></figure>
 
 {% content-ref url="kenya-node.md" %}
 [kenya-node.md](kenya-node.md)
