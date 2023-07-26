@@ -1,10 +1,10 @@
 ---
-description: How to use DVT to staking on Stader.
+description: How to use DVT to stake on Stader.
 ---
 
-# ⭐ Stader 🏗️
+# ⭐ Stader 🧪
 
-**Status: **<mark style="color:orange;">**In Development**</mark>** 🏗️**
+**Status: **<mark style="color:yellow;">**Testing**</mark> 🧪
 
 {% embed url="https://linktr.ee/stader.eth" %}
 

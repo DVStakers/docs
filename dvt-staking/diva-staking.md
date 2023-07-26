@@ -2,9 +2,9 @@
 description: How to use DVT to staking on Diva.
 ---
 
-# 💧 Diva Staking 🏗️
+# 💧 Diva Staking 🧪
 
-**Status: **<mark style="color:orange;">**In Development**</mark>** 🏗️**
+**Status: **<mark style="color:yellow;">**Testing**</mark> 🧪
 
 {% embed url="https://www.divalabs.org" %}
 
