@@ -1,4 +1,4 @@
-# SSV Node - Installation
+# 🖥 SSV - Installation
 
 Once you have your node running you'll be able to participate in multiple validator clusters and earn rewards 🥳
 
@@ -169,7 +169,7 @@ yq w -i config.yaml eth1.ETH1Addr "<ETH1_WEBSOCKET_ADDRESS>"
 Make sure your `ETH1Addr` endpoint is communicating **over WebSocket** and **not over HTTP** in order to support subscriptions and notifications.
 {% endhint %}
 
-Replace `<OPERATOR_SECRET_KEY>` with your operator secret key [generated above](ssv-node-installation.md#generate-operator-keys) e.g. `LS0tLS1CRUdJTiBSU0EgUFJJVkF...`
+Replace `<OPERATOR_SECRET_KEY>` with your operator secret key [generated above](ssv-installation.md#generate-operator-keys) e.g. `LS0tLS1CRUdJTiBSU0EgUFJJVkF...`
 
 ```bash
 yq w -i config.yaml OperatorPrivateKey "<OPERATOR_SECRET_KEY>"

@@ -62,8 +62,8 @@ As we continue our journey, we strive to stay at the forefront of innovation and
 [stakewise-v3-vault.md](dvt-staking/stakewise-v3-vault.md)
 {% endcontent-ref %}
 
-{% content-ref url="dvt-staking/ssv-operators/" %}
-[ssv-operators](dvt-staking/ssv-operators/)
+{% content-ref url="dvt-staking/ssv-operators.md" %}
+[ssv-operators.md](dvt-staking/ssv-operators.md)
 {% endcontent-ref %}
 
 {% content-ref url="dvt-staking/rocketpool-staking.md" %}

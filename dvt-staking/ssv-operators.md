@@ -8,14 +8,15 @@ description: How to stake with the DVStakers SSV Operators.
 
 {% embed url="https://ssv.network" %}
 
-SSV staking with DVStakers operators is currently being tested on Goerli to develop a robust process.
+SSV staking with DVStakers operators is currently being tested on Goerli to develop a robust process. This includes running operators across the world on different hardware setups, such as a Raspberry Pi!
 
 * [DVStakersEridian SSV Operator](https://explorer.ssv.network/operators/485)
 * [DVStakersSpacesider SSV Operator](https://explorer.ssv.network/operators/486)
 * [DVStakersMetanull SSV Operator](https://explorer.ssv.network/operators/487)
-* [MarkoInEther SSV Operator](https://explorer.ssv.network/operators/76)
+* [DVStakersKenya](https://explorer.ssv.network/operators/615)
+* [DVStakersSpacesiderPi](https://explorer.ssv.network/operators/671)
 
-<figure><img src="../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (27).png" alt=""><figcaption></figcaption></figure>
 
 If you are interested in learning more about our plans for SSV staking, please connect with us:
 
