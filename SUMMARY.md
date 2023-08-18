@@ -15,7 +15,7 @@
 
 * [➡ Direct Staking 🧪](dvt-staking/direct-staking.md)
 * [🏦 StakeWise V3 Vault 🧪](dvt-staking/stakewise-v3-vault.md)
-* [🤖 SSV Operators 🧪](dvt-staking/ssv-operators.md)
+* [🤖 SSV Operators 🧪](dvt-staking/ssv-operators/README.md)
 * [💧 Diva Staking 🧪](dvt-staking/diva-staking.md)
 * [🏖 Lido Community Staking 🏗️](dvt-staking/lido-community-staking.md)
 * [🗝 Stakehouse 🧪](dvt-staking/stakehouse.md)
@@ -26,7 +26,7 @@
 ## DVT Configuration
 
 * [🔑 Validator Key Generation](dvt-configuration/validator-key-generation.md)
-* [🖥 SSV - Installation](dvt-configuration/ssv-installation.md)
+* [🖥 SSV - Installation](dvt-staking/ssv-operators/ssv-node-installation.md)
 * [⚙ Obol - Installation](dvt-configuration/obol-dvt/README.md)
   * [🐳 Install Docker](dvt-configuration/obol-dvt/install-docker.md)
   * [🗝 Validator Keyshares](dvt-configuration/obol-dvt/validator-keyshares/README.md)

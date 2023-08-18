@@ -34,7 +34,11 @@ Connect to the Beacon Nodes of other solo staker to increase redundancy. Further
 
 ### Step 4: DVT Validators (Goerli - Here today📍)
 
-By splitting the keys of any existing validators into 9 keyshares each, a 6/9 Obol DVT cluster can be created. This means, that if any one system goes offline (e.g. due to power cuts, natural disaster, or a Cloud provider deciding that supporting the future of [decentralized finance isn't for them...](https://www.coindesk.com/business/2022/08/26/ethereum-could-get-kicked-off-cloud-host-that-powers-10-of-crypto-network/)) the validators will continue to perform their duties. True DVT!
+SSV operators allow for full redundancy and have been configured by the DVStakers operators, including running on Raspberry Pis!
+
+<figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+With Obol, by splitting the keys of any existing validators into 9 keyshares each, a 6/9 Obol DVT cluster can be created. This means, that if any one system goes offline (e.g. due to power cuts, natural disaster, or a Cloud provider deciding that supporting the future of [decentralized finance isn't for them...](https://www.coindesk.com/business/2022/08/26/ethereum-could-get-kicked-off-cloud-host-that-powers-10-of-crypto-network/)) the validators will continue to perform their duties. True DVT!
 
 The configuration instructions for this 6/9 cluster [can be found here](dvt-configuration/obol-dvt/cluster-config-6-9.md).
 

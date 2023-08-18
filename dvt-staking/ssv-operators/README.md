@@ -16,7 +16,7 @@ SSV staking with DVStakers operators is currently being tested on Goerli to deve
 * [DVStakersKenya](https://explorer.ssv.network/operators/615)
 * [DVStakersSpacesiderPi](https://explorer.ssv.network/operators/671)
 
-<figure><img src="../.gitbook/assets/image (27).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (27).png" alt=""><figcaption></figcaption></figure>
 
 If you are interested in learning more about our plans for SSV staking, please connect with us:
 
