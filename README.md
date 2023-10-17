@@ -54,8 +54,8 @@ As we continue our journey, we strive to stay at the forefront of innovation and
 
 ### 🔍 Current state of the DVT ecosystem
 
-{% content-ref url="dvt-staking/direct-staking.md" %}
-[direct-staking.md](dvt-staking/direct-staking.md)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
 
 {% content-ref url="dvt-staking/stakewise-v3-vault.md" %}

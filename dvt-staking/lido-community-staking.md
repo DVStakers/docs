@@ -10,9 +10,7 @@ description: How to use DVT to stake on Lido.
 
 Lido Community Staking is currently being trialed by a small group of stakers on the Goerli testnet.
 
-DVStakers have been taking part in that trial and it has been very successful so far. Obol trials are running with many different cluster sizes and are actively gathering long-term metrics.
-
-The SSV trial will start shortly.
+DVStakers have been taking part in that trial and it has been very successful.
 
 If you are interested in learning more about our plans for Lido community staking, please connect with us:
 

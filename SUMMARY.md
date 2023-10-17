@@ -13,15 +13,14 @@
 
 ## DVT Staking
 
-* [➡ Direct Staking 🧪](dvt-staking/direct-staking.md)
-* [🏦 StakeWise V3 Vault 🧪](dvt-staking/stakewise-v3-vault.md)
 * [🤖 SSV Operators 🧪](dvt-staking/ssv-operators/README.md)
 * [💧 Diva Staking 🧪](dvt-staking/diva-staking.md)
-* [🏖 Lido Community Staking 🏗️](dvt-staking/lido-community-staking.md)
-* [🗝 Stakehouse 🧪](dvt-staking/stakehouse.md)
-* [💡 Ether.fi Staking 🏗️](dvt-staking/ether.fi-staking.md)
-* [🚀 RocketPool Staking 🏗️](dvt-staking/rocketpool-staking.md)
+* [🏦 StakeWise V3 Vault 🧪](dvt-staking/stakewise-v3-vault.md)
+* [💡 Ether.fi Staking 🧪](dvt-staking/ether.fi-staking.md)
 * [⭐ Stader 🧪](dvt-staking/stader.md)
+* [🗝 Stakehouse 🧪](dvt-staking/stakehouse.md)
+* [🏖 Lido Community Staking 🏗️](dvt-staking/lido-community-staking.md)
+* [🚀 RocketPool Staking 🏗️](dvt-staking/rocketpool-staking.md)
 
 ## DVT Configuration
 

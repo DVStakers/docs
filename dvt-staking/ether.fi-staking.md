@@ -2,9 +2,9 @@
 description: How to use DVT to stake on Ether.fi.
 ---
 
-# 💡 Ether.fi Staking 🏗️
+# 💡 Ether.fi Staking 🧪
 
-**Status: **<mark style="color:orange;">**In Development**</mark>** 🏗️**
+**Status: **<mark style="color:yellow;">**Testing**</mark> 🧪
 
 {% embed url="https://ether.fi" %}
 
