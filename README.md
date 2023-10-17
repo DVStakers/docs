@@ -54,36 +54,32 @@ As we continue our journey, we strive to stay at the forefront of innovation and
 
 ### 🔍 Current state of the DVT ecosystem
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
-{% endcontent-ref %}
-
-{% content-ref url="dvt-staking/stakewise-v3-vault.md" %}
-[stakewise-v3-vault.md](dvt-staking/stakewise-v3-vault.md)
-{% endcontent-ref %}
-
 {% content-ref url="dvt-staking/ssv-operators/" %}
 [ssv-operators](dvt-staking/ssv-operators/)
-{% endcontent-ref %}
-
-{% content-ref url="dvt-staking/rocketpool-staking.md" %}
-[rocketpool-staking.md](dvt-staking/rocketpool-staking.md)
-{% endcontent-ref %}
-
-{% content-ref url="dvt-staking/lido-community-staking.md" %}
-[lido-community-staking.md](dvt-staking/lido-community-staking.md)
-{% endcontent-ref %}
-
-{% content-ref url="dvt-staking/ether.fi-staking.md" %}
-[ether.fi-staking.md](dvt-staking/ether.fi-staking.md)
 {% endcontent-ref %}
 
 {% content-ref url="dvt-staking/diva-staking.md" %}
 [diva-staking.md](dvt-staking/diva-staking.md)
 {% endcontent-ref %}
 
+{% content-ref url="dvt-staking/stakewise-v3-vault.md" %}
+[stakewise-v3-vault.md](dvt-staking/stakewise-v3-vault.md)
+{% endcontent-ref %}
+
+{% content-ref url="dvt-staking/ether.fi-staking.md" %}
+[ether.fi-staking.md](dvt-staking/ether.fi-staking.md)
+{% endcontent-ref %}
+
 {% content-ref url="dvt-staking/stader.md" %}
 [stader.md](dvt-staking/stader.md)
+{% endcontent-ref %}
+
+{% content-ref url="dvt-staking/lido-community-staking.md" %}
+[lido-community-staking.md](dvt-staking/lido-community-staking.md)
+{% endcontent-ref %}
+
+{% content-ref url="dvt-staking/rocketpool-staking.md" %}
+[rocketpool-staking.md](dvt-staking/rocketpool-staking.md)
 {% endcontent-ref %}
 
 ### 📚 Our Journey
