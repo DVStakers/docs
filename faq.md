@@ -16,7 +16,11 @@ DVStakers is a growing global network of solo stakers, running Ethereum nodes an
 
 ### **Are you sponsored or paid by anyone?**
 
-Not yet. If at some point in the future, we do apply for grants or funding to support this project, we'll let you know here.
+Yes. DVStakers received a grant from the [Ethereum Foundation](https://ethereum.org/) in 2023. This money was used to fund content creation as well as the Kenya node project. More details about the EF grant will be shared when the Q3 2023 Allocation Update blog post is published.
+
+[Lido](https://lido.fi) awarded DVStakers a grant of $25,000 USD to support the work we do and the content we create. The details of that grant can be seen [here](https://research.lido.fi/t/dvstakers-grant-proposal/5346). This was a no-strings-attached grant and DVStakers remains in control of our content and views.
+
+DVStakers thanks everyone who supports the project both with monetary contributions as well as time commitments 🙏
 
 ### Can I be involved in this project?
 
