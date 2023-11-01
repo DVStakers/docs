@@ -193,11 +193,15 @@ vim ~/geth-update.sh
 ```bash
 #!/bin/bash
 cd ~/go-ethereum
-git checkout master
 
-echo "**********************************"
-echo "Pulling latest changes for Geth..."
-echo "**********************************"
+read -p "Enter the commit hash you want to checkout: " commit_hash
+
+git fetch
+git checkout $commit_hash
+
+echo "****************************"
+echo "Pulling changes for Geth..."
+echo "****************************"
 git pull
 
 echo

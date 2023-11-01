@@ -12,25 +12,6 @@ description: Notes on how to maintain and update an MEV Boost client.
 mev-update
 ```
 {% endtab %}
-
-{% tab title="Full Commands" %}
-```bash
-# <BUILD LATEST VERSION>
-cd ~/mev-boost
-git checkout main
-git pull
-make build-portable
-
-# <STOP SERVICE AND REPLACE BINARY>
-sudo systemctl stop mevboost.service
-
-sudo rm /usr/local/bin/mev-boost
-sudo cp ~/mev-boost/mev-boost /usr/local/bin
-
-# <START SERVICE>
-sudo systemctl start mevboost.service
-```
-{% endtab %}
 {% endtabs %}
 
 ### MEV Boost - Update mevboost.service

@@ -145,18 +145,22 @@ vim ~/mev-update.sh
 ```bash
 #!/bin/bash
 cd ~/mev-boost
-git checkout main
+
+read -p "Enter the commit hash you want to checkout: " commit_hash
+
+git fetch
+git checkout $commit_hash
 
 echo "***************************************"
 echo "Pulling latest changes for MEV Boost..."
 echo "***************************************"
-make build-portable
+make build
 
 echo
 echo "*******************"
 echo "Making MEV Boost..."
 echo "*******************"
-make build-portable
+make build
 
 echo "*********************"
 echo "Stopping MEV Boost..."

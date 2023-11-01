@@ -33,25 +33,6 @@ echo 'PATH="$PATH:/usr/local/go/bin"' >> ~/.profile
 geth-update
 ```
 {% endtab %}
-
-{% tab title="Full Commands" %}
-```bash
-# <BUILD LATEST VERSION>
-cd ~/go-ethereum
-git checkout master
-git pull
-make geth
-
-# <STOP SERVICE AND REPLACE BINARY>
-sudo systemctl stop geth.service
-
-sudo rm /usr/local/bin/geth
-sudo cp ~/go-ethereum/build/bin/geth /usr/local/bin
-
-# <START SERVICE>
-sudo systemctl start geth.service
-```
-{% endtab %}
 {% endtabs %}
 
 ### Geth - Update geth.service

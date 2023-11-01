@@ -81,6 +81,7 @@ cd ~/lighthouse
 
 read -p "Enter the commit hash you want to checkout: " commit_hash
 
+git fetch
 git checkout $commit_hash
 
 echo "****************************************"
@@ -138,7 +139,6 @@ if [ "$validator_status" = "active" ]; then
     echo "Restarting Lighthouse Validator..."
     sudo systemctl start lighthousevalidator.service
 fi
-
 ```
 {% endcode %}
 
