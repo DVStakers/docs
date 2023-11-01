@@ -78,7 +78,10 @@ vim ~/lighthouse-build.sh
 ```bash
 #!/bin/bash
 cd ~/lighthouse
-git checkout stable
+
+read -p "Enter the commit hash you want to checkout: " commit_hash
+
+git checkout $commit_hash
 
 echo "****************************************"
 echo "Pulling latest changes for Lighthouse..."
@@ -102,19 +105,40 @@ vim ~/lighthouse-deploy.sh
 {% code title="~/lighthouse-deploy.sh" %}
 ```bash
 #!/bin/bash
-echo "**********************"
-echo "Stopping Lighthouse..."
-sudo systemctl stop lighthousebeacon.service
-sudo systemctl stop lighthousevalidator.service
 
+beacon_status=$(sudo systemctl is-active lighthousebeacon.service 2>/dev/null)
+validator_status=$(sudo systemctl is-active lighthousevalidator.service 2>/dev/null)
+
+echo "**********************"
+
+if [ "$beacon_status" = "active" ]; then
+    echo "Stopping Lighthouse Beacon..."
+    sudo systemctl stop lighthousebeacon.service
+elif [ "$beacon_status" = "failed" ]; then
+    echo "Warning: Lighthouse Beacon service does not exist."
+fi
+
+if [ "$validator_status" = "active" ]; then
+    echo "Stopping Lighthouse Validator..."
+    sudo systemctl stop lighthousevalidator.service
+elif [ "$validator_status" = "failed" ]; then
+    echo "Warning: Lighthouse Validator service does not exist."
+fi
 
 echo "Replacing previous version..."
 sudo rm /usr/local/bin/lighthouse
 sudo cp ~/.cargo/bin/lighthouse /usr/local/bin
 
-echo "Restarting Lighthouse..."
-sudo systemctl start lighthousebeacon.service
-sudo systemctl start lighthousevalidator.service
+if [ "$beacon_status" = "active" ]; then
+    echo "Restarting Lighthouse Beacon..."
+    sudo systemctl start lighthousebeacon.service
+fi
+
+if [ "$validator_status" = "active" ]; then
+    echo "Restarting Lighthouse Validator..."
+    sudo systemctl start lighthousevalidator.service
+fi
+
 ```
 {% endcode %}
 
