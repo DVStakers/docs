@@ -142,26 +142,16 @@ CLUSTER_NAME=                  # E.g. DVStakers
 WITHDRAWAL_ADDRESS=            # Set withdrawal address
 FEE_RECIPIENT_ADDRESS=         # Set fee recipient address
 THRESHOLD=                     # E.g. 6
-NODES=                         # E.g. 9                
+NODES=                         # E.g. 9
+NETWORK=                       # E.g. mainnet or goerli          
 
-docker run --rm -v $(pwd):/opt/charon obolnetwork/charon:${CHARON_VERSION} create cluster --name="${CLUSTER_NAME}" --withdrawal-addresses="${WITHDRAWAL_ADDRESS}" --fee-recipient-addresses="${FEE_RECIPIENT_ADDRESS}" --split-existing-keys --split-keys-dir=/opt/charon/split_keys --threshold ${THRESHOLD} --nodes ${NODES}
+cd ~/charon-key-splitter
+docker run --rm -v $(pwd):/opt/charon obolnetwork/charon:${CHARON_VERSION} create cluster --name="${CLUSTER_NAME}" --withdrawal-addresses="${WITHDRAWAL_ADDRESS}" --fee-recipient-addresses="${FEE_RECIPIENT_ADDRESS}" --split-existing-keys --split-keys-dir=/opt/charon/split_keys --threshold ${THRESHOLD} --nodes ${NODES} --network ${NETWORK}
 ```
 
-In the `.charon` directory there will now be a `cluster` directory containing sub-directories, each named `node0`, `node1`, etc.&#x20;
-
-{% hint style="info" %}
-**I can't see the `.charon` directory?! 👀**
-
-On most filesystems, files and directories that start with a . are hidden by default.
-
-On a Unix system (Mac or Linux) on the command line you can see hidden files and directories using the `-a` flag for the `ls` command:
-
-<pre><code><strong>ls -la
-</strong></code></pre>
-{% endhint %}
+In the directory there will now be multiple new directories, each named `node0`, `node1`, etc.&#x20;
 
 ```
-.charon/cluster/
 ├─ node[0-*]/                   Directory for each node
    ├─ charon-enr-private-key    Charon networking private key for node authentication
    ├─ cluster-lock.json         Cluster lock defines the cluster lock file which is signed by all nodes
