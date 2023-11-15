@@ -46,7 +46,7 @@ Our passion for blockchain technology and decentralized systems led us to explor
 
 **To become a leading community of DVT node operators**
 
-DVStakers' vision is to become a community of leading DVT non-custodial node operators within the Ethereum ecosystem, running validators using multiple DVT protocols such as Obol, SSV and Diva. By working with platforms such as StakeWise, RocketPool, ether.fi, Lido, and more, we aim to support a diverse range of staking opportunities.&#x20;
+DVStakers' vision is to become a community of leading DVT non-custodial node operators within the Ethereum ecosystem, running validators using multiple DVT protocols such as Obol, SSV, SafeStake and Diva. By working with platforms such as StakeWise, RocketPool, ether.fi, Lido, and more, we aim to support a diverse range of staking opportunities.&#x20;
 
 Our commitment to leveraging the best of each protocol will enable us to offer optimal staking experiences, maximizing rewards, and minimizing risks for all stakeholders involved.&#x20;
 
@@ -60,6 +60,10 @@ As we continue our journey, we strive to stay at the forefront of innovation and
 
 {% content-ref url="dvt-staking/diva-staking.md" %}
 [diva-staking.md](dvt-staking/diva-staking.md)
+{% endcontent-ref %}
+
+{% content-ref url="dvt-staking/safestake.md" %}
+[safestake.md](dvt-staking/safestake.md)
 {% endcontent-ref %}
 
 {% content-ref url="dvt-staking/stakewise-v3-vault.md" %}
