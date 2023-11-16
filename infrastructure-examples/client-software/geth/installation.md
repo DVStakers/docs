@@ -127,7 +127,9 @@ TimeoutStopSec=1200
 Environment=NETWORK=         # E.g. mainnet or goerli
 Environment=P2P_PORT=        # Default: 30303
 Environment=MAX_PEERS=       # Default: 50
-Environment=CACHE=           # Default 
+Environment=WS_PORT=         # Default: 8546
+Environment=WS_ADDR=         # e.g. 192.168.1.2
+Environment=RPC_ADDR=        # e.g. 0.0.0.0
 
 ExecStart=/usr/local/bin/geth \
     --${NETWORK} \
@@ -142,7 +144,11 @@ ExecStart=/usr/local/bin/geth \
     --pprof \
     --authrpc.jwtsecret=/var/lib/goethereum/jwtsecret \
     --maxpeers ${MAX_PEERS} \
-    --cache ${CACHE}
+    --ws \
+    --ws.port ${WS_PORT} \
+    --ws.addr ${WS_ADDR} \
+    --http.addr ${RPC_ADDR} \
+    --http.corsdomain '*'
 
 [Install]
 WantedBy=default.target
