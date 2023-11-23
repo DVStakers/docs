@@ -15,6 +15,7 @@
 
 * [🤖 SSV Operators 🧪](dvt-staking/ssv-operators/README.md)
 * [💧 Diva Staking 🧪](dvt-staking/diva-staking.md)
+* [🔑 Safestake 🧪](dvt-staking/safestake.md)
 * [🏦 StakeWise V3 Vault 🧪](dvt-staking/stakewise-v3-vault.md)
 * [💡 Ether.fi Staking 🧪](dvt-staking/ether.fi-staking.md)
 * [⭐ Stader 🧪](dvt-staking/stader.md)
