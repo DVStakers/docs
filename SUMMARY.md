@@ -34,6 +34,7 @@
     * [🕯 Obol DKG Ceremony](dvt-configuration/obol-dvt/validator-keyshares/obol-dkg-ceremony.md)
   * [🔧 Cluster Config - 6/9](dvt-configuration/obol-dvt/cluster-config-6-9.md)
   * [⌨ Useful commands](dvt-configuration/obol-dvt/useful-commands.md)
+* [Safestake - Installation](docs/dvt-configuration/safestake-operator-installation/README.md)
 
 ## Infrastructure Examples
 
