@@ -1,14 +1,13 @@
 ---
-description: How to evolve from isolated solo staking setups to a redundant DVT system.
+description: The DVStakers journey from solo home staking to DVT validators.
 ---
 
-# 🖥 The Evolution of Solo Staking
+# 🚄 Our Journey
 
 * [Step 1: Standard Solo Staking](the-evolution-of-solo-staking.md#step-1-standard-solo-staking)
 * [Step 2: Redundant Local Hardware](the-evolution-of-solo-staking.md#step-2-redundant-local-hardware)
-* [Step 3: Redundant Remote Beacon Nodes (Mainnet - Here today📍)](the-evolution-of-solo-staking.md#step-3-redundant-remote-beacon-nodes-mainnet-here-today)
-* [Step 4: Obol DVT Validators (Goerli - Here today📍)](the-evolution-of-solo-staking.md#step-4-obol-dvt-validators-goerli-here-today)
-* [Step 5: Add additional DVT solutions & staking protocols](the-evolution-of-solo-staking.md#step-5-add-additional-dvt-solutions-and-staking-protocols)
+* [Step 3: Redundant Remote Beacon Nodes](the-evolution-of-solo-staking.md#step-3-redundant-remote-beacon-nodes-mainnet-here-today)
+* [Step 4: DVT Validators](the-evolution-of-solo-staking.md#step-4-dvt-validators)
 
 <figure><img src=".gitbook/assets/image (2).png" alt="Home Stakers Meme" width="410"><figcaption></figcaption></figure>
 
@@ -26,13 +25,13 @@ Note that there is still only a single validator client (VC) for each operator. 
 
 <figure><img src=".gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-### Step 3: Redundant Remote Beacon Nodes (Mainnet - Here today📍)
+### Step 3: Redundant Remote Beacon Nodes
 
 Connect to the Beacon Nodes of other solo staker to increase redundancy. Further increasing client diversity by running different EC/BN pairs. This doesn't increase the risk of slashing, it simply increases the number of nodes that broadcast the signed messages, but there is still only one signed message (slashing occurs when there are two or more conflicting signed messages).
 
 <figure><img src=".gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
 
-### Step 4: DVT Validators (Goerli - Here today📍)
+### Step 4: DVT Validators
 
 SSV operators allow for full redundancy and have been configured by the DVStakers operators, including running on Raspberry Pis!
 
@@ -44,7 +43,10 @@ The configuration instructions for this 6/9 cluster [can be found here](dvt-conf
 
 <figure><img src=".gitbook/assets/image (12) (3).png" alt=""><figcaption></figcaption></figure>
 
-### Step 5: Add additional DVT solutions & staking protocols
 
-Coming soon...
 
+Take a look at the next stage of our journey with:
+
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
+{% endcontent-ref %}
