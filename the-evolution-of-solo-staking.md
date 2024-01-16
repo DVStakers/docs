@@ -9,7 +9,7 @@ description: The DVStakers journey from solo home staking to DVT validators.
 * [Step 3: Redundant Remote Beacon Nodes](the-evolution-of-solo-staking.md#step-3-redundant-remote-beacon-nodes-mainnet-here-today)
 * [Step 4: DVT Validators](the-evolution-of-solo-staking.md#step-4-dvt-validators)
 
-<figure><img src=".gitbook/assets/image (2).png" alt="Home Stakers Meme" width="410"><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (2) (1).png" alt="Home Stakers Meme" width="410"><figcaption></figcaption></figure>
 
 ### Step 1: Standard Solo Staking
 
@@ -23,7 +23,7 @@ Still isolated systems, but the single points of failure have been reduced, thou
 
 Note that there is still only a single validator client (VC) for each operator. There is no failover setup as failover systems are very likely to cause slashing!
 
-<figure><img src=".gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Step 3: Redundant Remote Beacon Nodes
 
@@ -35,7 +35,7 @@ Connect to the Beacon Nodes of other solo staker to increase redundancy. Further
 
 SSV operators allow for full redundancy and have been configured by the DVStakers operators, including running on Raspberry Pis!
 
-<figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 With Obol, by splitting the keys of any existing validators into 9 keyshares each, a 6/9 Obol DVT cluster can be created. This means, that if any one system goes offline (e.g. due to power cuts, natural disaster, or a Cloud provider deciding that supporting the future of [decentralized finance isn't for them...](https://www.coindesk.com/business/2022/08/26/ethereum-could-get-kicked-off-cloud-host-that-powers-10-of-crypto-network/)) the validators will continue to perform their duties. True DVT!
 

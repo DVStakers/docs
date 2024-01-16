@@ -2,15 +2,17 @@
 
 In [Kenya Node - Phase 1](kenya-node.md) an Ethereum full node, validator, and DVT validators were set up in an office in Nairobi, Kenya 🇰🇪
 
-Phase 2 was pitched on a Lido Node Operator Community Call and a [grant proposal](https://research.lido.fi/t/dvstakers-grant-proposal/5346) was submitted to Lido LEGO requesting funds for this project.
+Phase 2 was pitched on a Lido Node Operator [Community Call](https://twitter.com/LidoFinance/status/1694266564642562100) and a [grant proposal](https://research.lido.fi/t/dvstakers-grant-proposal/5346) was submitted to Lido LEGO requesting funds for this project.
 
 <figure><img src="../.gitbook/assets/image (51).png" alt=""><figcaption><p><a href="https://twitter.com/LidoFinance/status/1694266564642562100">https://twitter.com/LidoFinance/status/1694266564642562100</a></p></figcaption></figure>
 
-With the [funds awarded](https://research.lido.fi/t/dvstakers-grant-proposal/5346/4) by Lido LEGO in October 2023, phase 2 could begin!
+With the [funds awarded](https://research.lido.fi/t/dvstakers-grant-proposal/5346/4) by Lido LEGO in October 2023, Phase 2 could begin!
 
 ## Phase 2 Goal
 
-**To set up a fully off-the-grid Ethereum validator in a rural village in Kenya, supporting the local community through education.**
+> **To set up a fully off-the-grid Ethereum validator in a rural village in Kenya, supporting the local community through education.**
+
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p>Kenya node location</p></figcaption></figure>
 
 ## Preparation
 
@@ -18,7 +20,7 @@ The location chosen for the machines was a house located near the base of Kilima
 
 <figure><img src="../.gitbook/assets/image (57).png" alt="" width="563"><figcaption><p>A family of new Ethereum stakers</p></figcaption></figure>
 
-Before DVStakers traveled to Kenya to move the existing equipment from Nairobi a number of preparation steps were required:
+Before DVStakers traveled to Kenya to move the existing equipment from Nairobi several preparation steps were required:
 
 1. Solar panels
 2. Batteries
@@ -27,7 +29,7 @@ Before DVStakers traveled to Kenya to move the existing equipment from Nairobi a
 
 <figure><img src="../.gitbook/assets/image (35).png" alt=""><figcaption><p>Site layout</p></figcaption></figure>
 
-All the equipment used at the property (excluding the staking machines and laptops) were locally sourced.&#x20;
+All the equipment used at the property (excluding the staking machines and laptops) was locally sourced.&#x20;
 
 <figure><img src="../.gitbook/assets/image (50).png" alt=""><figcaption><p>Local equipment sourcing</p></figcaption></figure>
 
@@ -60,9 +62,9 @@ Having reliable solar power is a great start, but the staking machines need to b
 Kenya has a very good mobile internet network that is widely available and reasonably priced. However, for the amount of data needed for an Ethereum full node, faster internet was required. Starlink became active in Kenya in[ July 2023](https://twitter.com/Starlink/status/1681287681341542400), so the timing was perfect for this project!
 
 {% hint style="info" %}
-Equipment cost: 92,100 KSH (\~ $570 USD)
+Equipment cost: 92,100 KSH (\~$570 USD)
 
-Monthly subscription: 6,500 KSH per month (\~40 $USD)
+Monthly subscription: 6,500 KSH per month (\~$40 USD)
 {% endhint %}
 
 <figure><img src="../.gitbook/assets/image (54).png" alt="" width="375"><figcaption><p>Starlink arrives!</p></figcaption></figure>
@@ -176,7 +178,7 @@ Full nodes are important to the Ethereum network. Even without [open ports](keny
 
 ### Etherfi Operation Solo Staker
 
-[Ether.fi](kenya-node-phase-2.md#etherfi-operation-solo-staker) Operation Solo Staker enables anyone to run nodes, further decentralizing the Ethereum network. The current rewards are \~$30 per month which is a non-trivial amount.
+[Ether.fi](kenya-node-phase-2.md#etherfi-operation-solo-staker) Operation Solo Staker enables anyone to run nodes, further decentralizing the Ethereum network. The current rewards are \~$30 per month which is a non-trivial amount for the Kenyan stakers involved in this initiative.
 
 These DVT validators are running [Obol](https://obol.tech) clusters.
 
@@ -210,7 +212,7 @@ The internet and power setup for the validator nodes can also be used by the loc
 
 <figure><img src="../.gitbook/assets/image (38).png" alt=""><figcaption><p>A local school supported by DVStakers and DVT</p></figcaption></figure>
 
-So what does Phase 3 look like? There's certainly a lot of opportunity to grow the Kenyan staking community and improve local infrastructure. If anyone has any suggestions or ideas for what DVStakers could do next please join the [Discord](https://discord.gg/VbVwqgSdFD) to discuss.
+So what does Phase 3 look like? There's certainly a lot of opportunity to grow the Kenyan staking community and improve local infrastructure. If anyone has any suggestions or ideas for what DVStakers could do next please join the [Discord](https://discord.gg/VbVwqgSdFD) to discuss 🙂
 
 <figure><img src="../.gitbook/assets/image (48).png" alt=""><figcaption><p>A solo giraffe 🦒</p></figcaption></figure>
 
@@ -218,4 +220,6 @@ So what does Phase 3 look like? There's certainly a lot of opportunity to grow t
 
 This initiative was made possible by support from [Lido](https://twitter.com/LidoFinance), [Dappnode](https://twitter.com/DAppNode), [Homenode](https://twitter.com/Homenodeorg), [Ether.fi](https://twitter.com/ether\_fi), the [EF](https://twitter.com/ethereum), [Obol](https://twitter.com/ObolNetwork), [SSV](https://twitter.com/ssv\_network), and many others. It wouldn't have been possible without all of this help so it is hugely appreciated!
 
-[Eridian](https://twitter.com/EridianAlpha) coordinated this project as the DVStakers member on the ground supporting the setup.&#x20;
+[Eridian](https://twitter.com/EridianAlpha) coordinated this project as the DVStakers member on the ground supporting the setup.
+
+<figure><img src="../.gitbook/assets/image (1).png" alt="" width="272"><figcaption><p>Solo Stakers Eridian and Steven</p></figcaption></figure>
