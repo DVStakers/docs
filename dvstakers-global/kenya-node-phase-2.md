@@ -12,7 +12,7 @@ With the [funds awarded](https://research.lido.fi/t/dvstakers-grant-proposal/534
 
 > **To set up a fully off-the-grid Ethereum validator in a rural village in Kenya, supporting the local community through education.**
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p>Kenya node location</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption><p>Kenya node location</p></figcaption></figure>
 
 ## Preparation
 
@@ -212,6 +212,8 @@ The internet and power setup for the validator nodes can also be used by the loc
 
 <figure><img src="../.gitbook/assets/image (38).png" alt=""><figcaption><p>A local school supported by DVStakers and DVT</p></figcaption></figure>
 
+<figure><img src="../.gitbook/assets/image.png" alt="" width="563"><figcaption><p>Education enabled by Ethereum</p></figcaption></figure>
+
 So what does Phase 3 look like? There's certainly a lot of opportunity to grow the Kenyan staking community and improve local infrastructure. If anyone has any suggestions or ideas for what DVStakers could do next please join the [Discord](https://discord.gg/VbVwqgSdFD) to discuss 🙂
 
 <figure><img src="../.gitbook/assets/image (48).png" alt=""><figcaption><p>A solo giraffe 🦒</p></figcaption></figure>
@@ -222,4 +224,4 @@ This initiative was made possible by support from [Lido](https://twitter.com/Lid
 
 [Eridian](https://twitter.com/EridianAlpha) coordinated this project as the DVStakers member on the ground supporting the setup.
 
-<figure><img src="../.gitbook/assets/image (1).png" alt="" width="272"><figcaption><p>Solo Stakers Eridian and Steven</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt="" width="272"><figcaption><p>Solo Stakers Eridian and Steven</p></figcaption></figure>

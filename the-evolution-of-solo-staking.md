@@ -23,7 +23,7 @@ Still isolated systems, but the single points of failure have been reduced, thou
 
 Note that there is still only a single validator client (VC) for each operator. There is no failover setup as failover systems are very likely to cause slashing!
 
-<figure><img src=".gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Step 3: Redundant Remote Beacon Nodes
 
