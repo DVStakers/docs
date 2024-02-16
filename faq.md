@@ -38,7 +38,7 @@ Some use cases:
 
 ### What is the purpose of DVStakers?
 
-DVStakers is a growing global network of solo stakers, running Ethereum nodes and DVT validators. We provide educational resources and support to anyone interested in learning more about DVT.
+To level the playing field of the Ethereum staking ecosystem.
 
 ### **Are you sponsored or paid by anyone?**
 
@@ -51,8 +51,6 @@ DVStakers thanks everyone who supports the project both with monetary contributi
 ### Can I be involved in this project?
 
 If you are interested in being part of the DVT revolution then please join us!&#x20;
-
-DVTStakers aims to be an inclusive community, so if you want to learn more about DVT and contribute in any way, please reach out to us:
 
 * [Twitter - @DVStakers](https://twitter.com/DVStakers)
 * [Discord - DVStakers](https://discord.gg/VbVwqgSdFD)
