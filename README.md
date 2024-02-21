@@ -6,6 +6,8 @@ description: Leveling the playing field of the Ethereum staking ecosystem.
 
 <figure><img src=".gitbook/assets/image (59).png" alt="" width="410"><figcaption></figcaption></figure>
 
+{% embed url="https://twitter.com/DVStakers/status/1747267532921479261" fullWidth="false" %}
+
 ### 🚀 About Us
 
 We are long-time cryptocurrency enthusiasts and experienced Ethereum solo stakers. Our contributors wrote the [EthStaker Knowledge Base](https://ethstaker.gitbook.io/ethstaker-knowledge-base/), providing an unbiased, open-source collection of useful information and concepts about Ethereum staking.
