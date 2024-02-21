@@ -12,6 +12,8 @@ description: Leveling the playing field of the Ethereum staking ecosystem.
 
 We are long-time cryptocurrency enthusiasts and experienced Ethereum solo stakers. Our contributors wrote the [EthStaker Knowledge Base](https://ethstaker.gitbook.io/ethstaker-knowledge-base/), providing an unbiased, open-source collection of useful information and concepts about Ethereum staking.
 
+Using [SSV](https://ssv.network), [Obol](https://obol.tech), and other DVT protocols we are pushing the frontier of the Ethereum staking ecosystem.&#x20;
+
 Our passion for blockchain technology and decentralized systems led us to explore the exciting world of DVT.
 
 <div align="center">
@@ -31,6 +33,8 @@ Our passion for blockchain technology and decentralized systems led us to explor
 <figure><img src=".gitbook/assets/Screenshot 2023-07-06 at 23.13.10-modified.png" alt=""><figcaption><p>Snapcrackle</p></figcaption></figure>
 
 </div>
+
+<figure><img src=".gitbook/assets/image (1) (1) (1).png" alt=""><figcaption><p>A global network of DVT stakers.</p></figcaption></figure>
 
 Connect with us now, and let the journey begin! 🌟
 
