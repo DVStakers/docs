@@ -153,4 +153,4 @@ You are advised to review this Privacy Policy periodically for any changes. Chan
 If you have any questions about this Privacy Policy, you can contact us:
 
 * [Twitter - @DVStakers](https://twitter.com/DVStakers)
-* [Discord - DVStakers](https://discord.gg/VbVwqgSdFD)
+* [Discord - DVStakers](https://discord.gg/MgKNjXuAk8)

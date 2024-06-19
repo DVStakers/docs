@@ -2,7 +2,7 @@
 description: Leveling the playing field of the Ethereum staking ecosystem.
 ---
 
-# 🗺 DVStakers
+# 🗺️ DVStakers
 
 <figure><img src=".gitbook/assets/image (59).png" alt="" width="410"><figcaption></figcaption></figure>
 
@@ -39,4 +39,4 @@ Our passion for blockchain technology and decentralized systems led us to explor
 Connect with us now, and let the journey begin! 🌟
 
 * [Twitter - @DVStakers](https://twitter.com/DVStakers)
-* [Discord - DVStakers](https://discord.gg/VbVwqgSdFD)
+* [Discord - DVStakers](https://discord.gg/MgKNjXuAk8)

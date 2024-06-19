@@ -53,4 +53,4 @@ DVStakers thanks everyone who supports the project both with monetary contributi
 If you are interested in being part of the DVT revolution then please join us!&#x20;
 
 * [Twitter - @DVStakers](https://twitter.com/DVStakers)
-* [Discord - DVStakers](https://discord.gg/VbVwqgSdFD)
+* [Discord - DVStakers](https://discord.gg/MgKNjXuAk8)
