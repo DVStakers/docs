@@ -47,10 +47,3 @@ Yes. DVStakers received a grant from the [Ethereum Foundation](https://ethereum.
 [Lido](https://lido.fi) awarded DVStakers a grant of $25,000 USD to support the work we do and the content we create. The details of that grant can be seen [here](https://research.lido.fi/t/dvstakers-grant-proposal/5346). This was a no-strings-attached grant and DVStakers remains in control of our content and views.
 
 DVStakers thanks everyone who supports the project both with monetary contributions as well as time commitments 🙏
-
-### Can I be involved in this project?
-
-If you are interested in being part of the DVT revolution then please join us!&#x20;
-
-* [Twitter - @DVStakers](https://twitter.com/DVStakers)
-* [Discord - DVStakers](https://discord.gg/MgKNjXuAk8)
