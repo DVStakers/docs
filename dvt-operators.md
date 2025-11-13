@@ -1,4 +1,8 @@
-# 🖥 DVT Operators
+---
+hidden: true
+---
+
+# 🖥️ DVT Operators
 
 ### SSV - Kenya Holesky
 

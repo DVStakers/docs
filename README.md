@@ -14,8 +14,4 @@ description: Leveling the playing field of the Ethereum staking ecosystem.
 [kenya-node-phase-2.md](kenya-node-phase-2.md)
 {% endcontent-ref %}
 
-{% content-ref url="dvt-operators.md" %}
-[dvt-operators.md](dvt-operators.md)
-{% endcontent-ref %}
-
 {% embed url="https://twitter.com/DVStakers/status/1747267532921479261" fullWidth="false" %}
